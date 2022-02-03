@@ -2,14 +2,11 @@
 
 Project Link: <https://github.com/NaturalSelectionLabs/RSS3>
 
-RSS3 is a protocol created to unify information formats and facilitate the free flow of information. Its index file focuses mainly on `items` with supporting sections including `assets`, `profile`, `links` and more.
+We've seen the Web1 era when everyone was happy to use RSS as a standard format for syndication and the Web2 era when RSS declined and the closure of information between platforms are created.
 
-The protocol is compatible, inclusive, highly modularated and can be easily integrated with other protocols, for example you can
+We all agree that information should be more freely distributed in the Web3 era, and to facilitate this we need a common format that we can all use to syndicate information, reducing the cost of use and development.
 
-- Integrate with various name services to make it easier to find personas' files
-- Integrate with various identity projects where accounts of different networks are already verified
-- Integrate with various content platforms to sync assets and items to files
-- Integrate with various social graphs to subscribe content with external links
+RSS3 is a protocol created to unify information formats and facilitate the free flow of information.
 
 ## Latest draft
 

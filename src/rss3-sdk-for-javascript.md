@@ -283,15 +283,17 @@ We can write a loop to request details.
 ```ts
 let details = [];
 for (let i = 0; i < 10; i++) {
-    const assetsNoDeails = assets.filter((asset) => !details.find((detail) => detail.id === asset));
-    if (!assetsNoDeails.length) {
-        break;
-    }
     details = details.concat(await rss3.assets.getDetails({
         assets: assetsNoDeails,
         full: true,
     }));
     myRender(details);
+    const assetsNoDeails = assets.filter((asset) => !details.find((detail) => detail.id === asset));
+    if (!assetsNoDeails.length) {
+        break;
+    } else {
+        await new Promise((r) => {setTimeout(r, 3000)})
+    }
 }
 ```
 
@@ -348,15 +350,17 @@ const assets = page1.filter((item) => item?.target?.field?.startsWith('assets-')
 // Same as above
 let details = [];
 for (let i = 0; i < 10; i++) {
-    const assetsNoDeails = assets.filter((asset) => !details.find((detail) => detail.id === asset));
-    if (!assetsNoDeails.length) {
-        break;
-    }
     details = details.concat(await rss3.assets.getDetails({
         assets: assetsNoDeails,
         full: true,
     }));
     myRender(details);
+    const assetsNoDeails = assets.filter((asset) => !details.find((detail) => detail.id === asset));
+    if (!assetsNoDeails.length) {
+        break;
+    } else {
+        await new Promise((r) => {setTimeout(r, 3000)})
+    }
 }
 ```
 

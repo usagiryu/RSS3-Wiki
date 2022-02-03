@@ -1,14 +1,25 @@
 # Introduction
 
-<p align="center" class="logo-img"></div>
-    <img src="https://rss3.mypinata.cloud/ipfs/QmUG6H3Z7D5P511shn7sB4CPmpjH5uZWu4m5mWX7U3Gqbu" alt="RSS3" width="300">
+<p align="center">
+    <p align="center">
+        <img src="https://graphics.rss3.workers.dev/" alt="RSS3" width="100">
+    </p>
+    <p align="center">
+        <img src="https://rss3.mypinata.cloud/ipfs/QmUG6H3Z7D5P511shn7sB4CPmpjH5uZWu4m5mWX7U3Gqbu" alt="RSS3" width="150">
+    </p>
 </p>
 
 > RSS3 is a next-generation feed standard that aims to support efficient and decentralized information distribution.
 
-RSS3 is a protocol created to unify information formats and facilitate the free flow of information. Its index file focuses mainly on `items` with supporting sections including `assets`, `profile`, `links` and more. Details of the RSS3 protocol can be found [here](/guide/protocol.html).
+<object height="20" data="https://ipfs.rss3.page/ipfs/QmZs8yG5nbwxfrFMfrjfHunSZNum61DQWKBqyxf3vwDJGd" type="image/svg+xml"></object>
 
-With a basic understanding of the protocol, the quickest way to get started is to use the [SDK](/guide/sdk.html), or to request [API](/guide/api.html) directly.
+We've seen the Web1 era when everyone was happy to use RSS as a standard format for syndication and the Web2 era when RSS declined and the closure of information between platforms are created.
+
+We all agree that information should be more freely distributed in the Web3 era, and to facilitate this we need a common format that we can all use to syndicate information, reducing the cost of use and development.
+
+RSS3 is a protocol created to unify information formats and facilitate the free flow of information. Details of the RSS3 protocol can be found [here](/protocol.html).
+
+With a basic understanding of the protocol, the quickest way to get started is to use the [SDK](/sdk.html), or to request [API](/api.html) directly.
 
 Reading [our white paper](https://rss3.io/#/whitepaper) is also a good way to learn more about the protocol and the upcoming decentralized network.
 
