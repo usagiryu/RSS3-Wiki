@@ -84,7 +84,7 @@ module.exports = {
                             ],
                         },
                         {
-                            text: 'Node',
+                            text: 'Network',
                             children: [
                                 'api.md',
                             ],
