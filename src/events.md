@@ -1,3 +1,7 @@
+---
+sidebar: auto
+---
+
 # Events
 
 ## RSS3 Whitepaper

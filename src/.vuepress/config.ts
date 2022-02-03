@@ -12,24 +12,22 @@ module.exports = {
     head: [
         ['meta', { name: 'theme-color', content: '#0072ff' }],
         ['meta', { name: 'apple-mobile-web-app-capable', content: 'yes' }],
-        ['meta', { name: 'apple-mobile-web-app-status-bar-style', content: 'black' }]
+        ['meta', { name: 'apple-mobile-web-app-status-bar-style', content: 'black' }],
+        ['link', { rel: 'icon', href: 'https://graphics.rss3.workers.dev/' }]
     ],
 
     themeConfig: {
         repo: 'NaturalSelectionLabs',
-        docsRepo: 'NaturalSelectionLabs/RSS3-Docs',
-        editLinks: true,
-        lastUpdated: true,
+        docsRepo: 'NaturalSelectionLabs/RSS3-Wiki',
         sidebarDepth: 2,
         docsDir: 'src',
-        docsBranch: 'main',
+        logo: 'https://graphics.rss3.workers.dev/',
         locales: {
             '/': {
                 lang: 'en-US',
                 label: 'English',
                 editLinkText: 'Edit this page on GitHub',
-                lastUpdated: 'Last Updated',
-                nav: [
+                navbar: [
                     {
                         text: 'Guide',
                         link: '/',
@@ -40,10 +38,10 @@ module.exports = {
                     },
                     {
                         text: 'Learn More',
-                        items: [
+                        children: [
                             {
                                 text: 'Events',
-                                link: '/events'
+                                link: '/events.md'
                             },
                             {
                                 text: 'Blog',
@@ -59,7 +57,7 @@ module.exports = {
                             },
                             {
                                 text: 'Support RSS3',
-                                link: '/support'
+                                link: '/support.md'
                             },
                         ]
                     },
@@ -67,39 +65,34 @@ module.exports = {
                 sidebar: {
                     '/': [
                         {
-                            title: 'Guide',
-                            collapsable: false,
+                            text: 'Guide',
                             children: [
-                                '',
+                                'README.md',
                             ],
                         },
                         {
-                            title: 'Protocol',
-                            collapsable: false,
+                            text: 'Protocol',
                             children: [
-                                'protocol',
+                                'protocol.md',
                             ],
                         },
                         {
-                            title: 'SDK',
-                            collapsable: false,
+                            text: 'SDK',
                             children: [
-                                'sdk-list',
-                                'rss3-sdk-for-javascript',
+                                'sdk-list.md',
+                                'rss3-sdk-for-javascript.md',
                             ],
                         },
                         {
-                            title: 'Node',
-                            collapsable: false,
+                            text: 'Node',
                             children: [
-                                'api',
+                                'api.md',
                             ],
                         },
                         {
-                            title: 'Data',
-                            collapsable: false,
+                            text: 'Data',
                             children: [
-                                'data',
+                                'data.md',
                             ],
                         },
                     ],
@@ -107,12 +100,4 @@ module.exports = {
             },
         },
     },
-
-    /**
-     * Apply plugins，ref：https://v1.vuepress.vuejs.org/zh/plugin/
-     */
-    plugins: [
-        '@vuepress/plugin-back-to-top',
-        '@vuepress/plugin-medium-zoom',
-    ],
 }
