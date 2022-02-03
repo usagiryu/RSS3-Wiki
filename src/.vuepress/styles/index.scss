@@ -1,7 +1,12 @@
 :root {
     // brand colors
-    --c-brand: #0072ff;
-    --c-brand-light: #0072ff;
+    --c-brand: #0072ff !important;
+    --c-brand-light: #0072ff !important;
+    --c-text-accent: #0072ff !important;
+    --back-to-top-color: #0072ff !important;
+    --back-to-top-color-hover: #0072ff !important;
+
+    --c-tip: #0072ff !important;
 }
 
 .sponsors {
