@@ -1,0 +1,1 @@
+const t={key:"v-760ae03a",path:"/support.html",title:"Support RSS3",lang:"en-US",frontmatter:{sidebar:"auto"},excerpt:"",headers:[],git:{updatedTime:1643889637e3,contributors:[{name:"DIYgod",email:"i@diygod.me",commits:1}]},filePathRelative:"support.md"};export{t as data};
