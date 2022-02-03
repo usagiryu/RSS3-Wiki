@@ -15,6 +15,8 @@ We've seen the Web1 era when everyone was happy to use RSS as a standard format 
 
 We all agree that information should be more freely distributed in the Web3 era, and to facilitate this we need a common format that we can all use to syndicate information, reducing the cost of use and development.
 
+Project deployment address: https://rss3.wiki
+
 ## Contact
 
 ![Twitter Follow](https://img.shields.io/twitter/follow/rss3_?style=social) ![Discord](https://img.shields.io/discord/837332113677090876?label=Discord&logo=discord&style=social)
