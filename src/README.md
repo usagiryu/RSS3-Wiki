@@ -13,7 +13,7 @@
 
 We've seen the Web1 era when everyone was happy to use RSS as a standard format for syndication and the Web2 era when RSS declined and the closure of information between platforms are created.
 
-We all agree that information should be more freely distributed in the Web3 era, and to facilitate this we need a common format that we can all use to syndicate information, reducing the cost of use and development.
+We all agree that information should be more freely distributed in the Web3 era, and to facilitate this we need a common format that we can all use to syndicate information, reducing the cost of use and development. So we created a new protocol RSS3, RSS stands for a tribute to the history and 3 stands for Web3.
 
 RSS3 is a protocol created to unify information formats and facilitate the free flow of information. Details of the RSS3 protocol can be found [here](/protocol.html).
 

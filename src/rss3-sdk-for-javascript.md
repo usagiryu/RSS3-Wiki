@@ -328,6 +328,16 @@ const page1 = await rss3.items.getListByPersona({
 });
 ```
 
+If you want to get comments on an asset
+
+```ts
+const page1 = await rss3.items.getList({
+    limit: 10,
+    linkTarget: 'Ethereum.NFT-0xacbe98efe2d4d103e221e04c76d7c55db15c8e89.5',
+    linkID: 'comment',
+});
+```
+
 If we use an external social graph (e.g. CyberConnect or Mem) and already have a list of following addresses:
 
 ```ts
@@ -433,6 +443,19 @@ const likeItem = await rss3.items.custom.post({
     link: {
         id: 'like',
         target: '0xC8b960D09C0078c18Dcbe7eB9AB9d816BcCa8944-item-auto-1',
+    };
+});
+```
+
+Or to an asset
+
+```ts
+// comment
+await rss3.items.custom.post({
+    summary: 'I love it',
+    link: {
+        id: 'comment',
+        target: 'Ethereum.NFT-0xacbe98efe2d4d103e221e04c76d7c55db15c8e89.5',
     };
 });
 ```
