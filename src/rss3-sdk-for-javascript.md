@@ -312,7 +312,7 @@ Items in the activity feed are divided into auto items indexed by the node and i
 If we want to get the last 10 activity items for a specific persona `0xC8b960D09C0078c18Dcbe7eB9AB9d816BcCa8944`:
 
 ```ts
-const page1 = await rss3.items.getListByPersona({
+const page1 = await rss3.items.getList({
     limit: 10,
     persona: '0xC8b960D09C0078c18Dcbe7eB9AB9d816BcCa8944',  
 });
@@ -321,7 +321,7 @@ const page1 = await rss3.items.getListByPersona({
 If we want to leverage existing links (e.g. following) in the RSS3 networks for a list of items from other personas followed by `0xC8b960D09C0078c18Dcbe7eB9AB9d816BcCa8944`:
 
 ```ts
-const page1 = await rss3.items.getListByPersona({
+const page1 = await rss3.items.getList({
     limit: 10,
     persona: '0xC8b960D09C0078c18Dcbe7eB9AB9d816BcCa8944',
     linkID: 'following',
@@ -341,7 +341,7 @@ const page1 = await rss3.items.getList({
 If we use an external social graph (e.g. CyberConnect or Mem) and already have a list of following addresses:
 
 ```ts
-const page1 = await rss3.items.getListByPersona({
+const page1 = await rss3.items.getList({
     limit: 10,
     personaList: list,
 });
@@ -350,7 +350,7 @@ const page1 = await rss3.items.getListByPersona({
 If we only want to get specific type(s) of activities, then:
 
 ```ts
-const page1 = await rss3.items.getListByPersona({
+const page1 = await rss3.items.getList({
     limit: 10,
     persona: '0xC8b960D09C0078c18Dcbe7eB9AB9d816BcCa8944',
     linkID: 'following',
@@ -392,7 +392,7 @@ let profiles = await rss3.profile.getList(profileSet);
 When the user scrolls to the next section, we use the time of the last item on the page1 as a tsp parameter to get the next 10 items.
 
 ```ts
-const page2 = await rss3.items.getListByPersona({
+const page2 = await rss3.items.getList({
     limit: 10,
     persona: '0xC8b960D09C0078c18Dcbe7eB9AB9d816BcCa8944',
     linkID: 'following',
@@ -711,13 +711,13 @@ const account = await rss3.profile.accounts.delete(
 
 ### Items
 
-**items.getListByPersona()**
+**items.getList()**
 
 <CodeGroup>
 <CodeGroupItem title="types" active>
 
 ```ts
-items.getListByPersona(options: {
+items.getList(options: {
     limit: number;
     tsp: string;
     persona: string;
@@ -731,13 +731,13 @@ items.getListByPersona(options: {
 <CodeGroupItem title="example">
 
 ```ts
-const followingTimeline = await rss3.items.getListByPersona({
+const followingTimeline = await rss3.items.getList({
     persona: '0x1234567890123456789012345678901234567890',
     linkID: 'following',
     limit: 10,
     tsp: '2021-12-06T13:59:57.030Z',
 });
-const personaTimeline = await rss3.items.getListByPersona({
+const personaTimeline = await rss3.items.getList({
     persona: '0x1234567890123456789012345678901234567890',
     limit: 10,
     tsp: '2021-12-06T13:59:57.030Z',
