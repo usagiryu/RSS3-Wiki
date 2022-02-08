@@ -50,6 +50,9 @@ Feel free to submit yours in [Let us know!](https://github.com/NaturalSelectionL
 - [Polygon](https://polygon.technology/): Ethereum's Internet of Blockchains.
 - [Binance Smart Chain](https://www.binance.org/en): Fast, decentralized, affordable and secure.
 - [Arweave](https://www.arweave.org/): Arweave enables you to store documents and applications forever.
+- [Arbitrum](https://arbitrum.io/): Next generation layer 2 for Ethereum dApps.
+- [Avalanche](https://www.avax.network/): An open, programmable smart contracts platform for decentralized applications.
+- [Fantom](https://fantom.foundation/): A fast, high-throughput open-source smart contract platform for digital assets and dApps.
 
 **Applications**
 
