@@ -80,19 +80,14 @@ module.exports = {
                             text: 'SDK',
                             children: [
                                 'sdk-list.md',
-                                'rss3-sdk-for-javascript.md',
+                                'sdk-for-javascript.md',
                             ],
                         },
                         {
                             text: 'Network',
                             children: [
-                                'api.md',
-                            ],
-                        },
-                        {
-                            text: 'Data',
-                            children: [
-                                'data.md',
+                                'network-api.md',
+                                'network-data.md',
                             ],
                         },
                     ],
