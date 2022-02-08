@@ -80,7 +80,7 @@ module.exports = {
                             text: 'SDK',
                             children: [
                                 'sdk-list.md',
-                                'sdk-for-javascript.md',
+                                'rss3-sdk-for-javascript.md',
                             ],
                         },
                         {
