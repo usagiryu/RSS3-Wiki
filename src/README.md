@@ -9,7 +9,7 @@
 
 > RSS3 is a next-generation feed standard that aims to support efficient and decentralized information distribution.
 
-<object height="20" data="https://ipfs.rss3.page/ipfs/QmZs8yG5nbwxfrFMfrjfHunSZNum61DQWKBqyxf3vwDJGd" type="image/svg+xml"></object>
+![RSS3](https://badge.rss3.workers.dev/)
 
 We've seen the Web1 era when everyone was happy to use RSS as a standard format for syndication and the Web2 era when RSS declined and the closure of information between platforms are created.
 
