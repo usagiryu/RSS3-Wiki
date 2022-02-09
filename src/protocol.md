@@ -10,7 +10,7 @@ RSS3 is a protocol created to unify information formats and facilitate the free 
 
 ## Latest draft
 
-Current version: **v0.3.1**
+Current version: [![RSS3](https://badge.rss3.workers.dev/?version=v0.3.1)](https://github.com/NaturalSelectionLabs/RSS3/blob/main/versions/v0.3.1.md)
 
 RSS3 exists in the form of files on the user side. There are two types of RSS3 files - RSS3Index and RSS3List, and each persona-generated file is signed by the persona.
 
@@ -190,11 +190,11 @@ interface RSS3AutoItem extends RSS3ItemBase {
 
 [Changelog](https://github.com/NaturalSelectionLabs/RSS3/blob/main/CHANGELOG.md)
 
-- [v0.3.0](https://github.com/NaturalSelectionLabs/RSS3/blob/main/versions/v0.3.0.md)
-- [v0.2.0](https://github.com/NaturalSelectionLabs/RSS3/blob/main/versions/v0.2.0.md)
-- [v0.1.1](https://github.com/NaturalSelectionLabs/RSS3/blob/main/versions/v0.1.1.md)
-- [v0.1.0](https://github.com/NaturalSelectionLabs/RSS3/blob/main/versions/v0.1.0.md)
-- [v0.1.0-alpha.0](https://github.com/NaturalSelectionLabs/RSS3/blob/main/versions/v0.1.0-alpha.0.md)
+- [![RSS3](https://badge.rss3.workers.dev/?version=v0.3.0)](https://github.com/NaturalSelectionLabs/RSS3/blob/main/versions/v0.3.0.md)
+- [![RSS3](https://badge.rss3.workers.dev/?version=v0.2.0)](https://github.com/NaturalSelectionLabs/RSS3/blob/main/versions/v0.2.0.md)
+- [![RSS3](https://badge.rss3.workers.dev/?version=v0.1.1)](https://github.com/NaturalSelectionLabs/RSS3/blob/main/versions/v0.1.1.md)
+- [![RSS3](https://badge.rss3.workers.dev/?version=v0.1.0)](https://github.com/NaturalSelectionLabs/RSS3/blob/main/versions/v0.1.0.md)
+- [![RSS3](https://badge.rss3.workers.dev/?version=v0.1.0%20alpha.0)](https://github.com/NaturalSelectionLabs/RSS3/blob/main/versions/v0.1.0-alpha.0.md)
 
 ## Contributing
 

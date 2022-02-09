@@ -4,6 +4,8 @@
 
 [Source code](https://github.com/NaturalSelectionLabs/RSS3-Pre-Node)
 
+[![RSS3](https://badge.rss3.workers.dev/?version=v0.3.1)](https://github.com/NaturalSelectionLabs/RSS3/blob/main/versions/v0.3.1.md)
+
 While actively working on our ultimate goal, a fully decentralized node, a temporarily centralized version is currently available, you can use <https://prenode.rss3.dev> as the node entry point.
 
 ## Supported name service
