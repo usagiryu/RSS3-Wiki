@@ -91,6 +91,12 @@ module.exports = {
                                 'network-data.md',
                             ],
                         },
+                        {
+                            text: 'Design',
+                            children: [
+                                'design.md',
+                            ],
+                        },
                     ],
                 },
             },
