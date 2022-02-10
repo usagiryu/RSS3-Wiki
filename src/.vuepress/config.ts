@@ -40,16 +40,8 @@ module.exports = {
                         text: 'Learn More',
                         children: [
                             {
-                                text: 'Events',
-                                link: '/events.md'
-                            },
-                            {
                                 text: 'Blog',
                                 link: 'https://rss3.notion.site/'
-                            },
-                            {
-                                text: 'Brand Kit',
-                                link: 'https://rss3.notion.site/RSS3-Brand-Kit-251e768345684ba9acd038d79c6899b8'
                             },
                             {
                                 text: 'Join Us',
@@ -95,6 +87,12 @@ module.exports = {
                             text: 'Design',
                             children: [
                                 'design.md',
+                            ],
+                        },
+                        {
+                            text: 'Events',
+                            children: [
+                                'events.md',
                             ],
                         },
                     ],

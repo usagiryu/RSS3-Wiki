@@ -1,7 +1,3 @@
----
-sidebar: auto
----
-
 # Events
 
 ## RSS3 Protocol v0.4.0 Adventure
