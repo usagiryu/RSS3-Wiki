@@ -40,6 +40,18 @@ module.exports = {
                         text: 'Learn More',
                         children: [
                             {
+                                text: 'Discord',
+                                link: 'https://discord.gg/rss3'
+                            },
+                            {
+                                text: 'Telegram',
+                                link: 'https://t.me/rss3_en'
+                            },
+                            {
+                                text: 'Twitter',
+                                link: 'https://twitter.com/rss3_'
+                            },
+                            {
                                 text: 'Blog',
                                 link: 'https://rss3.notion.site/'
                             },
