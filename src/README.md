@@ -47,7 +47,7 @@ Feel free to submit yours in [Let us know!](https://github.com/NaturalSelectionL
     <span><a target="_blank" href="https://www.info.unemeta.com/"><img alt="Une Meta" src="./images/apps/unemeta.svg"></a></span>
     <span><a target="_blank" href="https://matrixworld.org/home"><img alt="Matrix World" src="./images/apps/matrixworld.svg"></a></span>
     <span><a target="_blank" href="https://www.unipass.id/"><img alt="UniPass" src="./images/apps/unipass.svg"></a></span>
-    <span><a target="_blank" href="https://github.com/NaturalSelectionLabs/Re-ID"><img alt="Re: ID" src="./images/apps/reid.png"></a></span>
+    <span><img alt="Re: ID" src="./images/apps/reid.png"></span>
     <span><a target="_blank" href="https://github.com/NaturalSelectionLabs/RSS3/issues/21">Your logo</a></span>
 </p>
 
