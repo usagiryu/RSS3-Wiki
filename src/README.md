@@ -15,11 +15,15 @@ We've seen the Web1 era when everyone was happy to use RSS as a standard format 
 
 We all agree that information should be more freely distributed in the Web3 era, and to facilitate this we need a common format that we can all use to syndicate information, reducing the cost of use and development. So we created a new protocol RSS3, RSS stands for a tribute to the history and 3 stands for Web3.
 
-RSS3 is a protocol created to unify information formats and facilitate the free flow of information. Details of the RSS3 protocol can be found [here](/protocol.html).
+## How RSS3 works?
 
-With a basic understanding of the protocol, the quickest way to get started is to use the [SDK](/sdk.html), or to request [API](/api.html) directly.
+RSS3 protocol is created to unify information formats and facilitate the free flow of information. The protocol defines the format in which information exists, and through the RSS3 protocol, users store information to decentralised RSS3 network, including profile, link, note and asset, where note and asset include not only content published by users themselves, but also content automatically indexed from other networks. Details of the RSS3 protocol can be found [here](/protocol.html).
 
-Reading [our white paper](https://rss3.io/#/whitepaper) is also a good way to learn more about the protocol and the upcoming decentralized network.
+With a basic understanding of the protocol, the quickest way to get started is to use the [RSS3 SDK](/sdk.html), or to request [API](/api.html) directly.
+
+Reading [our white paper](https://rss3.io/#/whitepaper) is also a good way to learn more about the protocol and the upcoming decentralized RSS3 network.
+
+![RSS3 System](https://ipfs.rss3.page/ipfs/QmQK4x1LfrLeoLqTcBcU8saRgXDAHNkyyCQNyPzLcbXijG)
 
 If you have any questions, you can find us on [GitHub](https://github.com/NaturalSelectionLabs/RSS3) [Discord](https://discord.com/invite/aGuwzF2hW4) [Telegram](https://t.me/rss3_en) or [Twitter](https://twitter.com/rss3_). We'll be happy to help!
 

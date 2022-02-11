@@ -10,7 +10,7 @@ This symbolizes our desire for RSS3 to be open and inclusive.
 
 ## Badge
 
-Show the world you're using RSS3 with badge.
+Show the world you're using RSS3.
 
 `[![RSS3](https://badge.rss3.workers.dev)](https://github.com/NaturalSelectionLabs/RSS3)`
 
