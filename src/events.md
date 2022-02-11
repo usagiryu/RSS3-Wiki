@@ -6,7 +6,7 @@
 
 ## RSS3 Whitepaper
 
-![](./images/events-whitepaper.jpeg)
+![](./images/events/whitepaper.jpeg)
 
 [Website](https://rss3.io/#/events/whitepaper-nft)
 
@@ -18,7 +18,7 @@
 
 ## RSS3 X JIKE
 
-![](./images/events-jike.jpeg)
+![](./images/events/jike.jpeg)
 
 [Website](https://rss3.io/#/events/jike-nft)
 
@@ -30,7 +30,7 @@
 
 ## Web3 Wrapped 2021
 
-![](./images/events-web3wrapped.jpeg)
+![](./images/events/web3wrapped.jpeg)
 
 [Website](https://web3wrapped.com/)
 
@@ -42,7 +42,7 @@
 
 ## Mask Network X RSS3
 
-![](./images/events-mask.jpeg)
+![](./images/events/mask.jpeg)
 
 [Twitter](https://twitter.com/rss3_/status/1468770194763960323)
 
@@ -52,7 +52,7 @@
 
 ## RSS3 - Part of the Family
 
-![](./images/events-family.jpeg)
+![](./images/events/family.jpeg)
 
 [Twitter](https://twitter.com/rss3_/status/1456471949991813125)
 
@@ -62,7 +62,7 @@
 
 ## RSS3 Fully Supports POAP
 
-![](./images/events-poap.png)
+![](./images/events/poap.png)
 
 [Blog](https://rss3.fun/poap-claim/)
 
@@ -72,7 +72,7 @@
 
 ## $PASS
 
-![](./images/events-pass.png)
+![](./images/events/pass.png)
 
 [Blog](https://rss3.fun/how-to-get-your-pass-token/)
 
@@ -80,7 +80,7 @@
 
 ## RSS Fruits Token
 
-![](./images/events-fruit.gif)
+![](./images/events/fruit.gif)
 
 [Website](https://rft.rss3.io/)
 
