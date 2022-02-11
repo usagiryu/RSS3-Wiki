@@ -10,7 +10,9 @@ RSS3 is a protocol created to unify information formats and facilitate the free 
 
 ## Latest draft
 
-Current version: [![RSS3](https://badge.rss3.workers.dev/?version=v0.3.1)](https://github.com/NaturalSelectionLabs/RSS3/blob/main/versions/v0.3.1.md)
+🎇 RSS3 Protocol v0.4.0 [![RSS3](https://badge.rss3.workers.dev/?version=v0.4.0--rc)](https://github.com/NaturalSelectionLabs/RSS3/tree/main/versions/v0.4.0-rc) is in hot [discussion](https://github.com/NaturalSelectionLabs/RSS3-Protocol/discussions/25)
+
+Current stable version: [![RSS3](https://badge.rss3.workers.dev/?version=v0.3.1)](https://github.com/NaturalSelectionLabs/RSS3/blob/main/versions/v0.3.1.md)
 
 RSS3 exists in the form of files on the user side. There are two types of RSS3 files - RSS3Index and RSS3List, and each persona-generated file is signed by the persona.
 
