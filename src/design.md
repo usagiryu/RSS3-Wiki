@@ -11,7 +11,7 @@ This symbolizes our desire for RSS3 to be open and inclusive.
 </p>
 
 <p align="center">
-    <video width="300" autoplay muted playsinline src="https://ipfs.rss3.page/ipfs/QmYKMA4G1yYRg1QJgqZ8rzWf3ZBuvinrDUfir5258YrYtx"></video>
+    <video width="300" autoplay muted playsinline src="@source/images/logo.mp4"></video>
 </p>
 
 ## Badge

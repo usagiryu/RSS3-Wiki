@@ -1,7 +1,7 @@
 # Introduction
 
 <p align="center">
-    <video class="logo-video" autoplay muted playsinline src="https://ipfs.rss3.page/ipfs/QmYKMA4G1yYRg1QJgqZ8rzWf3ZBuvinrDUfir5258YrYtx"></video>
+    <video class="logo-video" autoplay muted playsinline src="@source/images/logo.mp4"></video>
 </p>
 
 > RSS3 is a next-generation feed standard that aims to support efficient and decentralized information distribution.
