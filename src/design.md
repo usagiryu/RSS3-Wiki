@@ -6,7 +6,13 @@ We designed an auxiliary graphic for RSS3, whose lines are not fixed, and if you
 
 This symbolizes our desire for RSS3 to be open and inclusive.
 
-<p><img width="100" src="https://graphics.rss3.workers.dev"></p>
+<p align="center">
+    <img width="100" src="https://graphics.rss3.workers.dev">
+</p>
+
+<p align="center">
+    <video width="300" autoplay muted playsinline src="https://ipfs.rss3.page/ipfs/QmYKMA4G1yYRg1QJgqZ8rzWf3ZBuvinrDUfir5258YrYtx"></video>
+</p>
 
 ## Badge
 
