@@ -34,3 +34,13 @@
 .page #introduction {
     display: none;
 }
+
+.logo-video {
+    width: 70%;
+}
+
+@media (max-width: 419px) {
+    .logo-video {
+        width: 100%;
+    }
+}
