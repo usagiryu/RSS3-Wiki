@@ -4,21 +4,37 @@
     <video class="logo-video" autoplay muted playsinline src="@source/images/logo.mp4"></video>
 </p>
 
-> RSS3 is a next-generation feed standard that aims to support efficient and decentralized information distribution.
+> RSS3 is an open information syndication protocol that aims to support efficient and decentralized information distribution in Web3.
 
 ![RSS3](https://badge.rss3.workers.dev/)
 
-We've seen the Web1 era when everyone was happy to use RSS as a standard format for syndication and the Web2 era when RSS declined and the closure of information between platforms are created.
+## What is RSS3?
 
-We all agree that information should be more freely distributed in the Web3 era, and to facilitate this we need a common format that we can all use to syndicate information, reducing the cost of use and development. So we created a new protocol RSS3, RSS stands for a tribute to the history and 3 stands for Web3.
+The right to create, disseminate and distribute information should not be in the hands of centralized governing. It is the basic right of cyber lives.
+
+Gradually over the past two decades, contents and links have been controlled by several data superpowers, who then eats all the profits, privacy and freedom. This centralization also resulted in a terrible environment of user experience innovations: No matter how well your design and engineer your application, there is no way to compete with the data monopolies.
+
+The world has been eager for a new way of information syndication. RSS used to be the pioneer of its time, now it’s time for us to pick up the baton and carry on.
+
+Derived from the best out of RSS, RSS3 is an open information syndication protocol that aims to support efficient and decentralized information distribution in Web3.
+
+Extended Reading:
+- [Here comes RSS3](https://rss3.notion.site/1-Here-comes-RSS3-501aa9df6dba40caae0a53eb2de6f060)
+- [What is the relationship between RSS3 and RSS?](./faq.md#q-what-is-the-relationship-between-rss3-and-rss)
+
+[![GitHub Org's stars](https://img.shields.io/github/stars/NaturalSelectionLabs?style=social)](https://github.com/NaturalSelectionLabs) [![Twitter Follow](https://img.shields.io/twitter/follow/rss3_?style=social)](https://twitter.com/rss3_) [![Discord](https://img.shields.io/discord/837332113677090876?label=Discord&logo=discord&style=social)](https://discord.gg/rss3)
 
 ## How RSS3 works?
 
-RSS3 protocol is created to unify information formats and facilitate the free flow of information. The protocol defines the format in which information exists, and through the RSS3 protocol, users store information to decentralised RSS3 network, including profile, link, note and asset, where note and asset include not only content published by users themselves, but also content automatically indexed from other networks. Details of the RSS3 protocol can be found [here](/protocol.html).
+Under the RSS3 system, users own and have control over their own files through public-key cryptography, and the applications can only use rather than control users' files. For a more detailed description you can read [Platformless Media](https://rss3.notion.site/3-Platformless-Media-55505c45a49743a2b89304abcb4a90da)
 
-With a basic understanding of the protocol, the quickest way to get started is to use the [RSS3 SDK](/sdk.html), or to request [API](/api.html) directly.
+RSS3 Protocol defines the format of information presence and communication, and through the protocol, users store signed information to decentralised RSS3 Network, including profile, link, note and asset, where note and asset include not only signed content published by users themselves, but also content automatically indexed from other networks. Details of the RSS3 Protocol can be found [here](/protocol.html).
 
-Reading [our white paper](https://rss3.io/#/whitepaper) is also a good way to learn more about the protocol and the upcoming decentralized RSS3 network.
+The RSS3 Protocol is designed to be very flexible, and using the RSS3 Protocol and RSS3 Network, you can do many types of applications, two typical representatives are user profile applications and information flow applications, you can see our two demo applications [Cheers](https://cheers.bio/) and [Revery](https://revery.so/). But we also do not limit and cannot predict what applications you will build.
+
+With a basic understanding of the protocol, the quickest way to develop an RSS3 application is to use the [RSS3 SDK](/sdk.html), or to request [API](/api.html) directly.
+
+Reading [our white paper](https://rss3.io/#/whitepaper) is also a good way to learn more about the protocol and the upcoming decentralized RSS3 Network.
 
 ![RSS3 System](./images/system.png)
 
@@ -26,7 +42,8 @@ If you have any questions, you can find us on [GitHub](https://github.com/Natura
 
 RSS3 and its affiliated network are open and permissionless - If you are using RSS3 for your project, we would be delighted if you [let us know](https://github.com/NaturalSelectionLabs/RSS3/issues/21). We will provide technical or operational assistance if you need it.
 
-[![GitHub Org's stars](https://img.shields.io/github/stars/NaturalSelectionLabs?style=social)](https://github.com/NaturalSelectionLabs) [![Twitter Follow](https://img.shields.io/twitter/follow/rss3_?style=social)](https://twitter.com/rss3_) [![Discord](https://img.shields.io/discord/837332113677090876?label=Discord&logo=discord&style=social)](https://discord.gg/rss3)
+Extended Reading:
+- [What is the relationship between RSS3 and RSS3 Network?](./faq.md#q-what-is-the-relationship-between-rss3-and-rss3-network)
 
 ## Ecosystem
 

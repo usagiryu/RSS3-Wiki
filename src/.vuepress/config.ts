@@ -72,6 +72,7 @@ module.exports = {
                             text: 'Guide',
                             children: [
                                 'README.md',
+                                'faq.md',
                             ],
                         },
                         {

@@ -4,7 +4,7 @@
 
 [Source code](https://github.com/NaturalSelectionLabs/RSS3-SDK-for-JavaScript)
 
-This is an RSS3 SDK for JavaScript that is kept up-to-date with the RSS3 protocol and provides easy access to the main modules, as well as automatic signature handlings.
+This is an RSS3 SDK for JavaScript that is kept up-to-date with the RSS3 Protocol and provides easy access to the main modules, as well as automatic signature handlings.
 
 The SDK is compatible with Node.js environments and major modern browsers, and has good support for TypeScript.
 
@@ -57,7 +57,7 @@ There are 4 ways to initialize the SDK:
 
 ```ts
 interface IOptions {
-    endpoint: string; // The RSS3 network endpoint
+    endpoint: string; // The RSS3 Network endpoint
     agentSign?: boolean;
     agentStorage?: {
         set: (key: string, value: string) => Promise<void>;
@@ -84,7 +84,7 @@ new RSS3(options: IOptionsMnemonic | IOptionsPrivateKey | IOptionsSign);
 
 **Temporary account**
 
-If the app only needs get information (e.g. activity feed or assets) from the RSS3 network without committing changes, the easiest way to initialize it is by creating a temporary account (the first way), i.e. just pass the `endpoint` parameter.
+If the app only needs get information (e.g. activity feed or assets) from the RSS3 Network without committing changes, the easiest way to initialize it is by creating a temporary account (the first way), i.e. just pass the `endpoint` parameter.
 
 ```ts
 const rss3 = new RSS3({
@@ -133,7 +133,7 @@ const rss3 = new RSS3({
 </CodeGroupItem>
 </CodeGroup>
 
-And `agentSign` is a type of agent signature - refer to the `agent_id` and `agent_signature` fields in [RSS3 protocol](https://github.com/NaturalSelectionLabs/RSS3) for more information. Once the user has initialized the SDK with an external signature, an agent signature is generated to sign subsequent changes. The agent information is stored in a suitable and secure place through the `agentStorage` parameter, and the default location is the cookies.
+And `agentSign` is a type of agent signature - refer to the `agent_id` and `agent_signature` fields in [RSS3 Protocol](https://github.com/NaturalSelectionLabs/RSS3) for more information. Once the user has initialized the SDK with an external signature, an agent signature is generated to sign subsequent changes. The agent information is stored in a suitable and secure place through the `agentStorage` parameter, and the default location is the cookies.
 
 We can also initialize the SDK with mnemonic or private keys, though not highly recommended.
 
@@ -206,7 +206,7 @@ account.signature = await signer.signMessage(signMessage);
 await rss3.profile.accounts.post(account);
 ```
 
-4. Sync the modified file to RSS3 network
+4. Sync the modified file to RSS3 Network
 
 ```ts
 await rss3.files.sync();
@@ -216,7 +216,7 @@ Next let's add another account on a centralised platform, such as Twitter.
 
 1. Add our main address or a name pointing to our main address (see [API#Supported name service](/guide/api.html#supported-name-service)) to the Twitter bio, name or url
 
-2. Declare this account; 3. Add account to rss3 file; 4. Sync the modified file to RSS3 network (Same as above)
+2. Declare this account; 3. Add account to rss3 file; 4. Sync the modified file to RSS3 Network (Same as above)
 
 ```ts
 const account = {
@@ -319,7 +319,7 @@ const page1 = await rss3.items.getList({
 });
 ```
 
-If we want to leverage existing links (e.g. following) in the RSS3 networks for a list of items from other personas followed by `0xC8b960D09C0078c18Dcbe7eB9AB9d816BcCa8944`:
+If we want to leverage existing links (e.g. following) in the RSS3 Networks for a list of items from other personas followed by `0xC8b960D09C0078c18Dcbe7eB9AB9d816BcCa8944`:
 
 ```ts
 const page1 = await rss3.items.getList({
