@@ -33,6 +33,10 @@ module.exports = {
                         link: '/',
                     },
                     {
+                        text: 'Tech Weekly',
+                        link: '/tech-weekly/',
+                    },
+                    {
                         text: 'Whitepaper',
                         link: 'https://rss3.io/#/whitepaper'
                     },
@@ -67,6 +71,14 @@ module.exports = {
                     },
                 ],
                 sidebar: {
+                    '/tech-weekly/': [
+                        {
+                            text: 'Tech Weekly',
+                            children: [
+                                'README.md',
+                            ],
+                        },
+                    ],
                     '/': [
                         {
                             text: 'Guide',
