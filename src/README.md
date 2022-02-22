@@ -1,5 +1,5 @@
 ---
-pageClass: home
+pageClass: home-page
 ---
 
 # Introduction
