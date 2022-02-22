@@ -16,10 +16,20 @@ module.exports = {
         ['link', { rel: 'icon', href: 'https://graphics.rss3.workers.dev/' }]
     ],
 
+    markdown: {
+        extractHeaders: {
+            level: [1, 2, 3, 4, 5],
+        },
+    },
+
+    plugins: [
+        '@vuepress/plugin-shiki',
+    ],
+
     themeConfig: {
         repo: 'NaturalSelectionLabs',
         docsRepo: 'NaturalSelectionLabs/RSS3-Wiki',
-        sidebarDepth: 2,
+        sidebarDepth: 5,
         docsDir: 'src',
         logo: 'https://graphics.rss3.workers.dev/',
         locales: {
@@ -75,7 +85,7 @@ module.exports = {
                         {
                             text: 'Tech Weekly',
                             children: [
-                                'README.md',
+                                '/tech-weekly/README.md',
                             ],
                         },
                     ],
@@ -83,41 +93,52 @@ module.exports = {
                         {
                             text: 'Guide',
                             children: [
-                                'README.md',
-                                'faq.md',
+                                '/README.md',
+                                '/faq.md',
                             ],
                         },
                         {
                             text: 'Protocol',
+                            sidebarDepth: 5,
                             children: [
-                                'protocol.md',
+                                '/protocol/README.md',
+                                '/protocol/v0.4.0-rc.md',
+                                {
+                                    text: 'RSS3 Improvement Proposals',
+                                    children: [
+                                        '/protocol/improvement-proposals/registered-account-platforms.md',
+                                        '/protocol/improvement-proposals/registered-items.md',
+                                        '/protocol/improvement-proposals/registered-link-types.md',
+                                        '/protocol/improvement-proposals/registered-name-services.md',
+                                    ],
+                                },
                             ],
                         },
                         {
                             text: 'SDK',
                             children: [
-                                'sdk-list.md',
-                                'rss3-sdk-for-javascript.md',
+                                '/sdk-list.md',
+                                '/rss3-sdk-for-javascript.md',
                             ],
                         },
                         {
                             text: 'Network',
                             children: [
-                                'network-roadmap.md',
-                                'network-api.md',
-                                'network-data.md',
+                                '/network-roadmap.md',
+                                '/network-api.md',
+                                '/network-data.md',
                             ],
                         },
                         {
                             text: 'Design',
                             children: [
-                                'design.md',
+                                '/design.md',
                             ],
                         },
                         {
                             text: 'Events',
                             children: [
-                                'events.md',
+                                '/events.md',
                             ],
                         },
                     ],

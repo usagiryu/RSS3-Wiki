@@ -1,3 +1,7 @@
+---
+pageClass: home
+---
+
 # Introduction
 
 <p align="center">
