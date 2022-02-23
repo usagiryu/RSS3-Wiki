@@ -2,25 +2,27 @@
 
 Project Link: <https://github.com/NaturalSelectionLabs/RSS3>
 
+RSS3 is an open information syndication protocol that aims to support efficient and decentralized information distribution in Web3.
+
 We've seen the Web1 era when everyone was happy to use RSS as a standard format for syndication and the Web2 era when RSS declined and the closure of information between platforms are created.
 
 We all agree that information should be more freely distributed in the Web3 era, and to facilitate this we need a common format that we can all use to syndicate information, reducing the cost of use and development. So we created a new protocol RSS3, RSS stands for a tribute to the history and 3 stands for Web3.
 
-RSS3 is a protocol created to unify information formats and facilitate the free flow of information.
+## Roadmap
 
-## Goals and Roadmap
+Currently, we are preparing our self-published [Internet-Drafts](https://www.ietf.org/how/ids/). In the future, we will pursue it to be published as an [RFC](https://www.ietf.org/standards/rfcs/) and become an Internet standard.
 
-TODO
+In the meantime, we will continue to promote its implementation and use in the Web3 area.
 
-## Latest draft
+## Project Status
 
-🎉 Coming soon: RSS3 Protocol v0.4.0 [![RSS3](https://badge.rss3.workers.dev/?version=v0.4.0)](https://github.com/NaturalSelectionLabs/RSS3/tree/main/versions/v0.4.0)
+🔭 The upcoming RSS3 Protocol v0.4.0 [![RSS3](https://badge.rss3.workers.dev/?version=v0.4.0)](https://github.com/NaturalSelectionLabs/RSS3/tree/main/versions/v0.4.0) is requesting for comments.
 
 - [View Documents](./v0.4.0-rc.html)
 
 - Participate in the [discussion](https://github.com/NaturalSelectionLabs/RSS3-Protocol/discussions/25)
 
-Current stable version: RSS3 Protocol v0.3.1 [![RSS3](https://badge.rss3.workers.dev/?version=v0.3.1)](https://github.com/NaturalSelectionLabs/RSS3/blob/main/versions/v0.3.1.md)
+🔬 Current stable version: RSS3 Protocol v0.3.1 [![RSS3](https://badge.rss3.workers.dev/?version=v0.3.1)](https://github.com/NaturalSelectionLabs/RSS3/blob/main/versions/v0.3.1.md)
 
 - [View details](https://github.com/NaturalSelectionLabs/RSS3/blob/main/versions/v0.3.1.md)
 

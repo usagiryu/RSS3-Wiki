@@ -26,8 +26,6 @@ Extended Reading:
 - [Here comes RSS3](https://rss3.notion.site/1-Here-comes-RSS3-501aa9df6dba40caae0a53eb2de6f060)
 - [What is the relationship between RSS3 and RSS?](./faq.md#q-what-is-the-relationship-between-rss3-and-rss)
 
-[![GitHub Org's stars](https://img.shields.io/github/stars/NaturalSelectionLabs?style=social)](https://github.com/NaturalSelectionLabs) [![Twitter Follow](https://img.shields.io/twitter/follow/rss3_?style=social)](https://twitter.com/rss3_) [![Discord](https://img.shields.io/discord/837332113677090876?label=Discord&logo=discord&style=social)](https://discord.gg/rss3)
-
 ## How RSS3 works?
 
 Under the RSS3 system, users own and have control over their own files through public-key cryptography, and the applications can only use rather than control users' files. For a more detailed description you can read [Platformless Media](https://rss3.notion.site/3-Platformless-Media-55505c45a49743a2b89304abcb4a90da)
@@ -48,6 +46,18 @@ RSS3 and its affiliated network are open and permissionless - If you are using R
 
 Extended Reading:
 - [What is the relationship between RSS3 and RSS3 Network?](./faq.md#q-what-is-the-relationship-between-rss3-and-rss3-network)
+
+## Community
+
+We have an active and growing community. All are welcome to be part of our community, help shape it, or simply observe.
+
+At any point, feel free to join our [Discord server](https://discord.gg/rss3).
+
+We also use [GitHub](https://github.com/NaturalSelectionLabs) Issues and Discussions.
+
+Or you can follow [Twitter](https://twitter.com/rss3_) for updates.
+
+[![GitHub Org's stars](https://img.shields.io/github/stars/NaturalSelectionLabs?style=social)](https://github.com/NaturalSelectionLabs) [![Discord](https://img.shields.io/discord/837332113677090876?label=Discord&logo=discord&style=social)](https://discord.gg/rss3) [![Twitter Follow](https://img.shields.io/twitter/follow/rss3_?style=social)](https://twitter.com/rss3_)
 
 ## Ecosystem
 
