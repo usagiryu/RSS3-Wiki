@@ -106,10 +106,10 @@ module.exports = {
                                 {
                                     text: 'RSS3 Improvement Proposals',
                                     children: [
-                                        '/protocol/improvement-proposals/registered-account-platforms.md',
-                                        '/protocol/improvement-proposals/registered-items.md',
-                                        '/protocol/improvement-proposals/registered-link-types.md',
-                                        '/protocol/improvement-proposals/registered-name-services.md',
+                                        '/protocol/RIPs/RIP-1.md',
+                                        '/protocol/RIPs/RIP-2.md',
+                                        '/protocol/RIPs/RIP-3.md',
+                                        '/protocol/RIPs/RIP-4.md',
                                     ],
                                 },
                             ],

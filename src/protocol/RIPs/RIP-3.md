@@ -1,4 +1,4 @@
-# Registered Item
+# RIP-3: Registered Items
 
 ## Platforms
 
