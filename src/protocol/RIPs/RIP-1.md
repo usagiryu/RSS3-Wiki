@@ -14,7 +14,7 @@ The RSS3 protocol does not restrict which platform accounts can be used, which c
 
 Cryptography-based decentralized platforms do not require a centralized server, but use a public signature algorithm for authentication.
 
-The accounts of these platforms can be used for both Main Account and Connected Accounts.
+The accounts of these platforms can be used for both Main Accounts and Connected Accounts.
 
 | Name | Symbol | Platform Website | Example | Address and Signature Algorithms |
 | -- | -- | -- | -- | -- |
@@ -24,7 +24,7 @@ The accounts of these platforms can be used for both Main Account and Connected 
 
 ### Centralized Platforms
 
-Centralized platforms require centralized servers for authentication. The user must put the address or name (Refer to [RIP-2: Registered Name Services](./RIPs/RIP-2.md)) of the Main Account into some location in the platform's account configuration to verify ownership.
+Centralized platforms require centralized servers for authentication. The user must put the address or name (Refer to [RIP-2: Registered Name Services](./RIPs/RIP-2.md)) of the Main Accounts into some location in the platform's account configuration to verify ownership.
 
 The accounts of these platforms can only be used for Connected Accounts.
 
