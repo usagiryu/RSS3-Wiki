@@ -100,7 +100,7 @@ Feel free to submit yours in [Let us know!](https://github.com/NaturalSelectionL
     <span><a target="_blank" href="https://gitcoin.co/"><img alt="Gitcoin" src="./images/networks/gitcoin.svg"></a></span>
     <span><a target="_blank" href="https://poap.xyz/"><img alt="POAP" src="./images/networks/poap.svg"></a></span>
     <span><a target="_blank" href="https://twitter.com/"><img alt="Twitter" src="./images/networks/twitter.svg"></a></span>
-    <span><a target="_blank" href="https://misskey.io/"><img alt="Misskey" src="./images/networks/misskey.ico"></a></span>
+    <span><a target="_blank" href="https://misskey-hub.net/"><img alt="Misskey" src="./images/networks/misskey.ico"></a></span>
     <span><a target="_blank" href="https://okjike.com/"><img alt="Jike" src="./images/networks/jike.png"></a></span>
 </p>
 
