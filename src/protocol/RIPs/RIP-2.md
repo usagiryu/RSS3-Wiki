@@ -26,7 +26,7 @@ The RSS3 protocol does not restrict which name services can be used, which creat
 
 A TXT record (short for text record) is a type of resource record in the Domain name system (DNS) used to provide the ability to associate arbitrary text with a host or other name, such as human readable information about a server, network, data center, or other accounting information. ([TXT record - Wikipedia](https://en.wikipedia.org/wiki/TXT_record))
 
-This proposal specifies using the TEXT field of DNS to resolve accounts, with the string content conforming to the RFC 1464 standard.
+This proposal specifies using the TXT field of DNS to resolve accounts, with the string content conforming to the RFC 1464 standard.
 
 TXT record name:
 
