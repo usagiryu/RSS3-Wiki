@@ -6,7 +6,7 @@ RIP-2 is used to describe and qualify name services that can be used for authent
 
 ## Motivation
 
-The RSS3 protocol does not restrict which name services can be used, which creates uncertainty in implementation and use.
+The RSS3 protocol does not restrict what name services can be used, which creates uncertainty in implementation and use.
 
 ## Dependencies
 

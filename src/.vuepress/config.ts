@@ -110,6 +110,7 @@ module.exports = {
                                         '/protocol/RIPs/RIP-2.md',
                                         '/protocol/RIPs/RIP-3.md',
                                         '/protocol/RIPs/RIP-4.md',
+                                        '/protocol/RIPs/RIP-5.md',
                                     ],
                                 },
                             ],
