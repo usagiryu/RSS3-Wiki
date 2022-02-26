@@ -92,6 +92,7 @@ module.exports = {
                     '/': [
                         {
                             text: 'Guide',
+                            collapsible: true,
                             children: [
                                 '/README.md',
                                 '/faq.md',
@@ -99,6 +100,7 @@ module.exports = {
                         },
                         {
                             text: 'Protocol',
+                            collapsible: true,
                             sidebarDepth: 5,
                             children: [
                                 '/protocol/README.md',
@@ -117,6 +119,7 @@ module.exports = {
                         },
                         {
                             text: 'SDK',
+                            collapsible: true,
                             children: [
                                 '/sdk-list.md',
                                 '/rss3-sdk-for-javascript.md',
@@ -124,6 +127,7 @@ module.exports = {
                         },
                         {
                             text: 'Network',
+                            collapsible: true,
                             children: [
                                 '/network-roadmap.md',
                                 '/network-api.md',
@@ -132,12 +136,14 @@ module.exports = {
                         },
                         {
                             text: 'Design',
+                            collapsible: true,
                             children: [
                                 '/design.md',
                             ],
                         },
                         {
                             text: 'Events',
+                            collapsible: true,
                             children: [
                                 '/events.md',
                             ],
