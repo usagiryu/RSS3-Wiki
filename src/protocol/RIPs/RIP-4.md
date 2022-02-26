@@ -10,8 +10,8 @@ The RSS3 protocol does not restrict what assets and notes can be indexed, which 
 
 ## Dependencies
 
-- [RIP-1: Registered Account Platforms](./RIP-1.md)
-- [RIP-3: Registered Decentralized Networks](./RIP-3.md)
+- [RIP-1: Registered Account Platforms](./RIP-1.md): as `<platform_symbol>`
+- [RIP-3: Registered Decentralized Networks](./RIP-3.md): as `<network_name>`
 
 ## TypeScript Validation
 
@@ -48,14 +48,14 @@ type Item = {
 
 ## Indexed Note Items List
 
-### Ethereum NFT's Acquisition and Loss
+### NFT Acquisition and Loss Activities
 
 #### `tags`
 
 ```json
 "tags": [
     "NFT",
-    <network_name>
+    "<network_name>"
 ]
 ```
 
@@ -67,35 +67,35 @@ type Item = {
 "attachments": [
     {
         "type": "name",
-        "content": <name>,
+        "content": "<name>",
         "mime_type": "text/plain"
     },
     {
         "type": "description",
-        "content": <description>,
+        "content": "<description>",
         "mime_type": "text/plain"
     },
     {
-        "type": "subject",
-        "address": <subject_address>,
-        "mime_type": <subject_mime_type>,
-        "size_in_bytes": <subject_size_in_bytes>
+        "type": "object",
+        "address": "<object_address>",
+        "mime_type": "<object_mime_type>",
+        "size_in_bytes": "<object_size_in_bytes>"
     },
     {
         "type": "preview",
-        "address": <preview_address>,
-        "mime_type": <preview_mime_type>,
-        "size_in_bytes": <preview_size_in_bytes>
-    },
-    {
-        "type": "token_info",
-        "content": "{\"address\":\"<token_address>\",\"name\":\"<token_name>\",\"symbol\":\"<token_symbol>\",\"id\":<token_id>}",
-        "mime_type": "text/json"
+        "address": "<preview_address>",
+        "mime_type": "<preview_mime_type>",
+        "size_in_bytes": "<preview_size_in_bytes>"
     },
     {
         "type": "attributes",
-        "content": "[{\"key\":\"<attribute_trait_type>\",\"value\":\"<attribute_value>\"}, ...]",
+        "content": "[{\"key\":\"<attribute_key>\",\"value\":\"<attribute_value>\"}, ...]",
         "mime_type": "text/json"
+    },
+    {
+        "type": "external_url",
+        "content": "<external_url>",
+        "mime_type": "text/uri-list"
     }
 ]
 ```
@@ -104,11 +104,17 @@ type Item = {
 
 ```ts
 "metadata": {
-    "proof": <transaction_hash>,
-    "platform": "ethereum",
-    "from": <transaction_from>,
-    "to": <transaction_to>,
-    "id": <token_id>
+    "platform": "<platform_symbol>",
+    "proof": "<transaction_hash>",
+    "from": "<transaction_from>",
+    "to": "<transaction_to>",
+
+    "token_standard": "<token_standard>",
+    "token_id": "<token_id>",
+    "token_symbol": "<token_symbol>",
+
+    "collection_address": "<collection_address>",
+    "collection_name": "<collection_name>",
 }
 ```
 
@@ -145,7 +151,7 @@ Example for [acquisition of RSS3 Whitepaper #1800](https://etherscan.io/token/0x
             "mime_type": "text/plain"
         },
         {
-            "type": "subject",
+            "type": "object",
             "address": "ipfs://bafybeicij6vw6xcsgwldofnmmh3c3j4w5yiocs6l72yubpbcldxcglkvqe/rss3-whitepaper-no-1800.glb",
             "mime_type": "model/gltf-binary",
             "size_in_bytes": 3983376
@@ -165,17 +171,34 @@ Example for [acquisition of RSS3 Whitepaper #1800](https://etherscan.io/token/0x
             "type": "attributes",
             "content": "[{\"key\":\"Author(s)\",\"value\":\"Natural Selection Labs\"},{\"key\":\"Edition\",\"value\":\"First Edition\"},{\"key\":\"Edition Language\",\"value\":\"English\"},{\"key\":\"File Format\",\"value\":\"PDF\"},{\"key\":\"No.\",\"value\":1800},{\"key\":\"date\",\"value\":1610323200}]",
             "mime_type": "text/json"
+        },
+        {
+            "type": "external_url",
+            "content": "https://rss3.io/RSS3-Whitepaper.pdf",
+            "mime_type": "text/uri-list"
         }
     ],
 
     "metadata": {
-        "proof": "0x0b97d6caf6ade4cb0ec6f483463371b97d04fb1a74f72bcc411e480572d712af",
         "platform": "ethereum",
+        "proof": "0x0b97d6caf6ade4cb0ec6f483463371b97d04fb1a74f72bcc411e480572d712af",
         "from": "0x0000000000000000000000000000000000000000",
-        "to": "0xc8b960d09c0078c18dcbe7eb9ab9d816bcca8944"
+        "to": "0xc8b960d09c0078c18dcbe7eb9ab9d816bcca8944",
+
+        "token_standard": "ERC-721",
+        "token_id": "1800",
+        "token_symbol": "RWP",
+
+        "collection_address": "0xb9619cf4f875cdf0e3ce48b28a1c725bc4f6c0fb",
+        "collection_name": "RSS3 Whitepaper"
     }
 }
 ```
+
+#### References
+
+- [Specification | Metaplex Docs](https://docs.metaplex.com/token-metadata/specification)
+- [EIP-721: Non-Fungible Token Standard](https://eips.ethereum.org/EIPS/eip-721)
 
 ### Mirror Entry Creation
 
