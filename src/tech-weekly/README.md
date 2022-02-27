@@ -9,3 +9,4 @@
 Have a question? You can communicate directly with core developers in the `#💡meet-the-developers` channel of the [RSS3 Discord Server](https://discord.com/invite/rss3).
 
 - [Week 1 - February 18, 2022](./02-18-2022.md)
+- [Week 2 - February 25, 2022](./02-25-2022.md)
