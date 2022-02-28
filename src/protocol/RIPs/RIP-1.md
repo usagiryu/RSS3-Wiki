@@ -21,6 +21,7 @@ The accounts of these platforms can be used for both Main Accounts and Connected
 | Ethereum | ethereum | <https://ethereum.org> | 0xC8b960D09C0078c18Dcbe7eB9AB9d816BcCa8944@ethereum | <https://ethereum.org/en/developers/docs/accounts/> |
 | Solana | solana | <https://solana.com> | 42jYG1DjDeGq8VgKtah1yR45MXU1uxThFxXukb6QBKMY@solana | <https://docs.solana.com/terminology#account> |
 | Flow | flow | <https://www.onflow.org/> | 0xff2da663c7033313@flow | <https://docs.onflow.org/cadence/language/crypto/> |
+| Arweave | arweave | <https://www.arweave.org/> | DMMgLkfQ4faV_igfexJn4aOJY7Drc8PkJBk_K5T3rsM@arweave | <https://docs.arweave.org/developers/server/http-api#key-format> |
 
 ### Centralized Platforms
 
