@@ -91,7 +91,7 @@ Including NFT minting, transferring out, transferring in, and burning.
     },
     {
         "type": "attributes",
-        "content": "[{\"key\":\"<attribute_key>\",\"value\":\"<attribute_value>\"}, ...]",
+        "content": "{\"<attribute_key>\":\"<attribute_value>\", ...}",
         "mime_type": "text/json"
     },
     {
@@ -121,9 +121,28 @@ Including NFT minting, transferring out, transferring in, and burning.
 }
 ```
 
-#### Example
+#### Special NFTs
 
-Example for [acquisition of RSS3 Whitepaper #1800](https://etherscan.io/token/0xb9619cf4f875cdf0e3ce48b28a1c725bc4f6c0fb)
+Some NFTs contain special tags.
+
+##### POAP
+
+```json
+"tags": [
+    "NFT",
+    "POAP"
+]
+```
+
+Condition: `metadata.network` === `Gnosis Mainnet` && `metadata.collection_address` === `0x22C1f6050E56d2876009903609a2cC3fEf83B415`
+
+A set of NFTs centrally issued, distributed and stored data by POAP Inc, which needs to be fetched from POAP Inc's centralized servers, but due to its widespread use, we have to support it specifically.
+
+#### Examples
+
+##### Mintting of RSS3 Whitepaper #1800
+
+[Chain Explorer](https://etherscan.io/token/0xb9619cf4f875cdf0e3ce48b28a1c725bc4f6c0fb)
 
 ```json
 {
@@ -165,13 +184,8 @@ Example for [acquisition of RSS3 Whitepaper #1800](https://etherscan.io/token/0x
             "size_in_bytes": 117310
         },
         {
-            "type": "token_info",
-            "content": "{\"address\":\"0xb9619cf4f875cdf0e3ce48b28a1c725bc4f6c0fb\",\"name\":\"RSS3 Whitepaper\",\"symbol\":\"RWP\",\"id\":1800}",
-            "mime_type": "text/json"
-        },
-        {
             "type": "attributes",
-            "content": "[{\"key\":\"Author(s)\",\"value\":\"Natural Selection Labs\"},{\"key\":\"Edition\",\"value\":\"First Edition\"},{\"key\":\"Edition Language\",\"value\":\"English\"},{\"key\":\"File Format\",\"value\":\"PDF\"},{\"key\":\"No.\",\"value\":1800},{\"key\":\"date\",\"value\":1610323200}]",
+            "content": "{\"Author(s)\":\"Natural Selection Labs\",\"Edition\":\"First Edition\",\"Edition Language\":\"English\",\"File Format\":\"PDF\",\"No.\":1800,\"date\":1610323200}",
             "mime_type": "text/json"
         },
         {
@@ -198,12 +212,89 @@ Example for [acquisition of RSS3 Whitepaper #1800](https://etherscan.io/token/0x
 }
 ```
 
+##### Mintting of POAP #2444192
+
+[Chain Explorer](https://blockscout.com/xdai/mainnet/tx/0x51de22ba27f05aee163bf01983107b7ddb130d70e1cf9a0ea544392c80580020)
+
+Its data stored by <https://api.poap.xyz/token/2444192>
+
+```json
+{
+    "identifier": "rss3://account:0xC8b960D09C0078c18Dcbe7eB9AB9d816BcCa8944@evm/note/C97402DD-87BB-4054-ADD0-39F2C3CC8B0F",
+    "date_created": "2021-11-02T03:11:40.000Z",
+    "date_updated": "2021-11-02T03:11:40.000Z",
+
+    "auto": true,
+    "identifier_instance": "rss3://note:C97402DD-87BB-4054-ADD0-39F2C3CC8B0F@evm",
+
+    "tags": [
+        "NFT",
+        "POAP"
+    ],
+    "authors": [
+        "rss3://account:0xC8b960D09C0078c18Dcbe7eB9AB9d816BcCa8944@evm"
+    ],
+
+    "attachments": [
+        {
+            "type": "name",
+            "content": "RSS3 Fully Supports POAP",
+            "mime_type": "text/plain"
+        },
+        {
+            "type": "description",
+            "content": "This POAP is used to commemorate the RSS3 protocol now fully supports the index of POAPs.",
+            "mime_type": "text/plain"
+        },
+        {
+            "type": "object",
+            "address": "https://assets.poap.xyz/rss3-fully-support-poap-2021-logo-1635826323177.png",
+            "mime_type": "image/png",
+            "size_in_bytes": 1264683
+        },
+        {
+            "type": "preview",
+            "address": "https://assets.poap.xyz/rss3-fully-support-poap-2021-logo-1635826323177.png",
+            "mime_type": "image/png",
+            "size_in_bytes": 1264683
+        },
+        {
+            "type": "attributes",
+            "content": "{\"id\":12526,\"fancy_id\":\"rss3-fully-support-poap-2021\",\"country\":\"\",\"city\":\"\",\"year\":2021,\"start_date\":\"02-Nov-2021\",\"end_date\":\"02-Nov-2021\",\"expiry_date\":\"02-Dec-2021\"}",
+            "mime_type": "text/json"
+        },
+        {
+            "type": "external_url",
+            "content": "https://rss3.bio",
+            "mime_type": "text/uri-list"
+        }
+    ],
+
+    "metadata": {
+        "platform": "Ethereum",
+        "network": "Gnosis Mainnet",
+        "proof": "0x51de22ba27f05aee163bf01983107b7ddb130d70e1cf9a0ea544392c80580020",
+        "from": "0x0000000000000000000000000000000000000000",
+        "to": "0xc8b960d09c0078c18dcbe7eb9ab9d816bcca8944",
+
+        "token_standard": "ERC-721",
+        "token_id": "2444192",
+        "token_symbol": "The Proof of Attendance Protocol",
+
+        "collection_address": "0x22C1f6050E56d2876009903609a2cC3fEf83B415",
+        "collection_name": "POAP"
+    }
+}
+```
+
 #### References
 
 - [Specification | Metaplex Docs](https://docs.metaplex.com/token-metadata/specification)
 - [EIP-721: Non-Fungible Token Standard](https://eips.ethereum.org/EIPS/eip-721)
 
 ### Mirror Entry
+
+Mirror Entry is a JSON file that uses the Ethereum account, but is stored in Arweave Mainnet by a Mirror official account.
 
 #### `title`
 
@@ -247,11 +338,13 @@ If the body is too long, then only record part of the body, followed by `...` at
 
 #### Example
 
-Example for <https://mirror.xyz/0xee8fEeb6D0c2fC02Ef41879514A75d0E791b5061/vfTMz8HQa28GNEMfhZLbbAdYQoaY11khOUyXAzBjnX8>
+##### Entry vfTMz8HQa28GNEMfhZLbbAdYQoaY11khOUyXAzBjnX8
 
-Its Arware Transaction is <https://viewblock.io/arweave/tx/9s_R8b4UfSMoP1wIJ7UGUC-fMtR68Z9cZQYplA6nj-k>
+[Mirror Address](https://mirror.xyz/0xee8fEeb6D0c2fC02Ef41879514A75d0E791b5061/vfTMz8HQa28GNEMfhZLbbAdYQoaY11khOUyXAzBjnX8)
 
-Its Arware Link is <https://63chy34fd5emud6xaie62qmubhzs2r5pdh24mudctfaou6he.arweave.net/9s_R8b4UfSMoP1wIJ7UGUC-fMtR68Z9cZQYplA6nj-k>
+[Arware Transaction](https://viewblock.io/arweave/tx/9s_R8b4UfSMoP1wIJ7UGUC-fMtR68Z9cZQYplA6nj-k)
+
+[Arware Link](https://63chy34fd5emud6xaie62qmubhzs2r5pdh24mudctfaou6he.arweave.net/9s_R8b4UfSMoP1wIJ7UGUC-fMtR68Z9cZQYplA6nj-k)
 
 ```json
 {

@@ -16,7 +16,7 @@ pageClass: home-page
 
 The right to create, disseminate and distribute information should not be in the hands of centralized governing. It is the basic right of cyber lives.
 
-Gradually over the past two decades, contents and links have been controlled by several data superpowers, who then eats all the profits, privacy and freedom. This centralization also resulted in a terrible environment of user experience innovations: No matter how well your design and engineer your application, there is no way to compete with the data monopolies.
+Gradually over the past two decades, several data superpowers have controlled contents and links to create a toxic centralized atmosphere, where privacy and freedom are sacrificed for profits. This atmosphere further hinders innovations: No matter how well you design and engineer your application, there is no way to compete with the data monopolies.
 
 The world has been eager for a new way of information syndication. RSS used to be the pioneer of its time, now it’s time for us to pick up the baton and carry on.
 

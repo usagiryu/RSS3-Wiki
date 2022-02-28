@@ -18,6 +18,7 @@ The RSS3 protocol does not restrict what networks can be used for index items, w
 | Arbitrum | Ethereum | <https://arbitrum.io/> |
 | Avalanche | Ethereum | <https://www.avax.network/> |
 | Fantom | Ethereum | <https://fantom.foundation/> |
+| Gnosis Mainnet | Ethereum | <https://www.xdaichain.com/> |
 | Solana Mainnet | Solana | <https://solana.com> |
 | Flow Mainnet | Flow | <https://www.onflow.org/> |
 | Arweave Mainnet | Arweave | <https://www.arweave.org/> |
