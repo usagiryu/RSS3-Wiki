@@ -82,13 +82,13 @@ NFT activity, including NFT minting, transferring out, transferring in, and burn
         "type": "object",
         "address": "<object_address>",
         "mime_type": "<object_mime_type>",
-        "size_in_bytes": "<object_size_in_bytes>"
+        "size_in_bytes": <object_size_in_bytes>
     },
     {
         "type": "preview",
         "address": "<preview_address>",
         "mime_type": "<preview_mime_type>",
-        "size_in_bytes": "<preview_size_in_bytes>"
+        "size_in_bytes": <preview_size_in_bytes>
     },
     {
         "type": "attributes",
@@ -141,7 +141,7 @@ Condition: `metadata.network` === `Gnosis Mainnet` && `metadata.collection_addre
 
 #### Examples
 
-##### Mintting of RSS3 Whitepaper #1800
+##### Minting of RSS3 Whitepaper #1800
 
 [Chain Explorer](https://etherscan.io/token/0xb9619cf4f875cdf0e3ce48b28a1c725bc4f6c0fb)
 
@@ -213,7 +213,7 @@ Condition: `metadata.network` === `Gnosis Mainnet` && `metadata.collection_addre
 }
 ```
 
-##### Mintting of POAP #2444192
+##### Minting of POAP #2444192
 
 [Chain Explorer](https://blockscout.com/xdai/mainnet/tx/0x51de22ba27f05aee163bf01983107b7ddb130d70e1cf9a0ea544392c80580020)
 
@@ -417,7 +417,7 @@ A special transfer activity for making a donation on Gitcoin.
         "type": "logo",
         "address": "<logo_address>",
         "mime_type": "<logo_mime_type>",
-        "size_in_bytes": "<logo_size_in_bytes>"
+        "size_in_bytes": <logo_size_in_bytes>
     },
     {
         "type": "gitcoin_url",
@@ -508,7 +508,9 @@ A special transfer activity for making a donation on Gitcoin.
 
 ### Tweets
 
-Tweets from [Twitter](https://twitter.com/).
+[Tweets](https://help.twitter.com/en/using-twitter/types-of-tweets) on [Twitter](https://twitter.com/).
+
+See the [Twitter API Documentation](https://developer.twitter.com/en/docs/twitter-api/v1/tweets/timelines/overview) to learn more about how to get tweets.
 
 #### `title`
 
@@ -534,26 +536,29 @@ Tweet text.
         "type": "media",
         "address": "<media_address>",
         "mime_type": "image/png",
+        "size_in_bytes": <media_size_in_bytes>
     },
     {
         "type": "media",
-        "address": "<media_address>",
+        "address": "<media>",
         "mime_type": "video/mp4",
+        "size_in_bytes": <media_size_in_bytes>
     },
     {
         "type": "quote_address",
         "content": "<quote_address>",
-        "mime_type": "text/uri-list",
+        "mime_type": "text/uri-list"
     },
     {
         "type": "quote_text",
         "content": "<quote_text>",
-        "mime_type": "text/plain",
+        "mime_type": "text/plain"
     },
     {
         "type": "quote_media",
         "content": "<quote_media_address>",
         "mime_type": "image/png",
+        "size_in_bytes": <quote_media_size_in_bytes>
     },
     ...
 ]
@@ -640,16 +645,17 @@ Tweet text.
             "type": "media",
             "address": "https://pbs.twimg.com/media/FJghAOqXIAUPAqJ.jpg?name=orig",
             "mime_type": "image/png",
+            "size_in_bytes": 73876
         },
         {
             "type": "quote_address",
             "content": "https://twitter.com/rss3_/status/1483803568327262210",
-            "mime_type": "text/uri-list",
+            "mime_type": "text/uri-list"
         },
         {
             "type": "quote_text",
             "content": "6 mins for all Whitepaper NFTs! Thank you all!",
-            "mime_type": "text/plain",
+            "mime_type": "text/plain"
         }
     ],
 
@@ -660,7 +666,176 @@ Tweet text.
 }
 ```
 
-### Misskey
+### Misskey Notes
+
+[Misskey](https://misskey-hub.net/) [Notes](https://misskey-hub.net/en/docs/features/note.html).
+
+See the [Misskey API Documentation](https://misskey.io/api-doc#operation/users/notes) to learn more about how to get Misskey Notes.
+
+#### `title`
+
+Null
+
+#### `summary`
+
+Note text.
+
+#### `tags`
+
+```json
+"tags": [
+    "Misskey Note"
+]
+```
+
+#### `attachments`
+
+```json
+"attachments": [
+    {
+        "type": "emojis",
+        "content": "<emojis>",
+        "mime_type": "text/json",
+    },
+    {
+        "type": "file",
+        "address": "<file_address>",
+        "mime_type": "<file_mime_type>",
+        "size_in_bytes": <file_size_in_bytes>
+    },
+    {
+        "type": "quote_address",
+        "content": "<quote_address>",
+        "mime_type": "text/uri-list",
+    },
+    {
+        "type": "quote_text",
+        "content": "<quote_text>",
+        "mime_type": "text/plain",
+    },
+    {
+        "type": "quote_emojis",
+        "content": "<quote_emojis>",
+        "mime_type": "text/json",
+    },
+    {
+        "type": "quote_file",
+        "content": "<quote_file_address>",
+        "mime_type": "<quote_file_mime_type>",
+        "size_in_bytes": <quote_file_size_in_bytes>
+    },
+    ...
+]
+```
+
+#### `metadata`
+
+```ts
+"metadata": {
+    "platform": "Misskey",
+    "proof": "<misskey_address>"
+}
+```
+
+#### Example
+
+##### Misskey nya.one/notes/8wern2wyun
+
+[Misskey address](https://nya.one/notes/8wern2wyun)
+
+<details>
+    <summary>Misskey API</summary>
+
+```json
+{
+    "id": "8wern2wyun",
+    "createdAt": "2022-02-06T11:48:20.482Z",
+    "text": "盲 盒（物理x :nacho_nya:",
+    "cw": null,
+    "emojis": [
+        {
+            "name": "nacho_nya",
+            "url": "https://file.nya.one/misskey/webpublic-cc375802-fe69-4c4c-9e8d-2cddd2505404.png"
+        }
+    ],
+    "renote": {
+        "id": "8werm1i8u5",
+        "createdAt": "2022-02-06T11:47:32.000Z",
+        "text": "？？？\nNFT 是这么卖的？？",
+        "cw": null,
+        "emojis": [
+            {
+                "name": "nacho_attention@.",
+                "url": "https://file.nya.one/misskey/webpublic-b45483d9-b09b-4b84-a1f2-8fb2595671fa.png"
+            }
+        ],
+        "files": [
+            {
+                "type": "image/jpeg",
+                "md5": "c84435a19d51bb05879e5b2276e71d8a",
+                "size": 317909,
+                "url": "https://file.nya.one/misskey/52cd5198-bb00-4f8e-b023-9063b2c988f2.jpeg",
+                ...
+            }
+        ],
+        "uri": "https://m.uuu.moe/users/yashi/statuses/107750886737259295",
+        "url": "https://m.uuu.moe/@yashi/107750886737259295"
+        ...
+    }
+    ...
+}
+```
+
+</details>
+
+```json
+{
+    "identifier": "rss3://account:0xee8fEeb6D0c2fC02Ef41879514A75d0E791b5061@evm/note/18602E45-F56D-4FB5-A136-238F40893E9C",
+    "date_created": "2022-02-06T11:48:20.482Z",
+    "date_updated": "2022-02-06T11:48:20.482Z",
+
+    "auto": true,
+    "identifier_instance": "rss3://note:18602E45-F56D-4FB5-A136-238F40893E9C@evm",
+
+    "tags": [
+        "Misskey Note"
+    ],
+    "authors": [
+        "rss3://account:0xee8fEeb6D0c2fC02Ef41879514A75d0E791b5061@evm"
+    ],
+
+    "summary": "盲 盒（物理x :nacho_nya:",
+
+    "attachments": [
+        {
+            "type": "emojis",
+            "content": "{\"name\":\"nacho_nya\",\"url\":\"https://file.nya.one/misskey/webpublic-cc375802-fe69-4c4c-9e8d-2cddd2505404.png\"}",
+            "mime_type": "text/json",
+        },
+        {
+            "type": "quote_address",
+            "content": "https://m.uuu.moe/@yashi/107750886737259295",
+            "mime_type": "text/uri-list",
+        },
+        {
+            "type": "quote_text",
+            "content": "？？？\nNFT 是这么卖的？？",
+            "mime_type": "text/plain",
+        },
+        {
+            "type": "quote_file",
+            "content": "https://file.nya.one/misskey/52cd5198-bb00-4f8e-b023-9063b2c988f2.jpeg",
+            "mime_type": "image/jpeg",
+            "size_in_bytes": 317909
+        },
+    ],
+
+    "metadata": {
+        "platform": "Misskey",
+        "proof": "https://nya.one/notes/8wern2wyun"
+    }
+}
+```
 
 ### 即刻
 
