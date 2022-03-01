@@ -31,6 +31,7 @@ The accounts of these platforms can only be used for Connected Accounts.
 
 | Name | Symbol | Platform Website | Example | Address or Name Location |
 | -- | -- | -- | -- | -- |
+| RSS | rss | <https://validator.w3.org/feed/docs/rss2.html> | https%3A%2F%2Fdiygod.me%2Fatom.xml@rss | title, description, generator, webMaster |
 | Twitter | twitter | <https://twitter.com> | rss3_@twitter | Username, Name, Bio, Website, Pinned tweet |
 | Misskey | misskey | <https://misskey-hub.net/> | Candinya@nya.one@misskey | Name, Bio, Labels, Pinned notes |
 | 即刻 | jike | <https://web.okjike.com/> | 3EE02BC9-C5B3-4209-8750-4ED1EE0F67BB@jike | 昵称, 签名 |
