@@ -295,9 +295,11 @@ Its data stored by <https://api.poap.xyz/token/2444192>
 
 ### Mirror Entries
 
-Activity of publishing a [Mirror](https://mirror.xyz/) Entry.
+Activity of a [Mirror](https://mirror.xyz/) Entry.
 
 Mirror Entry is a kind of JSON file that uses the Ethereum account, but is stored in Arweave Mainnet by a Mirror official account.
+
+It is worth noting that Mirror Entries can be modified by a new transaction.
 
 #### `title`
 
@@ -504,7 +506,159 @@ A special transfer activity for making a donation on Gitcoin.
 }
 ```
 
-### Twitter
+### Tweets
+
+Tweets from [Twitter](https://twitter.com/).
+
+#### `title`
+
+Null
+
+#### `summary`
+
+Tweet text.
+
+#### `tags`
+
+```json
+"tags": [
+    "Tweet"
+]
+```
+
+#### `attachments`
+
+```json
+"attachments": [
+    {
+        "type": "media",
+        "address": "<media_address>",
+        "mime_type": "image/png",
+    },
+    {
+        "type": "media",
+        "address": "<media_address>",
+        "mime_type": "video/mp4",
+    },
+    {
+        "type": "quote_address",
+        "content": "<quote_address>",
+        "mime_type": "text/uri-list",
+    },
+    {
+        "type": "quote_text",
+        "content": "<quote_text>",
+        "mime_type": "text/plain",
+    },
+    {
+        "type": "quote_media",
+        "content": "<quote_media_address>",
+        "mime_type": "image/png",
+    },
+    ...
+]
+```
+
+#### `metadata`
+
+```ts
+"metadata": {
+    "platform": "Twitter",
+    "proof": "<tweet_address>"
+}
+```
+
+#### Example
+
+##### Tweet 1483972580616949762
+
+[Tweet address](https://twitter.com/DIYgod/status/1483972580616949762)
+
+<details>
+    <summary>Twitter API</summary>
+
+```json
+{
+    "created_at": "Thu Jan 20 01:20:08 +0000 2022",
+    "id_str": "1483972580616949762",
+    "text": "YES! https://t.co/OheN2oPAVC https://t.co/gTpAi7Ct5c",
+    "entities": {
+        "urls": [
+            {
+                "url": "https://t.co/OheN2oPAVC",
+                "expanded_url": "https://twitter.com/rss3_/status/1483803568327262210",
+                ...
+            }
+        ],
+        "media": [
+            {
+                "id_str": "1483972365038067717",
+                "media_url_https": "https://pbs.twimg.com/media/FJghAOqXIAUPAqJ.jpg",
+                "url": "https://t.co/gTpAi7Ct5c",
+                "type": "photo",
+                ...
+            }
+        ]
+        ...
+    },
+    "quoted_status": {
+        "user": {
+            "screen_name": "rss3_",
+            ...
+        },
+        "created_at": "Wed Jan 19 14:08:33 +0000 2022",
+        "id_str": "1483803568327262210",
+        "text": "6 mins for all Whitepaper NFTs! Thank you all!",
+        ...
+    }
+    ...
+}
+```
+
+</details>
+
+```json
+{
+    "identifier": "rss3://account:0xee8fEeb6D0c2fC02Ef41879514A75d0E791b5061@evm/note/1BB1AF27-0046-4436-BDA1-C505AD2E40E7",
+    "date_created": "2022-01-20T01:20:08.000Z",
+    "date_updated": "2022-01-20T01:20:08.000Z",
+
+    "auto": true,
+    "identifier_instance": "rss3://note:1BB1AF27-0046-4436-BDA1-C505AD2E40E7@evm",
+
+    "tags": [
+        "Tweet"
+    ],
+    "authors": [
+        "rss3://account:0xee8fEeb6D0c2fC02Ef41879514A75d0E791b5061@evm"
+    ],
+
+    "summary": "YES!",
+
+    "attachments": [
+        {
+            "type": "media",
+            "address": "https://pbs.twimg.com/media/FJghAOqXIAUPAqJ.jpg?name=orig",
+            "mime_type": "image/png",
+        },
+        {
+            "type": "quote_address",
+            "content": "https://twitter.com/rss3_/status/1483803568327262210",
+            "mime_type": "text/uri-list",
+        },
+        {
+            "type": "quote_text",
+            "content": "6 mins for all Whitepaper NFTs! Thank you all!",
+            "mime_type": "text/plain",
+        }
+    ],
+
+    "metadata": {
+        "platform": "Twitter",
+        "proof": "https://twitter.com/DIYgod/status/1483972580616949762"
+    }
+}
+```
 
 ### Misskey
 
