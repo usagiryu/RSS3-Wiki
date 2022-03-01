@@ -40,11 +40,12 @@ type Item = {
 
     metadata?: {
         platfrom: PlatformName;
-        network: NetworkName;
+        network?: NetworkName;
         proof: string;
         from?: string;
         to?: string;
-        id: string;
+
+        [key: string]: any;
     };
 };
 ```
@@ -420,11 +421,6 @@ A special transfer activity for making a donation on Gitcoin.
         "type": "gitcoin_url",
         "content": "<gitcoin_url>",
         "mime_type": "text/uri-list"
-    },
-    {
-        "type": "admin_address",
-        "content": "<admin_address>",
-        "mime_type": "text/plain"
     }
 ]
 ```
@@ -439,6 +435,7 @@ A special transfer activity for making a donation on Gitcoin.
     "from": "<transaction_from>",
     "to": "<transaction_to>",
 
+    "destination": "<admin_address>",
     "value_amount": <amount>,
     "value_symbol": "<symbol>",
 }
@@ -490,11 +487,6 @@ A special transfer activity for making a donation on Gitcoin.
             "type": "gitcoin_url",
             "content": "https://gitcoin.co/grants/2679/rss3-rss-with-human-curation",
             "mime_type": "text/uri-list"
-        },
-        {
-            "type": "admin_address",
-            "content": "0x8c23B96f2fb77AaE1ac2832debEE30f09da7af3C",
-            "mime_type": "text/plain"
         }
     ],
 
@@ -505,6 +497,7 @@ A special transfer activity for making a donation on Gitcoin.
         "from": "0xc8b960d09c0078c18dcbe7eb9ab9d816bcca8944",
         "to": "0x7d655c57f71464b6f83811c55d84009cd9f5221c",
 
+        "destination": "0x8c23B96f2fb77AaE1ac2832debEE30f09da7af3C",
         "value_amount": 0.00029085,
         "value_symbol": "Ether"
     }
