@@ -49,11 +49,11 @@ type Item = {
 };
 ```
 
-## Indexed Note Items List
+## Indexed Note Item List
 
 ### NFT Activities
 
-Including NFT minting, transferring out, transferring in, and burning.
+NFT activity, including NFT minting, transferring out, transferring in, and burning.
 
 #### `tags`
 
@@ -91,7 +91,7 @@ Including NFT minting, transferring out, transferring in, and burning.
     },
     {
         "type": "attributes",
-        "content": "{\"<attribute_key>\":\"<attribute_value>\", ...}",
+        "content": "{\"<attribute_key>\":\"<attribute_value>\",...}",
         "mime_type": "text/json"
     },
     {
@@ -127,6 +127,8 @@ Some NFTs contain special tags.
 
 ##### POAP
 
+A set of [POAP](https://poap.xyz/) NFTs centrally issued, distributed and stored data by POAP Inc, which needs to be fetched from POAP Inc's centralized servers, but due to its widespread use, we have to support it specifically.
+
 ```json
 "tags": [
     "NFT",
@@ -135,8 +137,6 @@ Some NFTs contain special tags.
 ```
 
 Condition: `metadata.network` === `Gnosis Mainnet` && `metadata.collection_address` === `0x22C1f6050E56d2876009903609a2cC3fEf83B415`
-
-A set of NFTs centrally issued, distributed and stored data by POAP Inc, which needs to be fetched from POAP Inc's centralized servers, but due to its widespread use, we have to support it specifically.
 
 #### Examples
 
@@ -292,9 +292,11 @@ Its data stored by <https://api.poap.xyz/token/2444192>
 - [Specification | Metaplex Docs](https://docs.metaplex.com/token-metadata/specification)
 - [EIP-721: Non-Fungible Token Standard](https://eips.ethereum.org/EIPS/eip-721)
 
-### Mirror Entry
+### Mirror Entries
 
-Mirror Entry is a JSON file that uses the Ethereum account, but is stored in Arweave Mainnet by a Mirror official account.
+Activity of publishing a [Mirror](https://mirror.xyz/) Entry.
+
+Mirror Entry is a kind of JSON file that uses the Ethereum account, but is stored in Arweave Mainnet by a Mirror official account.
 
 #### `title`
 
@@ -380,3 +382,149 @@ If the body is too long, then only record part of the body, followed by `...` at
     }
 }
 ```
+
+### Gitcoin Donations
+
+A special transfer activity for making a donation on Gitcoin.
+
+#### `tags`
+
+```json
+"tags": [
+    "Donation",
+    "Gitcoin"
+]
+```
+
+#### `attachments`
+
+```json
+"attachments": [
+    {
+        "type": "title",
+        "content": "<title>",
+        "mime_type": "text/plain"
+    },
+    {
+        "type": "description",
+        "content": "<description>",
+        "mime_type": "text/plain"
+    },
+    {
+        "type": "logo",
+        "address": "<logo_address>",
+        "mime_type": "<logo_mime_type>",
+        "size_in_bytes": "<logo_size_in_bytes>"
+    },
+    {
+        "type": "gitcoin_url",
+        "content": "<gitcoin_url>",
+        "mime_type": "text/uri-list"
+    },
+    {
+        "type": "admin_address",
+        "content": "<admin_address>",
+        "mime_type": "text/plain"
+    }
+]
+```
+
+#### `metadata`
+
+```ts
+"metadata": {
+    "platform": "<platform_name>",
+    "network": "<network_name>",
+    "proof": "<transaction_hash>",
+    "from": "<transaction_from>",
+    "to": "<transaction_to>",
+
+    "value_amount": <amount>,
+    "value_symbol": "<symbol>",
+}
+```
+
+#### Example
+
+##### Donation 0xa262c71eb905ff5ab6da66134826c5f6d90af8db7b406f84ef4ac725d574749c
+
+[Chain Explorer](https://etherscan.io/tx/0xa262c71eb905ff5ab6da66134826c5f6d90af8db7b406f84ef4ac725d574749c)
+
+[Gitcoin address](https://gitcoin.co/grants/2679/rss3-rss-with-human-curation)
+
+```json
+{
+    "identifier": "rss3://account:0xC8b960D09C0078c18Dcbe7eB9AB9d816BcCa8944@evm/note/CEA936A0-9859-4CA7-B5BC-B6D14CBBBCE0",
+    "date_created": "2021-10-14T02:42:51.000Z",
+    "date_updated": "2021-10-14T02:42:51.000Z",
+
+    "auto": true,
+    "identifier_instance": "rss3://note:CEA936A0-9859-4CA7-B5BC-B6D14CBBBCE0@evm",
+
+    "tags": [
+        "Donation",
+        "Gitcoin"
+    ],
+    "authors": [
+        "rss3://account:0xC8b960D09C0078c18Dcbe7eB9AB9d816BcCa8944@evm"
+    ],
+
+    "attachments": [
+        {
+            "type": "title",
+            "content": "RSS3 - RSS with human curation",
+            "mime_type": "text/plain"
+        },
+        {
+            "type": "description",
+            "content": "\nWelcome to the RSS3 GR 12\n\nSupport by Web3 Pass RSS3.bio: If u donations to us on GR12 you will get a $PASS to claim a free testnet RNS. Also, you will get a chance to try out our new product we're about to launch with a testnet RNS\n\n\n\nJoin us on RSS3 community\n\n\nWebsite: https://rss3.io\nDiscord: https://discord.gg/rss3\nTelegram: https://t.me/joinchat/jhhncmdayvNlMDgx\nTwitter: https://twitter.com/rss3_\nReddit: https://reddit.com/r/RSS3/\nQ3 NewsLetter arrived\n\n\n\n\n\n\nUpdate @ July 2\nQ2 NewsLetter arrived\n\n\n\nUpdate @ June 30\n\nIntro\nRSS3 is an open protocol designed for content and social networks in the Web 3 era. We believe the right to create, disseminate and distribute information should not be in the hands of centralized governing. It is the basic right of cyber lives.\n\nTeam\nI first was working on an RSS related app in 2018, which led me to the famous RSS project on Github called RSSHub (https://github.com/DIYgod/RSSHub). I worked on different types of social networks after that and gradually shifted my focus onto decentralized social and content networks. It was not until the second half of 2020, did I suddenly remembered RSSHub and its creator DIYgod (https://diygod.me/). I connected with him and decided that we could carry some of the best from RSS and build something better. Till today five of our talented members are based in Seattle, Shanghai and Auckland. They have created well-known open source projects, RSSHub & DPlayer, or are believers in the open-source community. Some are focused on front-end workflow optimisation, others are pioneers in marketing operations.\n\n\n\n\nThe Ideologies We Carry\nOpen Source\nIt goes without saying that the whole RSS3 project, including the standard and protocol itself and all other supporting layers like hosting and indexing, should be open source. Everyone should have the right to inspect and understand what the code is and how it works. Also, being open-source gives all developers a direct way to contribute to all parts of the project.\nWe will encourage all applications that utilize the protocol to be open-source as well. Otherwise, users won’t be trusting them with their valuable private keys. Chances are that malicious and non-open-source applications will be eliminated by market competition while data monopoly no longer exists.\nRight now, people are forced to trust centralized parties for what an internet service does. There are of course big brands to trust, like Facebook, Google or Amazon. People used to have the idea that “big brands won’t cheat”, but recent incidents have all reminded us that giving anyone the chance to do evil is equally dangerous. We need transparency.\n\nDistributed Control\nThe old RSS was designed to be decentralized but not distributed. And that leads to super sub-centres which still carries too much power similar to centralized architectures. For example, Spotify hosts a great number of long-tail podcasts and, though it still uses RSS for publishing, controls all the RSS files and the audio files.\nThe ultimate distributed control is to have every cyber persona control its data. And this means both indexing files and the content file should be under distributed hosting, and the right to edit the files are determined by their key pairs like in Bitcoin or Ethereum. However, it is important to note that this key pair that controls ownership can also be changed by their key holder, which will result in transferring or trading of a certain persona.\nThat being said, we still need to keep in mind that general users will take a pretty long time to adopt this idea of keeping one's keys and controlling one's data with them. There will likely be a gradual process that involves efforts from multiple parties.\n\nInclusiveness\nRSS3 and its applications are determined to win against the old giants, so it has to be inclusive in two major ways.\nIt starts with the inclusiveness regarding types of applications. Any content or social network is defined by its content form and network structure, where network structure is determined by the type of links and mechanism of discovery. Facebook, Twitter, Instagram, Whatsapp and TikTok are not that different technically. We need the protocol to support very different types of applications so that innovations can continue to happen.\nThen we need the inclusiveness on modules. Whether it is hosting, indexing or monetizing, RSS3 is designed to be extremely open to modules with different functionalities. This gives RSS3 great flexibility and possibility regarding what it can do in the future.\n\nThe Future We Aim\nEmpowered Personas\nCyber personas will truly have full control regarding the data they produce. Any persona can freely express their thoughts and ideas without being censored by any centralized agency. You can go to any application with your own content and relationships. No platform can ever force you to labour for it anymore. You, no longer the platform, will be empowered to create, own and monetize.\n\nPlatformless Medias\nMedias right now are closely bonded with platforms. Each social media platform has its own social graph and primary form of content. The adoption of RSS3 will give media a chance to have the largest unified group of subscribers, an efficient monetization channel without platform commission, and the freedom to generate content of various forms.\n\nInnovative Applications\nInnovations in user experience have slowed down so dramatically as data superpowers continue to grow. We want to rebuild the prosperous ecology of applications for different user experiences to emerge. When users control their data, they can easily choose to move to applications with better design and engineering efforts. Unlike competing for the scale and speed of data monopolizing, now applications will be competing for user experience.\n\nThe Team We Build\nTo achieve what we aimed for, we formed a distributed organization with a high standard. Every member who works on RSS3 comes from his/her/their/its true belief and passion. We share the culture below:\n\nMission\nTo Liberates Contents and Links\n\nVision\nBuild a world where information and its flow are free, secure, efficient and distributed\n\nValue\nNeutrality\nInclusiveness\nEquality\nSecurity\nPrivacy\nMeticulosity\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
+            "mime_type": "text/plain"
+        },
+        {
+            "type": "logo",
+            "address": "https://c.gitcoin.co/grants/546622657b597ce151666ed2e2ecbd92/rss3_square_blue.png",
+            "mime_type": "image/png",
+            "size_in_bytes": 106964
+        },
+        {
+            "type": "gitcoin_url",
+            "content": "https://gitcoin.co/grants/2679/rss3-rss-with-human-curation",
+            "mime_type": "text/uri-list"
+        },
+        {
+            "type": "admin_address",
+            "content": "0x8c23B96f2fb77AaE1ac2832debEE30f09da7af3C",
+            "mime_type": "text/plain"
+        }
+    ],
+
+    "metadata": {
+        "platform": "Ethereum",
+        "network": "Ethereum Mainnet",
+        "proof": "0xa262c71eb905ff5ab6da66134826c5f6d90af8db7b406f84ef4ac725d574749c",
+        "from": "0xc8b960d09c0078c18dcbe7eb9ab9d816bcca8944",
+        "to": "0x7d655c57f71464b6f83811c55d84009cd9f5221c",
+
+        "value_amount": 0.00029085,
+        "value_symbol": "Ether"
+    }
+}
+```
+
+### Twitter
+
+### Misskey
+
+### 即刻
+
+## Indexed Asset Item List
+
+### NFT
+
+### GitHub Achievement
+
+TODO
+
+### PlayStation Network Trophy
+
+TODO
