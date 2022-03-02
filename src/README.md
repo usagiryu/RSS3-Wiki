@@ -5,7 +5,8 @@ pageClass: home-page
 # Introduction
 
 <p align="center">
-    <video class="logo-video" autoplay muted playsinline src="@source/images/logo.mp4"></video>
+    <!-- <video class="logo-video" autoplay muted playsinline src="@source/images/logo.mp4"></video> -->
+    <img class="logo-vido" src="@source/images/logo.gif" />
 </p>
 
 > RSS3 is an open information syndication protocol that aims to support efficient and decentralized information distribution in Web3.
