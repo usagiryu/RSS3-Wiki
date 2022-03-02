@@ -535,13 +535,7 @@ Tweet text.
     {
         "type": "media",
         "address": "<media_address>",
-        "mime_type": "image/png",
-        "size_in_bytes": <media_size_in_bytes>
-    },
-    {
-        "type": "media",
-        "address": "<media>",
-        "mime_type": "video/mp4",
+        "mime_type": "<media_mime_type>",
         "size_in_bytes": <media_size_in_bytes>
     },
     {
@@ -556,7 +550,7 @@ Tweet text.
     },
     {
         "type": "quote_media",
-        "content": "<quote_media_address>",
+        "address": "<quote_media_address>",
         "mime_type": "image/png",
         "size_in_bytes": <quote_media_size_in_bytes>
     },
@@ -837,7 +831,149 @@ Note text.
 }
 ```
 
-### 即刻
+### Jike Posts
+
+[Jike](https://web.okjike.com/) Posts.
+
+#### `title`
+
+Null
+
+#### `summary`
+
+Post text.
+
+#### `tags`
+
+```json
+"tags": [
+    "Jike Post"
+]
+```
+
+#### `attachments`
+
+```json
+"attachments": [
+    {
+        "type": "media",
+        "address": "<media_address>",
+        "mime_type": "<media_mime_type>",
+        "size_in_bytes": <media_size_in_bytes>
+    },
+    {
+        "type": "quote_address",
+        "content": "<quote_address>",
+        "mime_type": "text/uri-list",
+    },
+    {
+        "type": "quote_text",
+        "content": "<quote_text>",
+        "mime_type": "text/plain",
+    },
+    {
+        "type": "quote_media",
+        "address": "<quote_media_address>",
+        "mime_type": "<quote_media_mime_type>",
+        "size_in_bytes": <quote_media_size_in_bytes>
+    },
+    ...
+]
+```
+
+#### `metadata`
+
+```ts
+"metadata": {
+    "platform": "Jike",
+    "proof": "<jike_address>"
+}
+```
+
+#### Example
+
+##### Jike 61dfc33558b7cf00109d11a4
+
+[Jike address](https://web.okjike.com/repost/61dfc33558b7cf00109d11a4)
+
+<details>
+    <summary>Jike API</summary>
+
+```json
+{
+    "id": "61dfc33558b7cf00109d11a4",
+    "type": "REPOST",
+    "content": "已经确保了",
+    "createdAt": "2022-01-13T06:14:13.064Z",
+    "__typename": "Repost",
+    "target": {
+        "id": "61dfb9ce6dcd95001093f964",
+        "type": "ORIGINAL_POST",
+        "content": "RSS3 与即刻APP达成深度合作，RSS3已支持即刻APP内容索引，在其生态产品 REVERY.so 中可查看即刻APP的内容。\n\n未来，双方将在内容索引、数据支持等方向展开更多合作。同时，即刻与RSS3推出特别纪念NFT，用户在RSS3网络中绑定自己的即刻账号即可满足铸造条件。\n\n确保 Web3 发生在即刻",
+        "pictures": [
+            {
+                "thumbnailUrl": "https://cdn.jellow.site/FpHKp4b_mcsQpC1Jciae7yQjDBDzv2.jpg?imageMogr2/auto-orient/thumbnail/300x2000%3E/quality/70/interlace/1",
+                "__typename": "PictureInfo"
+            }
+        ],
+        "topic": {
+            "id": "5738965b6628391200809ff1",
+            "content": "Web3研究所",
+            "__typename": "TopicInfo"
+        },
+        "__typename": "OriginalPost"
+        ...
+    },
+    "targetType": "ORIGINAL_POST",
+    ...
+}
+```
+
+</details>
+
+```json
+{
+    "identifier": "rss3://account:0xee8fEeb6D0c2fC02Ef41879514A75d0E791b5061@evm/note/1CBC16D3-98C8-4A86-9778-2B5C7697D663",
+    "date_created": "2022-01-13T06:14:13.064Z",
+    "date_updated": "2022-01-13T06:14:13.064Z",
+
+    "auto": true,
+    "identifier_instance": "rss3://note:1CBC16D3-98C8-4A86-9778-2B5C7697D663@evm",
+
+    "tags": [
+        "Jike Post"
+    ],
+    "authors": [
+        "rss3://account:0xee8fEeb6D0c2fC02Ef41879514A75d0E791b5061@evm"
+    ],
+
+    "summary": "已经确保了",
+
+    "attachments": [
+        {
+            "type": "quote_address",
+            "content": "https://web.okjike.com/originalPost/61dfb9ce6dcd95001093f964",
+            "mime_type": "text/uri-list",
+        },
+        {
+            "type": "quote_text",
+            "content": "RSS3 与即刻APP达成深度合作，RSS3已支持即刻APP内容索引，在其生态产品 REVERY.so 中可查看即刻APP的内容。\n\n未来，双方将在内容索引、数据支持等方向展开更多合作。同时，即刻与RSS3推出特别纪念NFT，用户在RSS3网络中绑定自己的即刻账号即可满足铸造条件。\n\n确保 Web3 发生在即刻",
+            "mime_type": "text/plain",
+        },
+        {
+            "type": "quote_media",
+            "address": "https://cdn.jellow.site/FpHKp4b_mcsQpC1Jciae7yQjDBDzv2.jpg",
+            "mime_type": "image/jpeg",
+            "size_in_bytes": 256905
+        }
+    ],
+
+    "metadata": {
+        "platform": "Jike",
+        "proof": "https://web.okjike.com/originalPost/5ee1b02380d99c00184c15d0"
+    }
+}
+```
 
 ## Indexed Asset Item List
 
