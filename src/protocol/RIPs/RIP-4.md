@@ -150,7 +150,7 @@ Condition: `metadata.network` === `Gnosis Mainnet` && `metadata.collection_addre
     "date_updated": "2022-01-19T02:06:38.000Z",
 
     "auto": true,
-    "identifier_instance": "rss3://note:D52DCF9F-7FF0-400A-9562-66C87DB3A866@ethereum_mainnet",
+    "identifier_instance": "rss3://note:0x0b97d6caf6ade4cb0ec6f483463371b97d04fb1a74f72bcc411e480572d712af@ethereum_mainnet",
 
     "tags": [
         "NFT"
@@ -224,7 +224,7 @@ Its data stored by <https://api.poap.xyz/token/2444192>
     "date_updated": "2021-11-02T03:11:40.000Z",
 
     "auto": true,
-    "identifier_instance": "rss3://note:C97402DD-87BB-4054-ADD0-39F2C3CC8B0F@gnosis_mainnet",
+    "identifier_instance": "rss3://note:0x51de22ba27f05aee163bf01983107b7ddb130d70e1cf9a0ea544392c80580020@gnosis_mainnet",
 
     "tags": [
         "NFT",
@@ -356,7 +356,7 @@ If the body is too long, then only record part of the body, followed by `...` at
     "date_updated": "2021-08-10T05:07:22.000Z",
 
     "auto": true,
-    "identifier_instance": "rss3://note:1B599C2B-4153-4DFC-8909-25AE1D51E801@arweave_mainnet",
+    "identifier_instance": "rss3://note:9s_R8b4UfSMoP1wIJ7UGUC-fMtR68Z9cZQYplA6nj-k@arweave_mainnet",
 
     "tags": [
         "Mirror Entry"
@@ -456,7 +456,7 @@ A special transfer activity for making a donation on Gitcoin.
     "date_updated": "2021-10-14T02:42:51.000Z",
 
     "auto": true,
-    "identifier_instance": "rss3://note:CEA936A0-9859-4CA7-B5BC-B6D14CBBBCE0@ethereum_mainnet",
+    "identifier_instance": "rss3://note:0xa262c71eb905ff5ab6da66134826c5f6d90af8db7b406f84ef4ac725d574749c@ethereum_mainnet",
 
     "tags": [
         "Donation",
@@ -621,7 +621,7 @@ Tweet text.
     "date_updated": "2022-01-20T01:20:08.000Z",
 
     "auto": true,
-    "identifier_instance": "rss3://note:1BB1AF27-0046-4436-BDA1-C505AD2E40E7@twitter",
+    "identifier_instance": "rss3://note:https%3A%2F%2Ftwitter.com%2FDIYgod%2Fstatus%2F1483972580616949762@twitter",
 
     "tags": [
         "Tweet"
@@ -787,7 +787,7 @@ Note text.
     "date_updated": "2022-02-06T11:48:20.482Z",
 
     "auto": true,
-    "identifier_instance": "rss3://note:18602E45-F56D-4FB5-A136-238F40893E9C@misskey",
+    "identifier_instance": "rss3://note:https%3A%2F%2Fnya.one%2Fnotes%2F8wern2wyun@misskey",
 
     "tags": [
         "Misskey Note"
@@ -936,7 +936,7 @@ Post text.
     "date_updated": "2022-01-13T06:14:13.064Z",
 
     "auto": true,
-    "identifier_instance": "rss3://note:1CBC16D3-98C8-4A86-9778-2B5C7697D663@jike",
+    "identifier_instance": "rss3://note:https%3A%2F%2Fweb.okjike.com%2ForiginalPost%2F5ee1b02380d99c00184c15d0@jike",
 
     "tags": [
         "Jike Post"
