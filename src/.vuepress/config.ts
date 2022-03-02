@@ -32,6 +32,9 @@ module.exports = {
         sidebarDepth: 5,
         docsDir: 'src',
         logo: 'https://graphics.rss3.workers.dev/',
+        themePlugins: {
+            activeHeaderLinks: false,
+        },
         locales: {
             '/': {
                 lang: 'en-US',
