@@ -18,7 +18,7 @@ module.exports = {
 
     markdown: {
         extractHeaders: {
-            level: [1, 2, 3, 4, 5],
+            level: [1, 2, 3],
         },
     },
 
@@ -29,7 +29,7 @@ module.exports = {
     themeConfig: {
         repo: 'NaturalSelectionLabs',
         docsRepo: 'NaturalSelectionLabs/RSS3-Wiki',
-        sidebarDepth: 5,
+        sidebarDepth: 3,
         docsDir: 'src',
         logo: 'https://graphics.rss3.workers.dev/',
         themePlugins: {

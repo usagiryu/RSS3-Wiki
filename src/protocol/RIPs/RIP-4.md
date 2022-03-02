@@ -1,3 +1,7 @@
+---
+sidebarDepth: 2
+---
+
 # RIP-4: Registered Indexed Items
 
 ## Abstract
@@ -137,7 +141,7 @@ Condition: `metadata.network` === `Gnosis Mainnet` && `metadata.collection_addre
 
 ##### Minting of RSS3 Whitepaper #1800
 
-[Chain Explorer](https://etherscan.io/token/0xb9619cf4f875cdf0e3ce48b28a1c725bc4f6c0fb)
+[Chain Explorer](https://etherscan.io/nft/0xb9619cf4f875cdf0e3ce48b28a1c725bc4f6c0fb/1800)
 
 ```json
 {
@@ -973,6 +977,135 @@ Post text.
 ## Indexed Asset Item List
 
 ### NFT
+
+#### `title`
+
+NFT name.
+
+#### `summary`
+
+NFT description.
+
+#### `tags`
+
+```json
+"tags": [
+    "NFT"
+]
+```
+
+#### `attachments`
+
+```json
+"attachments": [
+    {
+        "type": "object",
+        "address": "<object_address>",
+        "mime_type": "<object_mime_type>",
+        "size_in_bytes": <object_size_in_bytes>
+    },
+    {
+        "type": "preview",
+        "address": "<preview_address>",
+        "mime_type": "<preview_mime_type>",
+        "size_in_bytes": <preview_size_in_bytes>
+    },
+    {
+        "type": "attributes",
+        "content": "{\"<attribute_key>\":\"<attribute_value>\",...}",
+        "mime_type": "text/json"
+    },
+    {
+        "type": "external_url",
+        "content": "<external_url>",
+        "mime_type": "text/uri-list"
+    }
+]
+```
+
+#### `metadata`
+
+```ts
+"metadata": {
+    "network": "<network_name>",
+    "proof": "<collection_address>-<token_id>",
+
+    "token_standard": "<token_standard>",
+    "token_id": "<token_id>",
+    "token_symbol": "<token_symbol>",
+
+    "collection_address": "<collection_address>",
+    "collection_name": "<collection_name>",
+}
+```
+
+#### Special NFTs
+
+See [Indexed Note Item List - Special NFTs](#special-nfts)
+
+#### Examples
+
+##### Minting of RSS3 Whitepaper #1800
+
+[Chain Explorer](https://etherscan.io/nft/0xb9619cf4f875cdf0e3ce48b28a1c725bc4f6c0fb/1800)
+
+```json
+{
+    "identifier": "rss3://account:0xC8b960D09C0078c18Dcbe7eB9AB9d816BcCa8944@ethereum/asset/D52DCF9F-7FF0-400A-9562-66C87DB3A866",
+    "date_created": "2022-01-19T02:06:38.000Z",
+    "date_updated": "2022-01-19T02:06:38.000Z",
+
+    "auto": true,
+    "identifier_instance": "rss3://asset:0xb9619cf4f875cdf0e3ce48b28a1c725bc4f6c0fb-1800@ethereum_mainnet",
+
+    "tags": [
+        "NFT"
+    ],
+    "authors": [
+        "0xC8b960D09C0078c18Dcbe7eB9AB9d816BcCa8944@ethereum"
+    ],
+
+    "title": "RSS3 Whitepaper v1.0",
+    "summary": "RSS3 Whitepaper v1.0 - Commemorative & Limited Edition",
+
+    "attachments": [
+        {
+            "type": "object",
+            "address": "ipfs://bafybeicij6vw6xcsgwldofnmmh3c3j4w5yiocs6l72yubpbcldxcglkvqe/rss3-whitepaper-no-1800.glb",
+            "mime_type": "model/gltf-binary",
+            "size_in_bytes": 3983376
+        },
+        {
+            "type": "preview",
+            "address": "ipfs://bafybeianto7koyrfwkdjymx7byjrs3hzy7ldipfxc343vra2t7pbd557sy/rss3-whitepaper-no-1800.png",
+            "mime_type": "image/png",
+            "size_in_bytes": 117310
+        },
+        {
+            "type": "attributes",
+            "content": "{\"Author(s)\":\"Natural Selection Labs\",\"Edition\":\"First Edition\",\"Edition Language\":\"English\",\"File Format\":\"PDF\",\"No.\":1800,\"date\":1610323200}",
+            "mime_type": "text/json"
+        },
+        {
+            "type": "external_url",
+            "content": "https://rss3.io/RSS3-Whitepaper.pdf",
+            "mime_type": "text/uri-list"
+        }
+    ],
+
+    "metadata": {
+        "network": "Ethereum Mainnet",
+        "proof": "0xb9619cf4f875cdf0e3ce48b28a1c725bc4f6c0fb-1800",
+
+        "token_standard": "ERC-721",
+        "token_id": "1800",
+        "token_symbol": "RWP",
+
+        "collection_address": "0xb9619cf4f875cdf0e3ce48b28a1c725bc4f6c0fb",
+        "collection_name": "RSS3 Whitepaper"
+    }
+}
+```
 
 ### GitHub Achievement
 
