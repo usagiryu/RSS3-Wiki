@@ -8,7 +8,7 @@
 
 ![](./images/events/whitepaper.jpeg)
 
-[Website](https://rss3.io/#/events/whitepaper-nft)
+[Website](https://rss3.events/whitepaper-nft)
 
 [Twitter](https://twitter.com/rss3_/status/1483620420473724929)
 
@@ -20,7 +20,7 @@
 
 ![](./images/events/jike.jpeg)
 
-[Website](https://rss3.io/#/events/jike-nft)
+[Website](https://rss3.events/jike-nft)
 
 [Twitter](https://twitter.com/rss3_/status/1481491318883106817)
 
