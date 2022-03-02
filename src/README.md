@@ -36,7 +36,7 @@ The RSS3 Protocol is designed to be very flexible, and using the RSS3 Protocol a
 
 With a basic understanding of the protocol, the quickest way to develop an RSS3 application is to use the [RSS3 SDK](/sdk.html), or to request [API](/api.html) directly.
 
-Reading [our white paper](https://rss3.io/#/whitepaper) is also a good way to learn more about the protocol and the upcoming decentralized RSS3 Network.
+Reading [our white paper](/RSS3-Whitepaper.pdf) is also a good way to learn more about the protocol and the upcoming decentralized RSS3 Network.
 
 ![RSS3 System](./images/system.png)
 

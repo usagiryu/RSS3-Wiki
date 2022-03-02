@@ -48,7 +48,7 @@ module.exports = {
                     },
                     {
                         text: 'Whitepaper',
-                        link: 'https://rss3.io/#/whitepaper'
+                        link: 'https://rss3.io/RSS3-Whitepaper.pdf'
                     },
                     {
                         text: 'Blog',

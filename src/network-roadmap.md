@@ -7,7 +7,7 @@
             <p>A fully decentralized implementation in Go</p>
             <p>Under Planning</p>
             <img src="./images/architecture.png">
-            <p><a target="_blank" href="https://rss3.io/#/whitepaper">Open in Whitepaper</a></p>
+            <p><a target="_blank" href="/RSS3-Whitepaper.pdf">Open in Whitepaper</a></p>
         </el-card>
     </el-timeline-item>
     <el-timeline-item timestamp="Jan 2022 - Mar 2022?" placement="top" :hollow="true" type="primary">
