@@ -1,7 +1,7 @@
 # Introduction
 
 <p align="center">
-    <video class="logo-video" autoplay muted playsinline src="@source/images/logo.mp4"></video>
+    <img class="logo-vido" src="@source/images/logo.gif" />
 </p>
 
 💡 RSS3 Tech Weekly is a brief report offering unique insights into our development progress to the community.

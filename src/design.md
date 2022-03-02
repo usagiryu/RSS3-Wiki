@@ -6,9 +6,19 @@ We designed an auxiliary graphic for RSS3, whose lines are not fixed, and if you
 
 This symbolizes our desire for RSS3 to be open and inclusive.
 
+SVG
+
 <p align="center">
     <img width="100" src="https://graphics.rss3.workers.dev">
 </p>
+
+GIF
+
+<p align="center">
+    <img class="logo-vido" src="@source/images/logo.gif" />
+</p>
+
+MP4
 
 <p align="center">
     <video width="300" autoplay muted playsinline src="@source/images/logo.mp4"></video>

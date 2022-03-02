@@ -5,7 +5,6 @@ pageClass: home-page
 # Introduction
 
 <p align="center">
-    <!-- <video class="logo-video" autoplay muted playsinline src="@source/images/logo.mp4"></video> -->
     <img class="logo-vido" src="@source/images/logo.gif" />
 </p>
 
