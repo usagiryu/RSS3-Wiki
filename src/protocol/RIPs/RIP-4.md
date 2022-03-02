@@ -25,7 +25,7 @@ type Item = {
     identifier_instance?: InstanceURI;
 
     tags?: string[];
-    authors: InstanceURI[];
+    authors: Account[];
     title?: string;
     summary?: string;
     attachments?: {
@@ -37,11 +37,8 @@ type Item = {
     }[];
 
     metadata?: {
-        platfrom: PlatformName;
-        network?: NetworkName;
+        network: NetworkName;
         proof: string;
-        from?: string;
-        to?: string;
 
         [key: string]: any;
     };
@@ -105,7 +102,6 @@ NFT activity, including NFT minting, transferring out, transferring in, and burn
 
 ```ts
 "metadata": {
-    "platform": "<platform_name>",
     "network": "<network_name>",
     "proof": "<transaction_hash>",
     "from": "<transaction_from>",
@@ -156,7 +152,7 @@ Condition: `metadata.network` === `Gnosis Mainnet` && `metadata.collection_addre
         "NFT"
     ],
     "authors": [
-        "rss3://account:0xC8b960D09C0078c18Dcbe7eB9AB9d816BcCa8944@ethereum"
+        "0xC8b960D09C0078c18Dcbe7eB9AB9d816BcCa8944@ethereum"
     ],
 
     "attachments": [
@@ -195,9 +191,9 @@ Condition: `metadata.network` === `Gnosis Mainnet` && `metadata.collection_addre
     ],
 
     "metadata": {
-        "platform": "Ethereum",
         "network": "Ethereum Mainnet",
         "proof": "0x0b97d6caf6ade4cb0ec6f483463371b97d04fb1a74f72bcc411e480572d712af",
+
         "from": "0x0000000000000000000000000000000000000000",
         "to": "0xc8b960d09c0078c18dcbe7eb9ab9d816bcca8944",
 
@@ -231,7 +227,7 @@ Its data stored by <https://api.poap.xyz/token/2444192>
         "POAP"
     ],
     "authors": [
-        "rss3://account:0xC8b960D09C0078c18Dcbe7eB9AB9d816BcCa8944@ethereum"
+        "0xC8b960D09C0078c18Dcbe7eB9AB9d816BcCa8944@ethereum"
     ],
 
     "attachments": [
@@ -270,9 +266,9 @@ Its data stored by <https://api.poap.xyz/token/2444192>
     ],
 
     "metadata": {
-        "platform": "Ethereum",
         "network": "Gnosis Mainnet",
         "proof": "0x51de22ba27f05aee163bf01983107b7ddb130d70e1cf9a0ea544392c80580020",
+
         "from": "0x0000000000000000000000000000000000000000",
         "to": "0xc8b960d09c0078c18dcbe7eb9ab9d816bcca8944",
 
@@ -333,7 +329,6 @@ If the body is too long, then only record part of the body, followed by `...` at
 
 ```ts
 "metadata": {
-    "platform": "Ethereum",
     "network": "Arweave Mainnet",
     "proof": "<transaction_hash>"
 }
@@ -362,7 +357,7 @@ If the body is too long, then only record part of the body, followed by `...` at
         "Mirror Entry"
     ],
     "authors": [
-        "rss3://account:0xee8fEeb6D0c2fC02Ef41879514A75d0E791b5061@ethereum"
+        "0xee8fEeb6D0c2fC02Ef41879514A75d0E791b5061@ethereum"
     ],
 
     "title": "献出心脏 直到高墙倒塌",
@@ -377,7 +372,6 @@ If the body is too long, then only record part of the body, followed by `...` at
     ],
 
     "metadata": {
-        "platform": "Ethereum",
         "network": "Arweave Mainnet",
         "proof": "9s_R8b4UfSMoP1wIJ7UGUC-fMtR68Z9cZQYplA6nj-k"
     }
@@ -429,9 +423,9 @@ A special transfer activity for making a donation on Gitcoin.
 
 ```ts
 "metadata": {
-    "platform": "<platform_name>",
     "network": "<network_name>",
     "proof": "<transaction_hash>",
+
     "from": "<transaction_from>",
     "to": "<transaction_to>",
 
@@ -463,7 +457,7 @@ A special transfer activity for making a donation on Gitcoin.
         "Gitcoin"
     ],
     "authors": [
-        "rss3://account:0xC8b960D09C0078c18Dcbe7eB9AB9d816BcCa8944@ethereum"
+        "0xC8b960D09C0078c18Dcbe7eB9AB9d816BcCa8944@ethereum"
     ],
 
     "attachments": [
@@ -491,9 +485,9 @@ A special transfer activity for making a donation on Gitcoin.
     ],
 
     "metadata": {
-        "platform": "Ethereum",
         "network": "Ethereum Mainnet",
         "proof": "0xa262c71eb905ff5ab6da66134826c5f6d90af8db7b406f84ef4ac725d574749c",
+
         "from": "0xc8b960d09c0078c18dcbe7eb9ab9d816bcca8944",
         "to": "0x7d655c57f71464b6f83811c55d84009cd9f5221c",
 
@@ -560,7 +554,7 @@ Tweet text.
 
 ```ts
 "metadata": {
-    "platform": "Twitter",
+    "network": "Twitter",
     "proof": "<tweet_address>"
 }
 ```
@@ -627,7 +621,8 @@ Tweet text.
         "Tweet"
     ],
     "authors": [
-        "rss3://account:0xee8fEeb6D0c2fC02Ef41879514A75d0E791b5061@ethereum"
+        "0xee8fEeb6D0c2fC02Ef41879514A75d0E791b5061@ethereum",
+        "DIYgod@twitter"
     ],
 
     "summary": "YES!",
@@ -652,7 +647,7 @@ Tweet text.
     ],
 
     "metadata": {
-        "platform": "Twitter",
+        "network": "Twitter",
         "proof": "https://twitter.com/DIYgod/status/1483972580616949762"
     }
 }
@@ -724,7 +719,7 @@ Note text.
 
 ```ts
 "metadata": {
-    "platform": "Misskey",
+    "network": "Misskey",
     "proof": "<misskey_address>"
 }
 ```
@@ -793,7 +788,8 @@ Note text.
         "Misskey Note"
     ],
     "authors": [
-        "rss3://account:0xee8fEeb6D0c2fC02Ef41879514A75d0E791b5061@ethereum"
+        "0xee8fEeb6D0c2fC02Ef41879514A75d0E791b5061@ethereum",
+        "Candinya@nya.one@misskey"
     ],
 
     "summary": "盲 盒（物理x :nacho_nya:",
@@ -823,7 +819,7 @@ Note text.
     ],
 
     "metadata": {
-        "platform": "Misskey",
+        "network": "Misskey",
         "proof": "https://nya.one/notes/8wern2wyun"
     }
 }
@@ -883,7 +879,7 @@ Post text.
 
 ```ts
 "metadata": {
-    "platform": "Jike",
+    "network": "Jike",
     "proof": "<jike_address>"
 }
 ```
@@ -942,7 +938,8 @@ Post text.
         "Jike Post"
     ],
     "authors": [
-        "rss3://account:0xee8fEeb6D0c2fC02Ef41879514A75d0E791b5061@ethereum"
+        "0xee8fEeb6D0c2fC02Ef41879514A75d0E791b5061@ethereum",
+        "3EE02BC9-C5B3-4209-8750-4ED1EE0F67BB@jike"
     ],
 
     "summary": "已经确保了",
@@ -967,7 +964,7 @@ Post text.
     ],
 
     "metadata": {
-        "platform": "Jike",
+        "network": "Jike",
         "proof": "https://web.okjike.com/originalPost/5ee1b02380d99c00184c15d0"
     }
 }
