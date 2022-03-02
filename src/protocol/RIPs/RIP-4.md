@@ -147,18 +147,18 @@ Condition: `metadata.network` === `Gnosis Mainnet` && `metadata.collection_addre
 
 ```json
 {
-    "identifier": "rss3://account:0xC8b960D09C0078c18Dcbe7eB9AB9d816BcCa8944@evm/note/D52DCF9F-7FF0-400A-9562-66C87DB3A866",
+    "identifier": "rss3://account:0xC8b960D09C0078c18Dcbe7eB9AB9d816BcCa8944@ethereum/note/D52DCF9F-7FF0-400A-9562-66C87DB3A866",
     "date_created": "2022-01-19T02:06:38.000Z",
     "date_updated": "2022-01-19T02:06:38.000Z",
 
     "auto": true,
-    "identifier_instance": "rss3://note:D52DCF9F-7FF0-400A-9562-66C87DB3A866@evm",
+    "identifier_instance": "rss3://note:D52DCF9F-7FF0-400A-9562-66C87DB3A866@ethereum",
 
     "tags": [
         "NFT"
     ],
     "authors": [
-        "rss3://account:0xC8b960D09C0078c18Dcbe7eB9AB9d816BcCa8944@evm"
+        "rss3://account:0xC8b960D09C0078c18Dcbe7eB9AB9d816BcCa8944@ethereum"
     ],
 
     "attachments": [
@@ -221,19 +221,19 @@ Its data stored by <https://api.poap.xyz/token/2444192>
 
 ```json
 {
-    "identifier": "rss3://account:0xC8b960D09C0078c18Dcbe7eB9AB9d816BcCa8944@evm/note/C97402DD-87BB-4054-ADD0-39F2C3CC8B0F",
+    "identifier": "rss3://account:0xC8b960D09C0078c18Dcbe7eB9AB9d816BcCa8944@ethereum/note/C97402DD-87BB-4054-ADD0-39F2C3CC8B0F",
     "date_created": "2021-11-02T03:11:40.000Z",
     "date_updated": "2021-11-02T03:11:40.000Z",
 
     "auto": true,
-    "identifier_instance": "rss3://note:C97402DD-87BB-4054-ADD0-39F2C3CC8B0F@evm",
+    "identifier_instance": "rss3://note:C97402DD-87BB-4054-ADD0-39F2C3CC8B0F@ethereum",
 
     "tags": [
         "NFT",
         "POAP"
     ],
     "authors": [
-        "rss3://account:0xC8b960D09C0078c18Dcbe7eB9AB9d816BcCa8944@evm"
+        "rss3://account:0xC8b960D09C0078c18Dcbe7eB9AB9d816BcCa8944@ethereum"
     ],
 
     "attachments": [
@@ -353,18 +353,18 @@ If the body is too long, then only record part of the body, followed by `...` at
 
 ```json
 {
-    "identifier": "rss3://account:0xee8fEeb6D0c2fC02Ef41879514A75d0E791b5061@evm/note/1B599C2B-4153-4DFC-8909-25AE1D51E801",
+    "identifier": "rss3://account:0xee8fEeb6D0c2fC02Ef41879514A75d0E791b5061@ethereum/note/1B599C2B-4153-4DFC-8909-25AE1D51E801",
     "date_created": "2021-08-10T05:07:22.000Z",
     "date_updated": "2021-08-10T05:07:22.000Z",
 
     "auto": true,
-    "identifier_instance": "rss3://note:1B599C2B-4153-4DFC-8909-25AE1D51E801@evm",
+    "identifier_instance": "rss3://note:1B599C2B-4153-4DFC-8909-25AE1D51E801@ethereum",
 
     "tags": [
         "Mirror Entry"
     ],
     "authors": [
-        "rss3://account:0xee8fEeb6D0c2fC02Ef41879514A75d0E791b5061@evm"
+        "rss3://account:0xee8fEeb6D0c2fC02Ef41879514A75d0E791b5061@ethereum"
     ],
 
     "title": "献出心脏 直到高墙倒塌",
@@ -453,19 +453,19 @@ A special transfer activity for making a donation on Gitcoin.
 
 ```json
 {
-    "identifier": "rss3://account:0xC8b960D09C0078c18Dcbe7eB9AB9d816BcCa8944@evm/note/CEA936A0-9859-4CA7-B5BC-B6D14CBBBCE0",
+    "identifier": "rss3://account:0xC8b960D09C0078c18Dcbe7eB9AB9d816BcCa8944@ethereum/note/CEA936A0-9859-4CA7-B5BC-B6D14CBBBCE0",
     "date_created": "2021-10-14T02:42:51.000Z",
     "date_updated": "2021-10-14T02:42:51.000Z",
 
     "auto": true,
-    "identifier_instance": "rss3://note:CEA936A0-9859-4CA7-B5BC-B6D14CBBBCE0@evm",
+    "identifier_instance": "rss3://note:CEA936A0-9859-4CA7-B5BC-B6D14CBBBCE0@ethereum",
 
     "tags": [
         "Donation",
         "Gitcoin"
     ],
     "authors": [
-        "rss3://account:0xC8b960D09C0078c18Dcbe7eB9AB9d816BcCa8944@evm"
+        "rss3://account:0xC8b960D09C0078c18Dcbe7eB9AB9d816BcCa8944@ethereum"
     ],
 
     "attachments": [
@@ -618,18 +618,18 @@ Tweet text.
 
 ```json
 {
-    "identifier": "rss3://account:0xee8fEeb6D0c2fC02Ef41879514A75d0E791b5061@evm/note/1BB1AF27-0046-4436-BDA1-C505AD2E40E7",
+    "identifier": "rss3://account:0xee8fEeb6D0c2fC02Ef41879514A75d0E791b5061@ethereum/note/1BB1AF27-0046-4436-BDA1-C505AD2E40E7",
     "date_created": "2022-01-20T01:20:08.000Z",
     "date_updated": "2022-01-20T01:20:08.000Z",
 
     "auto": true,
-    "identifier_instance": "rss3://note:1BB1AF27-0046-4436-BDA1-C505AD2E40E7@evm",
+    "identifier_instance": "rss3://note:1BB1AF27-0046-4436-BDA1-C505AD2E40E7@ethereum",
 
     "tags": [
         "Tweet"
     ],
     "authors": [
-        "rss3://account:0xee8fEeb6D0c2fC02Ef41879514A75d0E791b5061@evm"
+        "rss3://account:0xee8fEeb6D0c2fC02Ef41879514A75d0E791b5061@ethereum"
     ],
 
     "summary": "YES!",
@@ -784,18 +784,18 @@ Note text.
 
 ```json
 {
-    "identifier": "rss3://account:0xee8fEeb6D0c2fC02Ef41879514A75d0E791b5061@evm/note/18602E45-F56D-4FB5-A136-238F40893E9C",
+    "identifier": "rss3://account:0xee8fEeb6D0c2fC02Ef41879514A75d0E791b5061@ethereum/note/18602E45-F56D-4FB5-A136-238F40893E9C",
     "date_created": "2022-02-06T11:48:20.482Z",
     "date_updated": "2022-02-06T11:48:20.482Z",
 
     "auto": true,
-    "identifier_instance": "rss3://note:18602E45-F56D-4FB5-A136-238F40893E9C@evm",
+    "identifier_instance": "rss3://note:18602E45-F56D-4FB5-A136-238F40893E9C@ethereum",
 
     "tags": [
         "Misskey Note"
     ],
     "authors": [
-        "rss3://account:0xee8fEeb6D0c2fC02Ef41879514A75d0E791b5061@evm"
+        "rss3://account:0xee8fEeb6D0c2fC02Ef41879514A75d0E791b5061@ethereum"
     ],
 
     "summary": "盲 盒（物理x :nacho_nya:",
@@ -933,18 +933,18 @@ Post text.
 
 ```json
 {
-    "identifier": "rss3://account:0xee8fEeb6D0c2fC02Ef41879514A75d0E791b5061@evm/note/1CBC16D3-98C8-4A86-9778-2B5C7697D663",
+    "identifier": "rss3://account:0xee8fEeb6D0c2fC02Ef41879514A75d0E791b5061@ethereum/note/1CBC16D3-98C8-4A86-9778-2B5C7697D663",
     "date_created": "2022-01-13T06:14:13.064Z",
     "date_updated": "2022-01-13T06:14:13.064Z",
 
     "auto": true,
-    "identifier_instance": "rss3://note:1CBC16D3-98C8-4A86-9778-2B5C7697D663@evm",
+    "identifier_instance": "rss3://note:1CBC16D3-98C8-4A86-9778-2B5C7697D663@ethereum",
 
     "tags": [
         "Jike Post"
     ],
     "authors": [
-        "rss3://account:0xee8fEeb6D0c2fC02Ef41879514A75d0E791b5061@evm"
+        "rss3://account:0xee8fEeb6D0c2fC02Ef41879514A75d0E791b5061@ethereum"
     ],
 
     "summary": "已经确保了",
