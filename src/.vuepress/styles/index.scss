@@ -11,6 +11,10 @@
     --el-color-primary: #0072ff !important;
 }
 
+body {
+    overflow-x: hidden;
+}
+
 .grid {
     display: grid;
     row-gap: 3rem;
