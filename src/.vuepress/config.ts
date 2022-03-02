@@ -51,6 +51,14 @@ module.exports = {
                         link: 'https://rss3.io/#/whitepaper'
                     },
                     {
+                        text: 'Blog',
+                        link: 'https://rss3.notion.site/'
+                    },
+                    {
+                        text: '💌 Join Us',
+                        link: 'https://rss3.notion.site/Open-Source-Remote-RSS3-Offering-the-Dopest-Positions-b6fdbffee017449797397f45340de9d4'
+                    },
+                    {
                         text: 'Learn More',
                         children: [
                             {
@@ -64,14 +72,6 @@ module.exports = {
                             {
                                 text: 'Twitter',
                                 link: 'https://twitter.com/rss3_'
-                            },
-                            {
-                                text: 'Blog',
-                                link: 'https://rss3.notion.site/'
-                            },
-                            {
-                                text: 'Join Us',
-                                link: 'https://rss3.notion.site/Open-Source-Remote-RSS3-Offering-the-Dopest-Positions-Frontend-Full-stack-Decentralized-System--b6fdbffee017449797397f45340de9d4'
                             },
                             {
                                 text: 'Support RSS3',
@@ -95,6 +95,7 @@ module.exports = {
                             collapsible: true,
                             children: [
                                 '/README.md',
+                                '/products.md',
                                 '/faq.md',
                             ],
                         },
