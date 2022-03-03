@@ -108,7 +108,7 @@ module.exports = {
                             sidebarDepth: 5,
                             children: [
                                 '/protocol/README.md',
-                                '/protocol/v0.4.0-rc.md',
+                                '/protocol/v0.4.0-rc.1.md',
                                 {
                                     text: 'RSS3 Improvement Proposals',
                                     children: [
