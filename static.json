@@ -1,3 +1,13 @@
 {
-    "root": "./src/.vuepress/dist"
+    "https_only": true,
+    "root": "./src/.vuepress/dist",
+    "error_page": "404.html",
+    "headers": {
+        "/assets/*": {
+            "Cache-Control": "public, max-age=86400"
+        },
+        "/RSS3-Whitepaper.pdf": {
+            "Cache-Control": "public, max-age=86400"
+        }
+    }
 }
