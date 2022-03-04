@@ -4,7 +4,7 @@ pageClass: home-page
 
 # Introduction
 
-<div style="min-height:400px" id="logo"></div>
+<div id="logo"></div>
 
 > RSS3 is an open information syndication protocol that aims to support efficient and decentralized information distribution in Web3.
 
