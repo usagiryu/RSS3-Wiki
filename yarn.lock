@@ -1107,6 +1107,11 @@ log-symbols@^4.1.0:
     chalk "^4.1.0"
     is-unicode-supported "^0.1.0"
 
+lottie-web@^5.9.0:
+  version "5.9.0"
+  resolved "https://registry.yarnpkg.com/lottie-web/-/lottie-web-5.9.0.tgz#c5472f012fa090a64fecfa4dea6f87d03fb276c2"
+  integrity sha512-IE56lkSGDcsQO2WFQgEwY4T2y1C4dnJWt1ABNvk4f4hsV+D/bwkznXR3PKuAcMPFXkbHyXwRi5R23B85Ak+NOA==
+
 magic-string@^0.25.7:
   version "0.25.7"
   resolved "https://registry.yarnpkg.com/magic-string/-/magic-string-0.25.7.tgz#3f497d6fd34c669c6798dcb821f2ef31f5445051"

@@ -4,9 +4,7 @@ pageClass: home-page
 
 # Introduction
 
-<p align="center">
-    <img class="logo-vido" src="@source/images/logo.gif" />
-</p>
+<div style="min-height:400px" id="logo"></div>
 
 > RSS3 is an open information syndication protocol that aims to support efficient and decentralized information distribution in Web3.
 
@@ -150,3 +148,21 @@ Feel free to submit yours in [Let us know!](https://github.com/NaturalSelectionL
     <span><img alt="the jiho (axie infinity)" src="./images/sponsors/jiho.png"></span>
     <span><img alt="miss bitcoin" src="./images/sponsors/missbitcoin.png"></span>
 </p>
+
+
+<script>
+import lottie from 'lottie-web';
+import DataJson from '@source/images/logo.json';
+
+export default {
+    mounted() {
+        lottie.loadAnimation({
+            container: document.getElementById('logo'), // Required
+            animationData: DataJson, // Required
+            renderer: 'svg', // Required
+            loop: false, // Optional
+            autoplay: true, // Optional
+        });
+    },
+}
+</script>
