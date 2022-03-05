@@ -1,5 +1,6 @@
 ---
 pageClass: home-page
+sidebarDepth: 1
 ---
 
 # Introduction
