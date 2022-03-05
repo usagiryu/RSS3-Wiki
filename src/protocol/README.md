@@ -22,19 +22,19 @@ In the meantime, we will continue to promote its implementation and use in the W
 
 - Participate in the [discussion](https://github.com/NaturalSelectionLabs/RSS3-Protocol/discussions/32)
 
-🔬 Current stable version: RSS3 Protocol v0.3.1 [![RSS3](https://badge.rss3.workers.dev/?version=v0.3.1)](https://github.com/NaturalSelectionLabs/RSS3/blob/main/versions/v0.3.1.md)
+🔬 Current stable version: RSS3 Protocol v0.3.1 [![RSS3](https://badge.rss3.workers.dev/?version=v0.3.1)](./v0.3.1.md)
 
-- [View details](https://github.com/NaturalSelectionLabs/RSS3/blob/main/versions/v0.3.1.md)
+- [View Documents](./v0.3.1.md)
 
 ## Historical drafts
 
 [Changelog](https://github.com/NaturalSelectionLabs/RSS3/blob/main/CHANGELOG.md)
 
-- [![RSS3](https://badge.rss3.workers.dev/?version=v0.3.0)](https://github.com/NaturalSelectionLabs/RSS3/blob/main/versions/v0.3.0.md)
-- [![RSS3](https://badge.rss3.workers.dev/?version=v0.2.0)](https://github.com/NaturalSelectionLabs/RSS3/blob/main/versions/v0.2.0.md)
-- [![RSS3](https://badge.rss3.workers.dev/?version=v0.1.1)](https://github.com/NaturalSelectionLabs/RSS3/blob/main/versions/v0.1.1.md)
-- [![RSS3](https://badge.rss3.workers.dev/?version=v0.1.0)](https://github.com/NaturalSelectionLabs/RSS3/blob/main/versions/v0.1.0.md)
-- [![RSS3](https://badge.rss3.workers.dev/?version=v0.1.0%20alpha.0)](https://github.com/NaturalSelectionLabs/RSS3/blob/main/versions/v0.1.0-alpha.0.md)
+- [![RSS3](https://badge.rss3.workers.dev/?version=v0.3.0)](./v0.3.0.md)
+- [![RSS3](https://badge.rss3.workers.dev/?version=v0.2.0)](./v0.3.0.md)
+- [![RSS3](https://badge.rss3.workers.dev/?version=v0.1.1)](./v0.3.0.md)
+- [![RSS3](https://badge.rss3.workers.dev/?version=v0.1.0)](./v0.3.0.md)
+- [![RSS3](https://badge.rss3.workers.dev/?version=v0.1.0--alpha.0)](./v0.3.0.md)
 
 ## Contributing
 
