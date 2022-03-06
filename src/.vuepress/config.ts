@@ -1,16 +1,11 @@
 const { description } = require('../../package')
 
 module.exports = {
-    locales: {
-        '/': {
-            lang: 'en-US',
-            title: 'RSS3',
-            description: description,
-        },
-    },
+    title: 'RSS3',
+    description: description,
 
     head: [
-        ['meta', { name: 'theme-color', content: '#0072ff' }],
+        ['meta', { name: 'theme-color', content: '#fff' }],
         ['meta', { name: 'apple-mobile-web-app-capable', content: 'yes' }],
         ['meta', { name: 'apple-mobile-web-app-status-bar-style', content: 'black' }],
         ['link', { rel: 'icon', href: 'https://graphics.rss3.workers.dev/' }]
