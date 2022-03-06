@@ -1,6 +1,6 @@
 # Products
 
-Below is a list of products maintained or sponsored by RSS3 itself and their maintenance status.
+Below is a list of products maintained or sponsored by RSS3 foundation.
 
 <Badge type="warning" text="Experimental" vertical="middle" /> <Badge type="tip" text="Stable" vertical="middle" /> <Badge type="danger" text="Deprecated" vertical="middle" />
 
@@ -42,7 +42,7 @@ Below is a list of products maintained or sponsored by RSS3 itself and their mai
 | RSS3 Hub Next | ![RSS3](https://badge.rss3.workers.dev/?version=v0.2.0) | [GitHub (private repo)](https://github.com/NaturalSelectionLabs/RSS3-Hub-Next) | <Badge type="danger" text="Deprecated" vertical="middle" /> |
 | RSS3 Hub | ![RSS3](https://badge.rss3.workers.dev/?version=v0.1.1) ![RSS3](https://badge.rss3.workers.dev/?version=v0.1.0) | [GitHub (private repo)](https://github.com/NaturalSelectionLabs/RSS3-Hub) | <Badge type="danger" text="Deprecated" vertical="middle" /> |
 
-## RSS3 Applications
+## RSS3 First Party Applications
 
 | Product Name | RSS3 Version | Product Link | Maintenance Status |
 | -- | -- | -- | -- |
