@@ -6,7 +6,7 @@
             <h4>RSS3 God</h4>
             <p>A fully decentralized implementation in Go</p>
             <p>Under Planning</p>
-            <img src="./images/architecture.png">
+            <img src="@source/images/architecture.png">
             <p><a target="_blank" href="/RSS3-Whitepaper.pdf">Open in Whitepaper</a></p>
         </el-card>
     </el-timeline-item>
