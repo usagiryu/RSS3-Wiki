@@ -35,126 +35,119 @@ module.exports = {
         themePlugins: {
             activeHeaderLinks: false,
         },
-        locales: {
-            '/': {
-                lang: 'en-US',
-                label: 'English',
-                editLinkText: 'Edit this page on GitHub',
-                navbar: [
+        navbar: [
+            {
+                text: 'Guide',
+                link: '/',
+            },
+            {
+                text: 'Tech Weekly',
+                link: '/tech-weekly/',
+            },
+            {
+                text: 'Whitepaper',
+                link: 'https://rss3.io/RSS3-Whitepaper.pdf'
+            },
+            {
+                text: 'Blog',
+                link: 'https://rss3.notion.site/'
+            },
+            {
+                text: '💌 Join Us',
+                link: 'https://rss3.notion.site/Open-Source-Remote-RSS3-Offering-the-Dopest-Positions-b6fdbffee017449797397f45340de9d4'
+            },
+            {
+                text: 'Learn More',
+                children: [
                     {
-                        text: 'Guide',
-                        link: '/',
+                        text: 'Discord',
+                        link: 'https://discord.gg/rss3'
                     },
                     {
-                        text: 'Tech Weekly',
-                        link: '/tech-weekly/',
+                        text: 'Telegram',
+                        link: 'https://t.me/rss3_en'
                     },
                     {
-                        text: 'Whitepaper',
-                        link: 'https://rss3.io/RSS3-Whitepaper.pdf'
+                        text: 'Twitter',
+                        link: 'https://twitter.com/rss3_'
                     },
                     {
-                        text: 'Blog',
-                        link: 'https://rss3.notion.site/'
+                        text: 'Support RSS3',
+                        link: '/support.md'
                     },
-                    {
-                        text: '💌 Join Us',
-                        link: 'https://rss3.notion.site/Open-Source-Remote-RSS3-Offering-the-Dopest-Positions-b6fdbffee017449797397f45340de9d4'
-                    },
-                    {
-                        text: 'Learn More',
-                        children: [
-                            {
-                                text: 'Discord',
-                                link: 'https://discord.gg/rss3'
-                            },
-                            {
-                                text: 'Telegram',
-                                link: 'https://t.me/rss3_en'
-                            },
-                            {
-                                text: 'Twitter',
-                                link: 'https://twitter.com/rss3_'
-                            },
-                            {
-                                text: 'Support RSS3',
-                                link: '/support.md'
-                            },
-                        ]
-                    },
-                ],
-                sidebar: {
-                    '/tech-weekly/': [
-                        {
-                            text: 'Tech Weekly',
-                            children: [
-                                '/tech-weekly/README.md',
-                            ],
-                        },
+                ]
+            },
+        ],
+        sidebar: {
+            '/tech-weekly/': [
+                {
+                    text: 'Tech Weekly',
+                    children: [
+                        '/tech-weekly/README.md',
                     ],
-                    '/': [
+                },
+            ],
+            '/': [
+                {
+                    text: 'Guide',
+                    collapsible: true,
+                    children: [
+                        '/README.md',
+                        '/products.md',
+                        '/faq.md',
+                    ],
+                },
+                {
+                    text: 'Protocol',
+                    collapsible: true,
+                    sidebarDepth: 5,
+                    children: [
+                        '/protocol/README.md',
+                        '/protocol/v0.4.0-rc.1.md',
                         {
-                            text: 'Guide',
-                            collapsible: true,
+                            text: 'RSS3 Improvement Proposals',
                             children: [
-                                '/README.md',
-                                '/products.md',
-                                '/faq.md',
-                            ],
-                        },
-                        {
-                            text: 'Protocol',
-                            collapsible: true,
-                            sidebarDepth: 5,
-                            children: [
-                                '/protocol/README.md',
-                                '/protocol/v0.4.0-rc.1.md',
-                                {
-                                    text: 'RSS3 Improvement Proposals',
-                                    children: [
-                                        '/protocol/RIPs/RIP-1.md',
-                                        '/protocol/RIPs/RIP-2.md',
-                                        '/protocol/RIPs/RIP-3.md',
-                                        '/protocol/RIPs/RIP-4.md',
-                                        '/protocol/RIPs/RIP-5.md',
-                                    ],
-                                },
-                            ],
-                        },
-                        {
-                            text: 'SDK',
-                            collapsible: true,
-                            children: [
-                                '/sdk-list.md',
-                                '/rss3-sdk-for-javascript.md',
-                            ],
-                        },
-                        {
-                            text: 'Network',
-                            collapsible: true,
-                            children: [
-                                '/network-roadmap.md',
-                                '/network-api.md',
-                                '/network-data.md',
-                            ],
-                        },
-                        {
-                            text: 'Design',
-                            collapsible: true,
-                            children: [
-                                '/design.md',
-                            ],
-                        },
-                        {
-                            text: 'Events',
-                            collapsible: true,
-                            children: [
-                                '/events.md',
+                                '/protocol/RIPs/RIP-1.md',
+                                '/protocol/RIPs/RIP-2.md',
+                                '/protocol/RIPs/RIP-3.md',
+                                '/protocol/RIPs/RIP-4.md',
+                                '/protocol/RIPs/RIP-5.md',
                             ],
                         },
                     ],
                 },
-            },
+                {
+                    text: 'SDK',
+                    collapsible: true,
+                    children: [
+                        '/sdk-list.md',
+                        '/rss3-sdk-for-javascript.md',
+                    ],
+                },
+                {
+                    text: 'Network',
+                    collapsible: true,
+                    children: [
+                        '/network-roadmap.md',
+                        '/network-api.md',
+                        '/network-data.md',
+                    ],
+                },
+                {
+                    text: 'Design',
+                    collapsible: true,
+                    children: [
+                        '/design.md',
+                    ],
+                },
+                {
+                    text: 'Events',
+                    collapsible: true,
+                    children: [
+                        '/events.md',
+                    ],
+                },
+            ],
         },
     },
 }
