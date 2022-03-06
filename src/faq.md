@@ -4,6 +4,10 @@
 
 A: The founders of RSS3 are big fans of RSS, and aspire to the free and open Internet typically represented by RSS in the Web1 era. We made the [RSSHub](https://github.com/DIYgod/RSSHub) project based on the RSS protocol in an effort to integrate RSS with Web2 products, but due to the many limitations of the protocol, the project is like dancing with shackles on its feet. We all know that the design of RSS is no longer able to meet the more complex information aggregation and distribution needs of the current Internet. So we create RSS3, expecting that the spirit of RSS would be passed on in the Web3 era. In order to meet the complex needs of Web2 and Web3, the design and implementation of RSS3 is very different from RSS, and they are no other related except for the design concept.
 
+### Q: Is RSS3 a SocialFi?
+
+No. RSS3 can indeed be used for social, but it is not limited to social, it is an infrastructure for information distribution and can be used for any scenario that requires information distribution, such as NFT marketplace, personal resume, personal blog, posting notifications, etc.
+
 ### Q: What is the relationship between RSS3 and RSS3 Network?
 
 A: RSS3 is also known as RSS3 Protocol, it defines the format of information presence and communication, and the RSS3 Network is a decentralized implementation of the RSS3 Protocol, and provides some additional methods of easily accessing data based on the protocol.
@@ -15,3 +19,7 @@ A: We know storing data on the blockchain is a kind of Web3 political correctnes
 ### Q: What is the relationship between RSS3 and the applications Revery and Cheers?
 
 A: Revery and Cheers are demos and early testbeds for the RSS3 Protocol and RSS3 Network, they will gradually be turned into a normal eco-project to be maintained by the community.
+
+### Q: Does RSS3 support recommendation algorithms?
+
+A:  RSS3 don't reject recommendation algorithms, but they should be transparent and optional. In our scheme, the RSS3 network can be used in conjunction with an external and optional recommendation algorithm. No progress so far but we are constantly working on it.

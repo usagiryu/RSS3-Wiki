@@ -26,6 +26,7 @@ Derived from the best out of RSS, RSS3 is an open information syndication protoc
 Extended Reading:
 - [Here comes RSS3](https://rss3.notion.site/1-Here-comes-RSS3-501aa9df6dba40caae0a53eb2de6f060)
 - [What is the relationship between RSS3 and RSS?](./faq.md#q-what-is-the-relationship-between-rss3-and-rss)
+- [Is RSS3 a SocialFi?](./faq.md#q-is-rss3-a-socialfi)
 
 ## How RSS3 works?
 
@@ -47,6 +48,7 @@ RSS3 and its affiliated network are open and permissionless - If you are using R
 
 Extended Reading:
 - [What is the relationship between RSS3 and RSS3 Network?](./faq.md#q-what-is-the-relationship-between-rss3-and-rss3-network)
+- [Does RSS3 support recommendation algorithms?](./faq.md#q-does-rss3-support-recommendation-algorithms)
 
 ## Community
 
