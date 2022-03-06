@@ -91,6 +91,7 @@ module.exports = {
                 {
                     text: 'Guide',
                     collapsible: true,
+                    link: '/README.md',
                     children: [
                         '/README.md',
                         '/products.md',
@@ -101,6 +102,7 @@ module.exports = {
                     text: 'Protocol',
                     collapsible: true,
                     sidebarDepth: 5,
+                    link: '/protocol/README.md',
                     children: [
                         '/protocol/README.md',
                         '/protocol/v0.4.0-rc.1.md',
@@ -119,34 +121,24 @@ module.exports = {
                 {
                     text: 'SDK',
                     collapsible: true,
+                    link: '/sdk/list.md',
                     children: [
-                        '/sdk-list.md',
-                        '/rss3-sdk-for-javascript.md',
+                        '/sdk/list.md',
+                        '/sdk/rss3-sdk-for-javascript.md',
                     ],
                 },
                 {
                     text: 'Network',
                     collapsible: true,
+                    link: '/network/roadmap.md',
                     children: [
-                        '/network-roadmap.md',
-                        '/network-api.md',
-                        '/network-data.md',
+                        '/network/roadmap.md',
+                        '/network/api.md',
+                        '/network/data.md',
                     ],
                 },
-                {
-                    text: 'Design',
-                    collapsible: true,
-                    children: [
-                        '/design.md',
-                    ],
-                },
-                {
-                    text: 'Events',
-                    collapsible: true,
-                    children: [
-                        '/events.md',
-                    ],
-                },
+                '/design.md',
+                '/events.md',
             ],
         },
     },
