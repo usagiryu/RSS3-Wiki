@@ -6,7 +6,7 @@ sidebarDepth: 2
 
 ## Abstract
 
-RIP-2 is used to describe and qualify indexed assets and notes that can be used for RSS3 items.
+RIP-4 is used to describe and qualify indexed assets and notes that can be used for RSS3 items.
 
 ## Motivation
 

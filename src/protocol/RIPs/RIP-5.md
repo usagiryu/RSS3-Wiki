@@ -2,7 +2,7 @@
 
 ## Abstract
 
-RIP-3 is used to describe and qualify the link types that can be used for RSS3 link.
+RIP-5 is used to describe and qualify the link types that can be used for RSS3 link.
 
 ## Motivation
 
