@@ -2,7 +2,7 @@
 
 Below is a list of products maintained or sponsored by RSS3 foundation.
 
-<Badge type="warning" text="Experimental" vertical="middle" /> <Badge type="tip" text="Stable" vertical="middle" /> <Badge type="danger" text="Deprecated" vertical="middle" />
+<Badge type="warning" text="Experimental: 7" vertical="middle" /> <Badge type="tip" text="Stable: 8" vertical="middle" /> <Badge type="danger" text="Deprecated: 8" vertical="middle" />
 
 ## RSS3 Protocols
 
