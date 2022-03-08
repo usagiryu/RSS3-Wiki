@@ -1,8 +1,9 @@
-# Events
+# 🐝 Events
 
 ## RSS3 Protocol v0.4.0 Adventure
 
 [Phase II](https://github.com/NaturalSelectionLabs/RSS3-Protocol/discussions/32)
+
 [Phase I](https://github.com/NaturalSelectionLabs/RSS3-Protocol/discussions/25)
 
 ## RSS3 Whitepaper

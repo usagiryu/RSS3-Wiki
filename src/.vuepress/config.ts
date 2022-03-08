@@ -84,17 +84,18 @@ module.exports = {
             ],
             '/': [
                 {
-                    text: 'Guide',
+                    text: '👋 Guide',
                     collapsible: true,
                     link: '/README.md',
                     children: [
                         '/README.md',
                         '/products.md',
                         '/faq.md',
+                        '/thanks.md',
                     ],
                 },
                 {
-                    text: 'Protocol',
+                    text: '🕊 Protocol',
                     collapsible: true,
                     sidebarDepth: 5,
                     link: '/protocol/README.md',
@@ -114,7 +115,7 @@ module.exports = {
                     ],
                 },
                 {
-                    text: 'SDK',
+                    text: '🐿 SDK',
                     collapsible: true,
                     link: '/sdk/list.md',
                     children: [
@@ -123,7 +124,7 @@ module.exports = {
                     ],
                 },
                 {
-                    text: 'Network',
+                    text: '🦈 Network',
                     collapsible: true,
                     link: '/network/roadmap.md',
                     children: [
@@ -134,6 +135,7 @@ module.exports = {
                 },
                 '/design.md',
                 '/events.md',
+                '/token.md',
             ],
         },
     },
