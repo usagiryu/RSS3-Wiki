@@ -418,11 +418,11 @@ Sometimes we also want to attach an image or a video to items, we need to upload
 await rss3.items.custom.post({
     summary: 'I love RSS3',
     contents: [{
-        type: 'image/jpeg',
-        address: 'https://picsum.photos/200/300',
+        mime_type: 'image/jpeg',
+        address: ['https://picsum.photos/200/300'],
     }, {
-        type: 'video/mp4',
-        address: 'https://file-examples-com.github.io/uploads/2017/04/file_example_MP4_480_1_5MG.mp4',
+        mime_type: 'video/mp4',
+        address: ['https://file-examples-com.github.io/uploads/2017/04/file_example_MP4_480_1_5MG.mp4'],
     }],
 });
 ```
@@ -586,7 +586,7 @@ profile.patch(profile: RSS3Profile): Promise<RSS3Profile>
 ```ts
 const newProfile = await rss3.profile.patch({
     name: 'RSS3',
-    avatar: 'https://cloudflare-ipfs.com/ipfs/QmZWWSspbyFtWpLZtoAK35AjEYK75woNawqLgKC4DRpqxu',
+    avatar: ['https://cloudflare-ipfs.com/ipfs/QmZWWSspbyFtWpLZtoAK35AjEYK75woNawqLgKC4DRpqxu'],
     bio: 'RSS3 is an open protocol designed for content and social networks in the Web 3.0 era.',
 });
 ```

@@ -6,7 +6,7 @@ A: The founders of RSS3 are big fans of RSS, and aspire to the free and open Int
 
 ### Q: Is RSS3 a SocialFi?
 
-No. RSS3 can indeed be used for social, but it is not limited to social, it is an infrastructure for information distribution and can be used for any scenario that requires information distribution, such as NFT marketplace, personal resume, personal blog, posting notifications, etc.
+A: No. RSS3 can indeed be used for social, but it is not limited to social, it is an infrastructure for information distribution and can be used for any scenario that requires information distribution, such as NFT marketplace, personal resume, personal blog, posting notifications, etc.
 
 ### Q: What is the relationship between RSS3 and RSS3 Network?
 
