@@ -19,6 +19,11 @@ module.exports = {
 
     plugins: [
         '@vuepress/plugin-shiki',
+        ['@vuepress/plugin-docsearch', {
+            apiKey: 'a9bd399b495e1f6a542c545d43329f6d',
+            indexName: 'rss3',
+            appId: '6EJE6R29QB',
+        }],
     ],
 
     themeConfig: {
