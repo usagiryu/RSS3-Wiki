@@ -1,5 +1,5 @@
 ---
-sidebarDepth: 2
+sidebarDepth: 4
 ---
 
 # RIP-4: Registered Indexed Items
@@ -14,8 +14,7 @@ The RSS3 protocol does not restrict what assets and notes can be indexed, which 
 
 ## Dependencies
 
-- [RIP-1: Registered Account Platforms](./RIP-1.md): as `<platform_name>`
-- [RIP-3: Registered Item Networks](./RIP-3.md): as `<network_name>`
+- [RIP-3: Registered Item Networks](./RIP-3.md): as `NetworkName`
 
 ## TypeScript Validation
 
@@ -26,6 +25,7 @@ type Item = {
     date_updated: string;
 
     auto: true;
+    related_urls: string[];
     identifier_instance?: InstanceURI;
 
     tags?: string[];
@@ -54,6 +54,10 @@ type Item = {
 ### NFT Activities
 
 NFT activity, including NFT minting, transferring out, transferring in, and burning.
+
+#### `related_urls`
+
+URL of transaction page of Chain Explorer (defined by [RIP-3: Registered Item Networks](./RIP-3.md)) and NFT page (for example: OpenSea, Etherscan NFT Tracker) if avaiable.
 
 #### `tags`
 
@@ -120,28 +124,57 @@ NFT activity, including NFT minting, transferring out, transferring in, and burn
 }
 ```
 
-#### Special NFTs
-
-Some NFTs contain special tags.
-
-##### POAP
-
-A set of [POAP](https://poap.xyz/) NFTs centrally issued, distributed and stored data by POAP Inc, which needs to be fetched from POAP Inc's centralized servers, but due to its widespread use, we have to support it specifically.
-
-```json
-"tags": [
-    "NFT",
-    "POAP"
-]
-```
-
-Condition: `metadata.network` === `Gnosis Mainnet` && `metadata.collection_address` === `0x22C1f6050E56d2876009903609a2cC3fEf83B415`
-
 #### Examples
 
 ##### Minting of RSS3 Whitepaper #1800
 
-[Chain Explorer](https://etherscan.io/nft/0xb9619cf4f875cdf0e3ce48b28a1c725bc4f6c0fb/1800)
+[Chain Explorer](https://etherscan.io/tx/0x0b97d6caf6ade4cb0ec6f483463371b97d04fb1a74f72bcc411e480572d712af)
+
+[Etherscan NFT Tracker](https://opensea.io/assets/0xb9619cf4f875cdf0e3ce48b28a1c725bc4f6c0fb/1800)
+
+[OpenSea](https://opensea.io/assets/0xb9619cf4f875cdf0e3ce48b28a1c725bc4f6c0fb/1800)
+
+<details>
+    <summary>tokenURI: ipfs://QmTMD6sLA7M4iegKDhbdMPBZ4HLi5fjW27w2J16gqc5Cb7/1800.json</summary>
+
+```json
+{
+    "name": "RSS3 Whitepaper v1.0",
+    "description": "RSS3 Whitepaper v1.0 - Commemorative & Limited Edition",
+    "external_link": "https://rss3.io/RSS3-Whitepaper.pdf",
+    "attributes": [
+        {
+            "trait_type": "Author(s)",
+            "value": "Natural Selection Labs"
+        },
+        {
+            "trait_type": "Edition",
+            "value": "First Edition"
+        },
+        {
+            "trait_type": "Edition Language",
+            "value": "English"
+        },
+        {
+            "trait_type": "File Format",
+            "value": "PDF"
+        },
+        {
+            "trait_type": "No.",
+            "value": 1800
+        },
+        {
+            "trait_type": "Released Data",
+            "value": 1610323200,
+            "display_type": "date"
+        }
+    ],
+    "image": "ipfs://bafybeianto7koyrfwkdjymx7byjrs3hzy7ldipfxc343vra2t7pbd557sy/rss3-whitepaper-no-1800.png",
+    "animation_url": "ipfs://bafybeicij6vw6xcsgwldofnmmh3c3j4w5yiocs6l72yubpbcldxcglkvqe/rss3-whitepaper-no-1800.glb"
+}
+```
+
+</details>
 
 ```json
 {
@@ -150,6 +183,7 @@ Condition: `metadata.network` === `Gnosis Mainnet` && `metadata.collection_addre
     "date_updated": "2022-01-19T02:06:38.000Z",
 
     "auto": true,
+    "related_urls": ["https://etherscan.io/tx/0x0b97d6caf6ade4cb0ec6f483463371b97d04fb1a74f72bcc411e480572d712af", "https://etherscan.io/nft/0xb9619cf4f875cdf0e3ce48b28a1c725bc4f6c0fb/1800", "https://opensea.io/assets/0xb9619cf4f875cdf0e3ce48b28a1c725bc4f6c0fb/1800"],
     "identifier_instance": "rss3://note:0x0b97d6caf6ade4cb0ec6f483463371b97d04fb1a74f72bcc411e480572d712af@ethereum_mainnet",
 
     "tags": [
@@ -211,11 +245,63 @@ Condition: `metadata.network` === `Gnosis Mainnet` && `metadata.collection_addre
 }
 ```
 
+#### Special NFTs: POAP
+
+We think POAP is a good concept, but unfortunately it is not well implemented and still not out of the scope of NFT. We are looking forward to a kind of fungible but non transferable token standard to replace POAP in the future.
+
+A set of [POAP](https://poap.xyz/) NFTs centrally issued, distributed and stored data by POAP Inc, which needs to be fetched from POAP Inc's centralized servers, but due to its widespread use, we have to support it specifically.
+
+`related_urls`
+
+URL of transaction page of Gnosis Chain Explorer (`https://blockscout.com/xdai/mainnet/tx/<transaction_hash>`) and POAP page (`https://app.poap.xyz/r/token/<token_id>`).
+
+`tags`
+
+```json
+"tags": [
+    "NFT",
+    "POAP"
+]
+```
+
+Condition: `metadata.network` === `Gnosis Mainnet` && `metadata.collection_address` === `0x22C1f6050E56d2876009903609a2cC3fEf83B415`
+
 ##### Minting of POAP #2444192
 
 [Chain Explorer](https://blockscout.com/xdai/mainnet/tx/0x51de22ba27f05aee163bf01983107b7ddb130d70e1cf9a0ea544392c80580020)
 
-Its data stored by <https://api.poap.xyz/token/2444192>
+[POAO Token Page](https://app.poap.xyz/r/token/2444192)
+
+<details>
+    <summary>POAP Info: https://api.poap.xyz/token/2444192</summary>
+
+```json
+{
+    "event": {
+        "id": 12526,
+        "fancy_id": "rss3-fully-support-poap-2021",
+        "name": "RSS3 Fully Supports POAP",
+        "event_url": "https://rss3.bio",
+        "image_url": "https://assets.poap.xyz/rss3-fully-support-poap-2021-logo-1635826323177.png",
+        "country": "",
+        "city": "",
+        "description": "This POAP is used to commemorate the RSS3 protocol now fully supports the index of POAPs.",
+        "year": 2021,
+        "start_date": "02-Nov-2021",
+        "end_date": "02-Nov-2021",
+        "expiry_date": "02-Dec-2021"
+    },
+    "tokenId": "2444192",
+    "owner": "0xc8b960d09c0078c18dcbe7eb9ab9d816bcca8944",
+    "layer": "Layer2",
+    "supply": {
+        "total": 185,
+        "order": 5
+    }
+}
+```
+
+</details>
 
 ```json
 {
@@ -224,6 +310,7 @@ Its data stored by <https://api.poap.xyz/token/2444192>
     "date_updated": "2021-11-02T03:11:40.000Z",
 
     "auto": true,
+    "related_urls": ["https://blockscout.com/xdai/mainnet/tx/0x51de22ba27f05aee163bf01983107b7ddb130d70e1cf9a0ea544392c80580020", "https://app.poap.xyz/r/token/2444192"],
     "identifier_instance": "rss3://note:0x51de22ba27f05aee163bf01983107b7ddb130d70e1cf9a0ea544392c80580020@gnosis_mainnet",
 
     "tags": [
@@ -299,6 +386,10 @@ Mirror Entry is a kind of JSON file that uses the Ethereum account, but is store
 
 It is worth noting that Mirror Entries can be modified by a new transaction.
 
+#### `related_urls`
+
+URL of transaction page of Arweave Chain Explorer (`https://viewblock.io/arweave/tx/<transaction_hash>`) and Mirror Entry page (`https://mirror.xyz/entry/<original_digest>`).
+
 #### `title`
 
 Title of the Mirror Entry
@@ -355,6 +446,7 @@ If the body is too long, then only record part of the body, followed by `...` at
     "date_updated": "2021-08-10T05:07:22.000Z",
 
     "auto": true,
+    "related_urls": ["https://viewblock.io/arweave/tx/9s_R8b4UfSMoP1wIJ7UGUC-fMtR68Z9cZQYplA6nj-k", "https://mirror.xyz/0xee8fEeb6D0c2fC02Ef41879514A75d0E791b5061/vfTMz8HQa28GNEMfhZLbbAdYQoaY11khOUyXAzBjnX8"],
     "identifier_instance": "rss3://note:9s_R8b4UfSMoP1wIJ7UGUC-fMtR68Z9cZQYplA6nj-k@arweave_mainnet",
 
     "tags": [
@@ -386,6 +478,10 @@ If the body is too long, then only record part of the body, followed by `...` at
 
 A special transfer activity for making a donation on Gitcoin.
 
+#### `related_urls`
+
+URL of transaction page of Chain Explorer and Gitcoin grant page (`https://gitcoin.co/grants/xxx/xxx`).
+
 #### `tags`
 
 ```json
@@ -414,11 +510,6 @@ A special transfer activity for making a donation on Gitcoin.
         "address": "<logo_address>",
         "mime_type": "<logo_mime_type>",
         "size_in_bytes": <logo_size_in_bytes>
-    },
-    {
-        "type": "gitcoin_url",
-        "content": "<gitcoin_url>",
-        "mime_type": "text/uri-list"
     }
 ]
 ```
@@ -454,6 +545,7 @@ A special transfer activity for making a donation on Gitcoin.
     "date_updated": "2021-10-14T02:42:51.000Z",
 
     "auto": true,
+    "related_urls": ["https://etherscan.io/tx/0xa262c71eb905ff5ab6da66134826c5f6d90af8db7b406f84ef4ac725d574749c", "https://gitcoin.co/grants/2679/rss3-rss-with-human-curation"],
     "identifier_instance": "rss3://note:0xa262c71eb905ff5ab6da66134826c5f6d90af8db7b406f84ef4ac725d574749c@ethereum_mainnet",
 
     "tags": [
@@ -480,11 +572,6 @@ A special transfer activity for making a donation on Gitcoin.
             "address": "https://c.gitcoin.co/grants/546622657b597ce151666ed2e2ecbd92/rss3_square_blue.png",
             "mime_type": "image/png",
             "size_in_bytes": 106964
-        },
-        {
-            "type": "gitcoin_url",
-            "content": "https://gitcoin.co/grants/2679/rss3-rss-with-human-curation",
-            "mime_type": "text/uri-list"
         }
     ],
 
@@ -507,6 +594,10 @@ A special transfer activity for making a donation on Gitcoin.
 [Tweets](https://help.twitter.com/en/using-twitter/types-of-tweets) on [Twitter](https://twitter.com/).
 
 See the [Twitter API Documentation](https://developer.twitter.com/en/docs/twitter-api/v1/tweets/timelines/overview) to learn more about how to get tweets.
+
+#### `related_urls`
+
+URL of Tweet page (`https://twitter.com/<twitter_id>/status/<tweet_id>`).
 
 #### `title`
 
@@ -559,7 +650,7 @@ Tweet text.
 ```ts
 "metadata": {
     "network": "Twitter",
-    "proof": "<tweet_address>"
+    "proof": "<tweet_id>"
 }
 ```
 
@@ -619,6 +710,7 @@ Tweet text.
     "date_updated": "2022-01-20T01:20:08.000Z",
 
     "auto": true,
+    "related_urls": ["https://twitter.com/DIYgod/status/1483972580616949762"],
     "identifier_instance": "rss3://note:https%3A%2F%2Ftwitter.com%2FDIYgod%2Fstatus%2F1483972580616949762@twitter",
 
     "tags": [
@@ -652,7 +744,7 @@ Tweet text.
 
     "metadata": {
         "network": "Twitter",
-        "proof": "https://twitter.com/DIYgod/status/1483972580616949762"
+        "proof": "1483972580616949762"
     }
 }
 ```
@@ -662,6 +754,10 @@ Tweet text.
 [Misskey](https://misskey-hub.net/) [Notes](https://misskey-hub.net/en/docs/features/note.html).
 
 See the [Misskey API Documentation](https://misskey.io/api-doc#operation/users/notes) to learn more about how to get Misskey Notes.
+
+#### `related_urls`
+
+URL of Misskey Note page (`<misskey_host>/notes/<note_id>`).
 
 #### `title`
 
@@ -724,7 +820,7 @@ Note text.
 ```ts
 "metadata": {
     "network": "Misskey",
-    "proof": "<misskey_address>"
+    "proof": "<misskey_note_id>@<misskey_host>"
 }
 ```
 
@@ -786,6 +882,7 @@ Note text.
     "date_updated": "2022-02-06T11:48:20.482Z",
 
     "auto": true,
+    "related_urls": ["https://nya.one/notes/8wern2wyun"],
     "identifier_instance": "rss3://note:https%3A%2F%2Fnya.one%2Fnotes%2F8wern2wyun@misskey",
 
     "tags": [
@@ -819,12 +916,12 @@ Note text.
             "content": "https://file.nya.one/misskey/52cd5198-bb00-4f8e-b023-9063b2c988f2.jpeg",
             "mime_type": "image/jpeg",
             "size_in_bytes": 317909
-        },
+        }
     ],
 
     "metadata": {
         "network": "Misskey",
-        "proof": "https://nya.one/notes/8wern2wyun"
+        "proof": "8wern2wyun@nya.one"
     }
 }
 ```
@@ -832,6 +929,10 @@ Note text.
 ### Jike Posts
 
 [Jike](https://web.okjike.com/) Posts.
+
+#### `related_urls`
+
+URL of Jike Post page (`https://web.okjike.com/originalPost/<posts_id>` or `https://web.okjike.com/repost/<posts_id>`).
 
 #### `title`
 
@@ -884,7 +985,7 @@ Post text.
 ```ts
 "metadata": {
     "network": "Jike",
-    "proof": "<jike_address>"
+    "proof": "<jike_post_id>"
 }
 ```
 
@@ -936,6 +1037,7 @@ Post text.
     "date_updated": "2022-01-13T06:14:13.064Z",
 
     "auto": true,
+    "related_urls": ["https://web.okjike.com/repost/61dfc33558b7cf00109d11a4"],
     "identifier_instance": "rss3://note:https%3A%2F%2Fweb.okjike.com%2ForiginalPost%2F5ee1b02380d99c00184c15d0@jike",
 
     "tags": [
@@ -969,7 +1071,7 @@ Post text.
 
     "metadata": {
         "network": "Jike",
-        "proof": "https://web.okjike.com/originalPost/5ee1b02380d99c00184c15d0"
+        "proof": "61dfc33558b7cf00109d11a4"
     }
 }
 ```
@@ -977,6 +1079,10 @@ Post text.
 ## Indexed Asset Item List
 
 ### NFT
+
+#### `related_urls`
+
+URL of NFT page if avaiable.
 
 #### `title`
 
@@ -1039,10 +1145,6 @@ NFT description.
 }
 ```
 
-#### Special NFTs
-
-See [Indexed Note Item List - Special NFTs](#special-nfts)
-
 #### Examples
 
 ##### Minting of RSS3 Whitepaper #1800
@@ -1056,6 +1158,7 @@ See [Indexed Note Item List - Special NFTs](#special-nfts)
     "date_updated": "2022-01-19T02:06:38.000Z",
 
     "auto": true,
+    "related_urls": ["https://etherscan.io/nft/0xb9619cf4f875cdf0e3ce48b28a1c725bc4f6c0fb/1800", "https://opensea.io/assets/0xb9619cf4f875cdf0e3ce48b28a1c725bc4f6c0fb/1800"],
     "identifier_instance": "rss3://asset:0xb9619cf4f875cdf0e3ce48b28a1c725bc4f6c0fb-1800@ethereum_mainnet",
 
     "tags": [
@@ -1106,6 +1209,10 @@ See [Indexed Note Item List - Special NFTs](#special-nfts)
     }
 }
 ```
+
+#### Special NFTs: POAP
+
+See [NFT Activities - Special NFTs: POAP](#special-nfts-poap)
 
 ### GitHub Achievement
 

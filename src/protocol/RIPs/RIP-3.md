@@ -10,21 +10,21 @@ The RSS3 protocol does not restrict what networks can be used for indexed items,
 
 ## Network List
 
-| Network ID | Network Name | Network Symbol | Network Website |
-| -- | -- | -- | -- |
-| 1 | Ethereum Mainnet | ethereum_mainnet | <https://ethereum.org/> |
-| 2 | Polygon | polygon | <https://polygon.technology/> |
-| 3 | BNB Chain | bnb | <https://www.bnbchain.world/> |
-| 4 | Arbitrum | arbitrum | <https://arbitrum.io/> |
-| 5 | Avalanche | avalanche | <https://www.avax.network/> |
-| 6 | Fantom | fantom | <https://fantom.foundation/> |
-| 7 | Gnosis Mainnet | gnosis | <https://www.xdaichain.com/> |
-| 8 | Solana Mainnet | solana_mainnet | <https://solana.com> |
-| 9 | Flow Mainnet | flow_mainnet | <https://www.onflow.org/> |
-| 10 | Arweave Mainnet | arweave_mainnet | <https://www.arweave.org/> |
-| 11 | RSS | rss | <https://validator.w3.org/feed/docs/rss2.html> |
-| 12 | Twitter | twitter | <https://twitter.com> |
-| 13 | Misskey | misskey | <https://misskey-hub.net/> |
-| 14 | 即刻 | jike | <https://web.okjike.com/> |
-| 15 | PlayStation | playstation | <https://www.playstation.com/> |
-| 16 | GitHub | github | <https://github.com/> |
+| Network ID | Network Name | Network Symbol | Network Website | Chain Explorer |
+| -- | -- | -- | -- | -- |
+| 1 | Ethereum Mainnet | ethereum_mainnet | <https://ethereum.org/> | <https://etherscan.io/> |
+| 2 | Polygon | polygon | <https://polygon.technology/> | <https://polygonscan.com/> |
+| 3 | Binance Smart Chain | bsc | <https://www.bnbchain.world/> | <https://bscscan.com/> |
+| 4 | Arbitrum | arbitrum | <https://arbitrum.io/> | <https://arbiscan.io/> |
+| 5 | Avalanche | avalanche | <https://www.avax.network/> | <https://explorer.avax.network/> |
+| 6 | Fantom | fantom | <https://fantom.foundation/> | <https://explorer.fantom.network/> |
+| 7 | Gnosis | gnosis | <https://www.xdaichain.com/> | <https://blockscout.com/xdai/mainnet/> |
+| 8 | Solana Mainnet | solana_mainnet | <https://solana.com> | <https://solscan.io/> |
+| 9 | Flow Mainnet | flow_mainnet | <https://www.onflow.org/> | <https://flowscan.org/> |
+| 10 | Arweave Mainnet | arweave_mainnet | <https://www.arweave.org/> | <https://viewblock.io/arweave> |
+| 11 | RSS | rss | <https://validator.w3.org/feed/docs/rss2.html> | N/A |
+| 12 | Twitter | twitter | <https://twitter.com> | N/A |
+| 13 | Misskey | misskey | <https://misskey-hub.net/> | N/A |
+| 14 | 即刻 | jike | <https://web.okjike.com/> | N/A |
+| 15 | PlayStation | playstation | <https://www.playstation.com/> | N/A |
+| 16 | GitHub | github | <https://github.com/> | N/A |
