@@ -20,13 +20,12 @@ The RSS3 protocol does not restrict what assets and notes can be indexed, which 
 
 ```ts
 type Item = {
-    identifier: ItemURI;
+    identifier: ItemInstanceURI;
     date_created: string;
     date_updated: string;
 
     auto: true;
     related_urls: string[];
-    identifier_instance?: InstanceURI;
 
     tags?: string[];
     authors: Account[];
@@ -178,13 +177,12 @@ URL of transaction page of Chain Explorer (defined by [RIP-3: Registered Item Ne
 
 ```json
 {
-    "identifier": "rss3://account:0xC8b960D09C0078c18Dcbe7eB9AB9d816BcCa8944@ethereum/note/D52DCF9F-7FF0-400A-9562-66C87DB3A866",
+    "identifier": "rss3://note:0x0b97d6caf6ade4cb0ec6f483463371b97d04fb1a74f72bcc411e480572d712af@ethereum_mainnet",
     "date_created": "2022-01-19T02:06:38.000Z",
     "date_updated": "2022-01-19T02:06:38.000Z",
 
     "auto": true,
     "related_urls": ["https://etherscan.io/tx/0x0b97d6caf6ade4cb0ec6f483463371b97d04fb1a74f72bcc411e480572d712af", "https://etherscan.io/nft/0xb9619cf4f875cdf0e3ce48b28a1c725bc4f6c0fb/1800", "https://opensea.io/assets/0xb9619cf4f875cdf0e3ce48b28a1c725bc4f6c0fb/1800"],
-    "identifier_instance": "rss3://note:0x0b97d6caf6ade4cb0ec6f483463371b97d04fb1a74f72bcc411e480572d712af@ethereum_mainnet",
 
     "tags": [
         "NFT"
@@ -305,13 +303,12 @@ Condition: `metadata.network` === `Gnosis Mainnet` && `metadata.collection_addre
 
 ```json
 {
-    "identifier": "rss3://account:0xC8b960D09C0078c18Dcbe7eB9AB9d816BcCa8944@ethereum/note/C97402DD-87BB-4054-ADD0-39F2C3CC8B0F",
+    "identifier": "rss3://note:0x51de22ba27f05aee163bf01983107b7ddb130d70e1cf9a0ea544392c80580020@gnosis_mainnet",
     "date_created": "2021-11-02T03:11:40.000Z",
     "date_updated": "2021-11-02T03:11:40.000Z",
 
     "auto": true,
     "related_urls": ["https://blockscout.com/xdai/mainnet/tx/0x51de22ba27f05aee163bf01983107b7ddb130d70e1cf9a0ea544392c80580020", "https://app.poap.xyz/r/token/2444192"],
-    "identifier_instance": "rss3://note:0x51de22ba27f05aee163bf01983107b7ddb130d70e1cf9a0ea544392c80580020@gnosis_mainnet",
 
     "tags": [
         "NFT",
@@ -441,13 +438,12 @@ If the body is too long, then only record part of the body, followed by `...` at
 
 ```json
 {
-    "identifier": "rss3://account:0xee8fEeb6D0c2fC02Ef41879514A75d0E791b5061@ethereum/note/1B599C2B-4153-4DFC-8909-25AE1D51E801",
+    "identifier": "rss3://note:9s_R8b4UfSMoP1wIJ7UGUC-fMtR68Z9cZQYplA6nj-k@arweave_mainnet",
     "date_created": "2021-08-10T05:07:22.000Z",
     "date_updated": "2021-08-10T05:07:22.000Z",
 
     "auto": true,
     "related_urls": ["https://viewblock.io/arweave/tx/9s_R8b4UfSMoP1wIJ7UGUC-fMtR68Z9cZQYplA6nj-k", "https://mirror.xyz/0xee8fEeb6D0c2fC02Ef41879514A75d0E791b5061/vfTMz8HQa28GNEMfhZLbbAdYQoaY11khOUyXAzBjnX8"],
-    "identifier_instance": "rss3://note:9s_R8b4UfSMoP1wIJ7UGUC-fMtR68Z9cZQYplA6nj-k@arweave_mainnet",
 
     "tags": [
         "Mirror Entry"
@@ -540,13 +536,12 @@ URL of transaction page of Chain Explorer and Gitcoin grant page (`https://gitco
 
 ```json
 {
-    "identifier": "rss3://account:0xC8b960D09C0078c18Dcbe7eB9AB9d816BcCa8944@ethereum/note/CEA936A0-9859-4CA7-B5BC-B6D14CBBBCE0",
+    "identifier": "rss3://note:0xa262c71eb905ff5ab6da66134826c5f6d90af8db7b406f84ef4ac725d574749c@ethereum_mainnet",
     "date_created": "2021-10-14T02:42:51.000Z",
     "date_updated": "2021-10-14T02:42:51.000Z",
 
     "auto": true,
     "related_urls": ["https://etherscan.io/tx/0xa262c71eb905ff5ab6da66134826c5f6d90af8db7b406f84ef4ac725d574749c", "https://gitcoin.co/grants/2679/rss3-rss-with-human-curation"],
-    "identifier_instance": "rss3://note:0xa262c71eb905ff5ab6da66134826c5f6d90af8db7b406f84ef4ac725d574749c@ethereum_mainnet",
 
     "tags": [
         "Donation",
@@ -705,13 +700,12 @@ Tweet text.
 
 ```json
 {
-    "identifier": "rss3://account:0xee8fEeb6D0c2fC02Ef41879514A75d0E791b5061@ethereum/note/1BB1AF27-0046-4436-BDA1-C505AD2E40E7",
+    "identifier": "rss3://note:1483972580616949762@twitter",
     "date_created": "2022-01-20T01:20:08.000Z",
     "date_updated": "2022-01-20T01:20:08.000Z",
 
     "auto": true,
     "related_urls": ["https://twitter.com/DIYgod/status/1483972580616949762"],
-    "identifier_instance": "rss3://note:https%3A%2F%2Ftwitter.com%2FDIYgod%2Fstatus%2F1483972580616949762@twitter",
 
     "tags": [
         "Tweet"
@@ -820,7 +814,7 @@ Note text.
 ```ts
 "metadata": {
     "network": "Misskey",
-    "proof": "<misskey_note_id>@<misskey_host>"
+    "proof": "<misskey_note_id>-<misskey_host>"
 }
 ```
 
@@ -877,13 +871,12 @@ Note text.
 
 ```json
 {
-    "identifier": "rss3://account:0xee8fEeb6D0c2fC02Ef41879514A75d0E791b5061@ethereum/note/18602E45-F56D-4FB5-A136-238F40893E9C",
+    "identifier": "rss3://note:8wern2wyun-nya.one@misskey",
     "date_created": "2022-02-06T11:48:20.482Z",
     "date_updated": "2022-02-06T11:48:20.482Z",
 
     "auto": true,
     "related_urls": ["https://nya.one/notes/8wern2wyun"],
-    "identifier_instance": "rss3://note:https%3A%2F%2Fnya.one%2Fnotes%2F8wern2wyun@misskey",
 
     "tags": [
         "Misskey Note"
@@ -921,7 +914,7 @@ Note text.
 
     "metadata": {
         "network": "Misskey",
-        "proof": "8wern2wyun@nya.one"
+        "proof": "8wern2wyun-nya.one"
     }
 }
 ```
@@ -1032,13 +1025,12 @@ Post text.
 
 ```json
 {
-    "identifier": "rss3://account:0xee8fEeb6D0c2fC02Ef41879514A75d0E791b5061@ethereum/note/1CBC16D3-98C8-4A86-9778-2B5C7697D663",
+    "identifier": "rss3://note:61dfc33558b7cf00109d11a4@jike",
     "date_created": "2022-01-13T06:14:13.064Z",
     "date_updated": "2022-01-13T06:14:13.064Z",
 
     "auto": true,
     "related_urls": ["https://web.okjike.com/repost/61dfc33558b7cf00109d11a4"],
-    "identifier_instance": "rss3://note:https%3A%2F%2Fweb.okjike.com%2ForiginalPost%2F5ee1b02380d99c00184c15d0@jike",
 
     "tags": [
         "Jike Post"
@@ -1153,13 +1145,12 @@ NFT description.
 
 ```json
 {
-    "identifier": "rss3://account:0xC8b960D09C0078c18Dcbe7eB9AB9d816BcCa8944@ethereum/asset/D52DCF9F-7FF0-400A-9562-66C87DB3A866",
+    "identifier":  "rss3://asset:0xb9619cf4f875cdf0e3ce48b28a1c725bc4f6c0fb-1800@ethereum_mainnet",
     "date_created": "2022-01-19T02:06:38.000Z",
     "date_updated": "2022-01-19T02:06:38.000Z",
 
     "auto": true,
     "related_urls": ["https://etherscan.io/nft/0xb9619cf4f875cdf0e3ce48b28a1c725bc4f6c0fb/1800", "https://opensea.io/assets/0xb9619cf4f875cdf0e3ce48b28a1c725bc4f6c0fb/1800"],
-    "identifier_instance": "rss3://asset:0xb9619cf4f875cdf0e3ce48b28a1c725bc4f6c0fb-1800@ethereum_mainnet",
 
     "tags": [
         "NFT"
