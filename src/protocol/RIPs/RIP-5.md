@@ -22,3 +22,4 @@ The RSS3 protocol does not restrict what link types can be used for links, which
 | -- | -- |
 | comment | It represents this note is a comment on the target. This note is mainly shown at the target's side and may not be displayed in own timeline. In many applications, the number and list of received comments is displayed next to the items by `rss3://<Instance>/list/backlink?type=comment` |
 | forwarding | It represents this note is a repost of the target. This note is mainly displayed in own timeline and may not appear in the target's side. |
+| revision | It represents this note is a modified version of the target note. |

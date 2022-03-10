@@ -27,6 +27,15 @@ type Item = {
     auto: true;
     related_urls: string[];
 
+    links: {
+        identifiers?: {
+            type: LinkType;
+            identifier_custom: CustomLinkListURI;
+            identifier: AggregatedLinkListURI;
+        }[];
+        identifier_back: BacklinkListURI;
+    },
+
     tags?: string[];
     authors: Account[];
     title?: string;
@@ -184,6 +193,10 @@ URL of transaction page of Chain Explorer (defined by [RIP-3: Registered Item Ne
     "auto": true,
     "related_urls": ["https://etherscan.io/tx/0x0b97d6caf6ade4cb0ec6f483463371b97d04fb1a74f72bcc411e480572d712af", "https://etherscan.io/nft/0xb9619cf4f875cdf0e3ce48b28a1c725bc4f6c0fb/1800", "https://opensea.io/assets/0xb9619cf4f875cdf0e3ce48b28a1c725bc4f6c0fb/1800"],
 
+    "links": {
+        "identifier_back": "rss3://note:0x0b97d6caf6ade4cb0ec6f483463371b97d04fb1a74f72bcc411e480572d712af@ethereum/list/backlink"
+    },
+
     "tags": [
         "NFT"
     ],
@@ -310,6 +323,10 @@ Condition: `metadata.network` === `Gnosis Mainnet` && `metadata.collection_addre
     "auto": true,
     "related_urls": ["https://blockscout.com/xdai/mainnet/tx/0x51de22ba27f05aee163bf01983107b7ddb130d70e1cf9a0ea544392c80580020", "https://app.poap.xyz/r/token/2444192"],
 
+    "links": {
+        "identifier_back": "rss3://note:0x51de22ba27f05aee163bf01983107b7ddb130d70e1cf9a0ea544392c80580020@gnosis/list/backlink"
+    },
+
     "tags": [
         "NFT",
         "POAP"
@@ -387,6 +404,10 @@ It is worth noting that Mirror Entries can be modified by a new transaction.
 
 URL of transaction page of Arweave Chain Explorer (`https://viewblock.io/arweave/tx/<transaction_hash>`) and Mirror Entry page (`https://mirror.xyz/entry/<original_digest>`).
 
+#### `links.identifiers[0]`
+
+Mirror Entries can be modified by posting an Entry with the same digest attribute, here the Entry before and after the change is treated as two notes, and the latter note contains a `link.identifiers[0]` with `"type": "revision"`, pointing to the previous note.
+
 #### `title`
 
 Title of the Mirror Entry
@@ -444,6 +465,15 @@ If the body is too long, then only record part of the body, followed by `...` at
 
     "auto": true,
     "related_urls": ["https://viewblock.io/arweave/tx/9s_R8b4UfSMoP1wIJ7UGUC-fMtR68Z9cZQYplA6nj-k", "https://mirror.xyz/0xee8fEeb6D0c2fC02Ef41879514A75d0E791b5061/vfTMz8HQa28GNEMfhZLbbAdYQoaY11khOUyXAzBjnX8"],
+
+    "links": {
+        "identifiers": [{
+            "type": "revision",
+            "identifier_custom": "rss3://note:9s_R8b4UfSMoP1wIJ7UGUC-fMtR68Z9cZQYplA6nj-k@arweave/list/link/revision/0",
+            "identifier": "rss3://note:9s_R8b4UfSMoP1wIJ7UGUC-fMtR68Z9cZQYplA6nj-k@arweave/list/link/revision",
+        }],
+        "identifier_back": "rss3://note:9s_R8b4UfSMoP1wIJ7UGUC-fMtR68Z9cZQYplA6nj-k@arweave/list/backlink"
+    },
 
     "tags": [
         "Mirror Entry"
@@ -542,6 +572,10 @@ URL of transaction page of Chain Explorer and Gitcoin grant page (`https://gitco
 
     "auto": true,
     "related_urls": ["https://etherscan.io/tx/0xa262c71eb905ff5ab6da66134826c5f6d90af8db7b406f84ef4ac725d574749c", "https://gitcoin.co/grants/2679/rss3-rss-with-human-curation"],
+
+    "links": {
+        "identifier_back": "rss3://note:0xa262c71eb905ff5ab6da66134826c5f6d90af8db7b406f84ef4ac725d574749c@ethereum/list/backlink"
+    },
 
     "tags": [
         "Donation",
@@ -706,6 +740,10 @@ Tweet text.
 
     "auto": true,
     "related_urls": ["https://twitter.com/DIYgod/status/1483972580616949762"],
+
+    "links": {
+        "identifier_back": "rss3://note:1483972580616949762@twitter/list/backlink"
+    },
 
     "tags": [
         "Tweet"
@@ -878,6 +916,10 @@ Note text.
     "auto": true,
     "related_urls": ["https://nya.one/notes/8wern2wyun"],
 
+    "links": {
+        "identifier_back": "rss3://note:8wern2wyun-nya.one@misskey/list/backlink"
+    },
+
     "tags": [
         "Misskey Note"
     ],
@@ -1032,6 +1074,10 @@ Post text.
     "auto": true,
     "related_urls": ["https://web.okjike.com/repost/61dfc33558b7cf00109d11a4"],
 
+    "links": {
+        "identifier_back": "rss3://note:61dfc33558b7cf00109d11a4@jike/list/backlink"
+    },
+
     "tags": [
         "Jike Post"
     ],
@@ -1151,6 +1197,10 @@ NFT description.
 
     "auto": true,
     "related_urls": ["https://etherscan.io/nft/0xb9619cf4f875cdf0e3ce48b28a1c725bc4f6c0fb/1800", "https://opensea.io/assets/0xb9619cf4f875cdf0e3ce48b28a1c725bc4f6c0fb/1800"],
+
+    "links": {
+        "identifier_back": "rss3://asset:0xb9619cf4f875cdf0e3ce48b28a1c725bc4f6c0fb-1800@ethereum/list/backlink"
+    },
 
     "tags": [
         "NFT"
