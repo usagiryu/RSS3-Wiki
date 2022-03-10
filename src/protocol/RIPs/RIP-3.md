@@ -12,6 +12,7 @@ The RSS3 protocol does not restrict what networks can be used for indexed items,
 
 | Network ID | Network Name | Network Symbol | Network Website | Chain Explorer |
 | -- | -- | -- | -- | -- |
+| 0 | RSS3 | rss3 | <https://rss3.io/> | To be completed |
 | 1 | Ethereum Mainnet | ethereum_mainnet | <https://ethereum.org/> | <https://etherscan.io/> |
 | 2 | Polygon | polygon | <https://polygon.technology/> | <https://polygonscan.com/> |
 | 3 | Binance Smart Chain | bsc | <https://www.bnbchain.world/> | <https://bscscan.com/> |
