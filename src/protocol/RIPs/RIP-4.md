@@ -416,7 +416,7 @@ Title of the Mirror Entry
 
 Part or all of the Mirror Entry body.
 
-If the body is too long, then only record part of the body, followed by `...` at the end, the length is the maximum summary length set by the implementation program.
+If the body is too long, then only record part of the body, followed by `...` at the end, the length is the maximum summary length set by the RSS3 Network.
 
 #### `tags`
 
