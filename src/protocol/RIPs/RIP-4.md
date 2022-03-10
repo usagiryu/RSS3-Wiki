@@ -177,7 +177,7 @@ URL of transaction page of Chain Explorer (defined by [RIP-3: Registered Item Ne
 
 ```json
 {
-    "identifier": "rss3://note:0x0b97d6caf6ade4cb0ec6f483463371b97d04fb1a74f72bcc411e480572d712af@ethereum_mainnet",
+    "identifier": "rss3://note:0x0b97d6caf6ade4cb0ec6f483463371b97d04fb1a74f72bcc411e480572d712af@ethereum",
     "date_created": "2022-01-19T02:06:38.000Z",
     "date_updated": "2022-01-19T02:06:38.000Z",
 
@@ -303,7 +303,7 @@ Condition: `metadata.network` === `Gnosis Mainnet` && `metadata.collection_addre
 
 ```json
 {
-    "identifier": "rss3://note:0x51de22ba27f05aee163bf01983107b7ddb130d70e1cf9a0ea544392c80580020@gnosis_mainnet",
+    "identifier": "rss3://note:0x51de22ba27f05aee163bf01983107b7ddb130d70e1cf9a0ea544392c80580020@gnosis",
     "date_created": "2021-11-02T03:11:40.000Z",
     "date_updated": "2021-11-02T03:11:40.000Z",
 
@@ -438,7 +438,7 @@ If the body is too long, then only record part of the body, followed by `...` at
 
 ```json
 {
-    "identifier": "rss3://note:9s_R8b4UfSMoP1wIJ7UGUC-fMtR68Z9cZQYplA6nj-k@arweave_mainnet",
+    "identifier": "rss3://note:9s_R8b4UfSMoP1wIJ7UGUC-fMtR68Z9cZQYplA6nj-k@arweave",
     "date_created": "2021-08-10T05:07:22.000Z",
     "date_updated": "2021-08-10T05:07:22.000Z",
 
@@ -536,7 +536,7 @@ URL of transaction page of Chain Explorer and Gitcoin grant page (`https://gitco
 
 ```json
 {
-    "identifier": "rss3://note:0xa262c71eb905ff5ab6da66134826c5f6d90af8db7b406f84ef4ac725d574749c@ethereum_mainnet",
+    "identifier": "rss3://note:0xa262c71eb905ff5ab6da66134826c5f6d90af8db7b406f84ef4ac725d574749c@ethereum",
     "date_created": "2021-10-14T02:42:51.000Z",
     "date_updated": "2021-10-14T02:42:51.000Z",
 
@@ -1145,7 +1145,7 @@ NFT description.
 
 ```json
 {
-    "identifier":  "rss3://asset:0xb9619cf4f875cdf0e3ce48b28a1c725bc4f6c0fb-1800@ethereum_mainnet",
+    "identifier":  "rss3://asset:0xb9619cf4f875cdf0e3ce48b28a1c725bc4f6c0fb-1800@ethereum",
     "date_created": "2022-01-19T02:06:38.000Z",
     "date_updated": "2022-01-19T02:06:38.000Z",
 
