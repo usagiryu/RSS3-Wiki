@@ -24,6 +24,9 @@ module.exports = {
             indexName: 'rss3',
             appId: '6EJE6R29QB',
         }],
+        ['@vuepress/plugin-google-analytics', {
+            id: 'G-8BSS4K59LF',
+        }],
     ],
 
     themeConfig: {
