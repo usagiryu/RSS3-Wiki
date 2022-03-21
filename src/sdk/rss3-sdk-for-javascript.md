@@ -600,7 +600,7 @@ const newProfile = await rss3.profile.patch({
 <CodeGroupItem title="types" active>
 
 ```ts
-profile.get(personas: string[]): Promise<(RSS3Profile & { persona: string })[]>
+profile.getList(personas: string[]): Promise<(RSS3Profile & { persona: string })[]>
 ```
 
 </CodeGroupItem>
