@@ -119,3 +119,46 @@ body {
         }
     }
 }
+
+.protocol-page {
+    h1, h2 {
+        color: #003c86;
+
+        code {
+            color: #003c86;
+        }
+    }
+
+    h3 {
+        color: #004eaf;
+
+        code {
+            color: #004eaf;
+        }
+    }
+
+    h4 {
+        color: #0072ff;
+
+        code {
+            color: #0072ff;
+        }
+    }
+
+    h5 {
+        color: #338dff;
+
+        code {
+            color: #338dff;
+        }
+    }
+
+    h6 {
+        color: #5ba5ff;
+        font-size: 0.9rem;
+
+        code {
+            color: #5ba5ff;
+        }
+    }
+}
