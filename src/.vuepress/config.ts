@@ -1,5 +1,10 @@
 const { description } = require('../../package')
 
+// https://github.com/vuepress/vuepress-next/blob/98b7a57856c7b81a82291642e3cf7218699f3523/packages/%40vuepress/markdown/src/utils/slugify.ts
+const rControl = /[\u0000-\u001f]/g
+const rSpecial = /[\s~`!@#$%^&*()\-_+=[\]{}|\\;:"'“”‘’<>,.?/]+/g
+const rCombining = /[\u0300-\u036F]/g
+
 module.exports = {
     title: 'RSS3',
     description: description,
@@ -15,6 +20,24 @@ module.exports = {
         extractHeaders: {
             level: [1, 2, 3, 4, 5],
         },
+        anchor: {
+            slugify: (str) => str
+                .normalize('NFKD')
+                // Remove accents
+                .replace(rCombining, '')
+                // Remove control characters
+                .replace(rControl, '')
+                // Replace special characters
+                .replace(rSpecial, '-')
+                // Remove continuos separators
+                .replace(/-{2,}/g, '-')
+                // Remove prefixing and trailing separators
+                .replace(/^-+|-+$/g, '')
+                // ensure it doesn't start with a number (#121)
+                // .replace(/^(\d)/, '_$1')
+                // lowercase
+                .toLowerCase()
+        }
     },
 
     plugins: [
