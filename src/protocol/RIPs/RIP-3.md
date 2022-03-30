@@ -1,18 +1,18 @@
-# RIP-3: Registered Item Networks
+# RIP-3: Registered Networks
 
 ## Abstract
 
-RIP-3 is used to describe and qualify the networks that can be used for RSS3 indexed items.
+RIP-3 is used to describe and qualify the networks that can be used for RSS3 profiles links items.
 
 ## Motivation
 
-The RSS3 protocol does not restrict what networks can be used for indexed items, which creates uncertainty in implementation and use.
+The RSS3 protocol does not restrict what networks can be used for profiles links items, which creates uncertainty in implementation and use.
 
 ## Network List
 
 | Network ID | Network Name | Network Symbol | Network Website | Chain Explorer |
 | -- | -- | -- | -- | -- |
-| 0 | RSS3 | rss3 | <https://rss3.io/> | To be completed |
+| 0 | Crossbell | crossbell | TODO | TODO |
 | 1 | Ethereum | ethereum | <https://ethereum.org/> | <https://etherscan.io/> |
 | 2 | Polygon | polygon | <https://polygon.technology/> | <https://polygonscan.com/> |
 | 3 | Binance Smart Chain | bsc | <https://www.bnbchain.world/> | <https://bscscan.com/> |
@@ -26,6 +26,6 @@ The RSS3 protocol does not restrict what networks can be used for indexed items,
 | 11 | RSS | rss | <https://validator.w3.org/feed/docs/rss2.html> | N/A |
 | 12 | Twitter | twitter | <https://twitter.com> | N/A |
 | 13 | Misskey | misskey | <https://misskey-hub.net/> | N/A |
-| 14 | 即刻 | jike | <https://web.okjike.com/> | N/A |
+| 14 | Jike | jike | <https://web.okjike.com/> | N/A |
 | 15 | PlayStation | playstation | <https://www.playstation.com/> | N/A |
 | 16 | GitHub | github | <https://github.com/> | N/A |

@@ -1,25 +1,88 @@
-# RIP-5: Registered Link Types
+# RIP-5: Registered Profile Sources
 
 ## Abstract
 
-RIP-5 is used to describe and qualify the link types that can be used for RSS3 link.
+RIP-5 is used to describe and qualify the profile sources that can be indexed by RSS3.
 
 ## Motivation
 
-The RSS3 protocol does not restrict what link types can be used for links, which creates uncertainty in implementation and use.
+The RSS3 protocol does not restrict what source can be used for profile, which creates uncertainty in implementation and use.
 
-## For Account Instances
+## Source List
 
-| Link Type | Description |
-| -- | -- |
-| following | It represents subscribing to target's notes as a follower. These notes should appear in the follower's timeline by `rss3://<Instance>/list/note?link_type=following` |
-| like | It represents the like for the target. In many applications, the number of received likes is displayed next to the items by the value of `total` returned by `rss3://<Instance>/list/backlink?type=following&limit=0` |
-| collection | It represents bookmarking the target. In some applications, user bookmarks are displayed by `rss3://<Instance>/list/link/collection` |
+| Source ID | Source Name | Source Website | Used Account Platform |
+| -- | -- | -- | -- |
+| 0 | Crossbell | TODO | Ethereum |
+| 1 | ENS | <https://ethereum.org/> | Ethereum |
+| 2 | Lens | <https://lens.dev/> | Ethereum |
 
-## For Notes
+## Responses
 
-| Link Type | Description |
-| -- | -- |
-| comment | It represents this note is a comment on the target. This note is mainly shown at the target's side and may not be displayed in own timeline. In many applications, the number and list of received comments is displayed next to the items by `rss3://<Instance>/list/backlink?type=comment` |
-| forwarding | It represents this note is a repost of the target. This note is mainly displayed in own timeline and may not appear in the target's side. |
-| revision | It represents this note is a modified version of the target note. |
+```ts
+type Profile = {
+    date_created: string;
+    date_updated: string;
+
+    name?: string;
+    avatars?: URI[];
+    bio?: string;
+    attachments?: {
+        type?: string;
+        content?: string;
+        address?: URI;
+        mime_type: string;
+        size_in_bytes?: number;
+    }[];
+
+    connected_accounts?: AccountInstanceURI[];
+
+    source: ProfileSource;
+
+    metadata?: {
+        network: NetworkName;
+        proof: string;
+
+        [key: string]: any;
+    };
+}
+```
+
+### Crossbell
+
+TODO
+
+### ENS
+
+diygod.eth
+
+[ENS Page](https://app.ens.domains/name/diygod.eth/details)
+
+```json
+{
+    "date_created": "2021-11-16T05:54:430Z",
+    "date_updated": "2021-11-16T05:54:430Z",
+    "name": "diygod.eth",
+    "avatars": [
+        "ipfs://QmT1zZNHvXxdTzHesfEdvFjMPvw536Ltbup7B4ijGVib7t"
+    ],
+
+    "attachments": [
+        {
+            "type": "date_expiration",
+            "content": "2031-11-16T16:06:43.000Z",
+            "mime_type": "text/plain",
+        }
+    ],
+
+    "source": "ENS",
+
+    "metadata": {
+        "network": "Ethereum",
+        "proof": "0x57f1887a8bf19b14fc0df6fd9b2acc9af147ea85-38772411775600185392141164298857056901123186294823286690051165662418535698832",
+    },
+}
+```
+
+### Lens
+
+TODO

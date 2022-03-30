@@ -212,7 +212,7 @@ Feel free to submit yours in [Let us know!](https://github.com/NaturalSelectionL
     </span>
 </div>
 
-### RSS3 Supported Networks
+### RSS3 Supported Sources
 
 #### Profiles
 
