@@ -22,7 +22,7 @@ The RSS3 protocol does not restrict what networks can be used for profiles links
 | 7 | Gnosis | gnosis | <https://www.xdaichain.com/> | <https://blockscout.com/xdai/mainnet/> |
 | 8 | Solana | solana | <https://solana.com> | <https://solscan.io/> |
 | 9 | Flow | flow | <https://www.onflow.org/> | <https://flowscan.org/> |
-| 10 | Arweave | arweave | <https://www.arweave.org/> | <https://viewblock.io/arweave> |
+| 10 | Arweave | arweave | <https://www.arweave.org/> | <https://arweave.net/> |
 | 11 | RSS | rss | <https://validator.w3.org/feed/docs/rss2.html> | N/A |
 | 12 | Twitter | twitter | <https://twitter.com> | N/A |
 | 13 | Misskey | misskey | <https://misskey-hub.net/> | N/A |

@@ -414,7 +414,7 @@ It is worth noting that Mirror Entries can be modified by a new transaction.
 
 #### `related_urls`
 
-URL of transaction page of Arweave Chain Explorer (`https://viewblock.io/arweave/tx/<transaction_hash>`) and Mirror Entry page (`https://mirror.xyz/entry/<original_digest>`).
+URL of transaction page of Arweave Chain Explorer (`https://arweave.net/<transaction_hash>`) and Mirror Entry page (`https://mirror.xyz/entry/<original_digest>`).
 
 #### `links`
 
@@ -457,7 +457,7 @@ If the body is too long, then only record part of the body, followed by `...` at
 
 [Mirror Address](https://mirror.xyz/0xee8fEeb6D0c2fC02Ef41879514A75d0E791b5061/vfTMz8HQa28GNEMfhZLbbAdYQoaY11khOUyXAzBjnX8)
 
-[Arware Transaction](https://viewblock.io/arweave/tx/9s_R8b4UfSMoP1wIJ7UGUC-fMtR68Z9cZQYplA6nj-k)
+[Arware Transaction](https://arweave.net/9s_R8b4UfSMoP1wIJ7UGUC-fMtR68Z9cZQYplA6nj-k)
 
 [Arware Link](https://63chy34fd5emud6xaie62qmubhzs2r5pdh24mudctfaou6he.arweave.net/9s_R8b4UfSMoP1wIJ7UGUC-fMtR68Z9cZQYplA6nj-k)
 
@@ -468,7 +468,7 @@ If the body is too long, then only record part of the body, followed by `...` at
     "date_updated": "2021-08-10T05:07:22.000Z",
 
     "related_urls": [
-        "https://viewblock.io/arweave/tx/9s_R8b4UfSMoP1wIJ7UGUC-fMtR68Z9cZQYplA6nj-k",
+        "https://arweave.net/9s_R8b4UfSMoP1wIJ7UGUC-fMtR68Z9cZQYplA6nj-k",
         "https://mirror.xyz/0xee8fEeb6D0c2fC02Ef41879514A75d0E791b5061/vfTMz8HQa28GNEMfhZLbbAdYQoaY11khOUyXAzBjnX8"
     ],
 
