@@ -6,11 +6,11 @@ sidebarDepth: 2
 
 ## Abstract
 
-RIP-7 is used to describe and qualify the asset sources that can be indexed by RSS3.
+RIP-7 is used to describe and qualify the asset sources that can be indexed by RSS4.
 
 ## Motivation
 
-The RSS3 protocol does not restrict what source can be used for asset, which creates uncertainty in implementation and use.
+The RSS4 protocol does not restrict what source can be used for asset, which creates uncertainty in implementation and use.
 
 ## Source List
 
@@ -132,7 +132,7 @@ NFT description.
 
 #### Examples
 
-RSS3 Whitepaper #1800
+RSS4 Whitepaper #1800
 
 [Chain Explorer](https://etherscan.io/nft/0xb9619cf4f875cdf0e3ce48b28a1c725bc4f6c0fb/1800)
 
@@ -157,8 +157,8 @@ RSS3 Whitepaper #1800
         "rss3://account:0xC8b960D09C0078c18Dcbe7eB9AB9d816BcCa8944@ethereum"
     ],
 
-    "title": "RSS3 Whitepaper v1.0",
-    "summary": "RSS3 Whitepaper v1.0 - Commemorative & Limited Edition",
+    "title": "RSS4 Whitepaper v1.0",
+    "summary": "RSS4 Whitepaper v1.0 - Commemorative & Limited Edition",
 
     "attachments": [
         {
@@ -180,7 +180,7 @@ RSS3 Whitepaper #1800
         },
         {
             "type": "external_url",
-            "content": "https://rss3.io/RSS3-Whitepaper.pdf",
+            "content": "https://rss3.io/RSS4-Whitepaper.pdf",
             "mime_type": "text/uri-list"
         }
     ],
@@ -196,7 +196,7 @@ RSS3 Whitepaper #1800
         "token_symbol": "RWP",
 
         "collection_address": "0xb9619cf4f875cdf0e3ce48b28a1c725bc4f6c0fb",
-        "collection_name": "RSS3 Whitepaper"
+        "collection_name": "RSS4 Whitepaper"
     }
 }
 ```

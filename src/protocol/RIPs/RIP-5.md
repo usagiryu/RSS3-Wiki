@@ -2,11 +2,11 @@
 
 ## Abstract
 
-RIP-5 is used to describe and qualify the profile sources that can be indexed by RSS3.
+RIP-5 is used to describe and qualify the profile sources that can be indexed by RSS4.
 
 ## Motivation
 
-The RSS3 protocol does not restrict what source can be used for profile, which creates uncertainty in implementation and use.
+The RSS4 protocol does not restrict what source can be used for profile, which creates uncertainty in implementation and use.
 
 ## Source List
 

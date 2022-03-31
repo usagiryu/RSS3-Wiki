@@ -1,12 +1,12 @@
 # 🐝 Events
 
-## RSS3 Protocol v0.4.0 Adventure
+## RSS4 Protocol v0.4.0 Adventure
 
-[Phase II](https://github.com/NaturalSelectionLabs/RSS3-Protocol/discussions/32)
+[Phase II](https://github.com/NaturalSelectionLabs/RSS4-Protocol/discussions/32)
 
-[Phase I](https://github.com/NaturalSelectionLabs/RSS3-Protocol/discussions/25)
+[Phase I](https://github.com/NaturalSelectionLabs/RSS4-Protocol/discussions/25)
 
-## RSS3 Whitepaper
+## RSS4 Whitepaper
 
 ![](./images/events/whitepaper.jpeg)
 
@@ -18,7 +18,7 @@
 
 [Etherscan](https://etherscan.io/address/0xb9619cf4f875cdf0e3ce48b28a1c725bc4f6c0fb)
 
-## RSS3 X JIKE
+## RSS4 X JIKE
 
 ![](./images/events/jike.jpeg)
 
@@ -42,7 +42,7 @@
 
 [Etherscan](https://etherscan.io/address/0xc8f7e62532b19a3ffce589c0047d29d492e03835)
 
-## Mask Network X RSS3
+## Mask Network X RSS4
 
 ![](./images/events/mask.jpeg)
 
@@ -52,7 +52,7 @@
 
 [Polygonscan](https://polygonscan.com/address/0x4dfd080ae7c48c7e2f6b660304c58789caccef1c)
 
-## RSS3 - Part of the Family
+## RSS4 - Part of the Family
 
 ![](./images/events/family.jpeg)
 
@@ -62,7 +62,7 @@
 
 [Polygonscan](https://polygonscan.com/address/0x621032a220eb66a2e69ccf064033348718fdc90e)
 
-## RSS3 Fully Supports POAP
+## RSS4 Fully Supports POAP
 
 ![](./images/events/poap.png)
 
@@ -86,7 +86,7 @@
 
 [Website](https://rft.rss3.io/)
 
-[Blog](https://rss3.notion.site/6-RSS3-Fruit-Token-901ab03737e2452f999f31a5976be821)
+[Blog](https://rss3.notion.site/6-RSS4-Fruit-Token-901ab03737e2452f999f31a5976be821)
 
 [OpenSea](https://opensea.io/collection/rss-fruits-token)
 

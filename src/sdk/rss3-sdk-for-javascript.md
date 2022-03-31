@@ -1,16 +1,16 @@
-# RSS3 SDK for JavaScript
+# RSS4 SDK for JavaScript
 
 ## Introduction
 
-[Source code](https://github.com/NaturalSelectionLabs/RSS3-SDK-for-JavaScript)
+[Source code](https://github.com/NaturalSelectionLabs/RSS4-SDK-for-JavaScript)
 
-This is an RSS3 SDK for JavaScript that is kept up-to-date with the RSS3 Protocol and provides easy access to the main modules, as well as automatic signature handlings.
+This is an RSS4 SDK for JavaScript that is kept up-to-date with the RSS4 Protocol and provides easy access to the main modules, as well as automatic signature handlings.
 
 The SDK is compatible with Node.js environments and major modern browsers, and has good support for TypeScript.
 
-[![RSS3](https://badge.rss3.workers.dev/?version=v0.3.1)](https://github.com/NaturalSelectionLabs/RSS3/blob/main/versions/v0.3.1.md)
-[![test](https://github.com/NaturalSelectionLabs/RSS3-SDK-for-JavaScript/actions/workflows/test.yml/badge.svg)](https://github.com/NaturalSelectionLabs/RSS3-SDK-for-JavaScript/actions/workflows/test.yml)
-[![codecov](https://codecov.io/gh/NaturalSelectionLabs/RSS3-SDK-for-JavaScript/branch/develop/graph/badge.svg?token=361AKFS8AH)](https://codecov.io/gh/NaturalSelectionLabs/RSS3-SDK-for-JavaScript)
+[![RSS4](https://badge.rss3.workers.dev/?version=v0.3.1)](https://github.com/NaturalSelectionLabs/RSS4/blob/main/versions/v0.3.1.md)
+[![test](https://github.com/NaturalSelectionLabs/RSS4-SDK-for-JavaScript/actions/workflows/test.yml/badge.svg)](https://github.com/NaturalSelectionLabs/RSS4-SDK-for-JavaScript/actions/workflows/test.yml)
+[![codecov](https://codecov.io/gh/NaturalSelectionLabs/RSS4-SDK-for-JavaScript/branch/develop/graph/badge.svg?token=361AKFS8AH)](https://codecov.io/gh/NaturalSelectionLabs/RSS4-SDK-for-JavaScript)
 
 ## Install
 
@@ -39,7 +39,7 @@ npm install rss3 --save
 Then reference `rss3` in our project.
 
 ```js
-import RSS3, { utils as RSS3Utils } from 'rss3';
+import RSS4, { utils as RSS4Utils } from 'rss3';
 ```
 
 ## Getting Started
@@ -57,7 +57,7 @@ There are 4 ways to initialize the SDK:
 
 ```ts
 interface IOptions {
-    endpoint: string; // The RSS3 Network endpoint
+    endpoint: string; // The RSS4 Network endpoint
     agentSign?: boolean;
     agentStorage?: {
         set: (key: string, value: string) => Promise<void>;
@@ -79,15 +79,15 @@ export interface IOptionsSign extends IOptions {
     sign: (data: string) => Promise<string>;
 }
 
-new RSS3(options: IOptionsMnemonic | IOptionsPrivateKey | IOptionsSign);
+new RSS4(options: IOptionsMnemonic | IOptionsPrivateKey | IOptionsSign);
 ```
 
 **Temporary account**
 
-If the app only needs get information (e.g. activity feed or assets) from the RSS3 Network without committing changes, the easiest way to initialize it is by creating a temporary account (the first way), i.e. just pass the `endpoint` parameter.
+If the app only needs get information (e.g. activity feed or assets) from the RSS4 Network without committing changes, the easiest way to initialize it is by creating a temporary account (the first way), i.e. just pass the `endpoint` parameter.
 
 ```ts
-const rss3 = new RSS3({
+const rss3 = new RSS4({
     endpoint: 'https://prenode.rss3.dev',
 });
 ```
@@ -100,13 +100,13 @@ If the app wants to help users make changes to a file (e.g. posting a new item o
 <CodeGroupItem title="ethers" active>
 
 ```ts
-import RSS3 from 'rss3';
+import RSS4 from 'rss3';
 import { ethers } from 'ethers';
 
 const provider = new ethers.providers.Web3Provider(window.ethereum);
 const signer = provider.getSigner();
 
-const rss3 = new RSS3({
+const rss3 = new RSS4({
     endpoint: 'https://prenode.rss3.dev',
     address: await signer.getAddress(),
     sign: async (data) => await signer.signMessage(data),
@@ -118,12 +118,12 @@ const rss3 = new RSS3({
 <CodeGroupItem title="web3.js">
 
 ```ts
-import RSS3 from 'rss3';
+import RSS4 from 'rss3';
 import Web3 from 'web3';
 
 const web3 = new Web3(window.ethereum);
 const address = (await web3.eth.getAccounts())[0];
-const rss3 = new RSS3({
+const rss3 = new RSS4({
     endpoint: 'https://prenode.rss3.dev',
     address,
     sign: async (data) => await web3.eth.personal.sign(data, address),
@@ -133,14 +133,14 @@ const rss3 = new RSS3({
 </CodeGroupItem>
 </CodeGroup>
 
-And `agentSign` is a type of agent signature - refer to the `agent_id` and `agent_signature` fields in [RSS3 Protocol](https://github.com/NaturalSelectionLabs/RSS3) for more information. Once the user has initialized the SDK with an external signature, an agent signature is generated to sign subsequent changes. The agent information is stored in a suitable and secure place through the `agentStorage` parameter, and the default location is the cookies.
+And `agentSign` is a type of agent signature - refer to the `agent_id` and `agent_signature` fields in [RSS4 Protocol](https://github.com/NaturalSelectionLabs/RSS4) for more information. Once the user has initialized the SDK with an external signature, an agent signature is generated to sign subsequent changes. The agent information is stored in a suitable and secure place through the `agentStorage` parameter, and the default location is the cookies.
 
 We can also initialize the SDK with mnemonic or private keys, though not highly recommended.
 
 **Mnemonic**
 
 ```ts
-const rss3 = new RSS3({
+const rss3 = new RSS4({
     endpoint: 'https://prenode.rss3.dev',
     mnemonic: 'xxx',
     mnemonicPath: 'xxx',
@@ -150,7 +150,7 @@ const rss3 = new RSS3({
 **PrivateKey**
 
 ```ts
-const rss3 = new RSS3({
+const rss3 = new RSS4({
     endpoint: 'https://prenode.rss3.dev',
     privateKey: '0xxxx',
 });
@@ -160,7 +160,7 @@ The next section describes the use of the SDK through several usage scenarios.
 
 ### Getting Profile Details
 
-While external DID projects are supported (e.g. ENS, next.id and self.id), you can also get profile details from the RSS3 Network including avatars and nicknames. 
+While external DID projects are supported (e.g. ENS, next.id and self.id), you can also get profile details from the RSS4 Network including avatars and nicknames. 
 
 Use the `rss3.profile.get` method to get the profile of the specified persona.
 
@@ -174,7 +174,7 @@ const { details } = await rss3.profile.get('0xC8b960D09C0078c18Dcbe7eB9AB9d816Bc
 
 ### Adding Persona's Associated Accounts
 
-You can also help users add accounts to the RSS3 Network. 
+You can also help users add accounts to the RSS4 Network. 
 
 The list of supported accounts is available at [API#Supported account](/guide/api.html#supported-account)
 
@@ -189,7 +189,7 @@ Let's start by adding the current account of MetaMask. Please note that this add
 ```ts
 const account = {
     tags: ['test account'], // Optional
-    id: RSS3Utils.id.getAccount('EVM+', await signer.getAddress()), // 'EVM+-0xC8b960D09C0078c18Dcbe7eB9AB9d816BcCa8944'
+    id: RSS4Utils.id.getAccount('EVM+', await signer.getAddress()), // 'EVM+-0xC8b960D09C0078c18Dcbe7eB9AB9d816BcCa8944'
 };
 ```
 
@@ -206,7 +206,7 @@ account.signature = await signer.signMessage(signMessage);
 await rss3.profile.accounts.post(account);
 ```
 
-4. Sync the modified file to RSS3 Network
+4. Sync the modified file to RSS4 Network
 
 ```ts
 await rss3.files.sync();
@@ -216,11 +216,11 @@ Next let's add another account on a centralised platform, such as Twitter.
 
 1. Add our main address or a name pointing to our main address (see [API#Supported name service](/guide/api.html#supported-name-service)) to the Twitter bio, name or url
 
-2. Declare this account; 3. Add account to rss3 file; 4. Sync the modified file to RSS3 Network (Same as above)
+2. Declare this account; 3. Add account to rss3 file; 4. Sync the modified file to RSS4 Network (Same as above)
 
 ```ts
 const account = {
-    id: RSS3Utils.id.getAccount('Twitter', 'DIYgod'), // 'Twitter-DIYgod'
+    id: RSS4Utils.id.getAccount('Twitter', 'DIYgod'), // 'Twitter-DIYgod'
 };
 await rss3.profile.accounts.post(account);
 await rss3.files.sync();
@@ -228,7 +228,7 @@ await rss3.files.sync();
 
 ### Getting the List of Persona's Links
 
-RSS3 works with all social graph projects, however, if you want to leverage existing links on the RSS3 Network, here is how to make it work. 
+RSS4 works with all social graph projects, however, if you want to leverage existing links on the RSS4 Network, here is how to make it work. 
 
 The protocol defines that each persona can have many types of link, we will take `following` as an example. Here we use `following` as the id. We can also define our own link id.
 
@@ -319,7 +319,7 @@ const page1 = await rss3.items.getList({
 });
 ```
 
-If we want to leverage existing links (e.g. following) in the RSS3 Networks for a list of items from other personas followed by `0xC8b960D09C0078c18Dcbe7eB9AB9d816BcCa8944`:
+If we want to leverage existing links (e.g. following) in the RSS4 Networks for a list of items from other personas followed by `0xC8b960D09C0078c18Dcbe7eB9AB9d816BcCa8944`:
 
 ```ts
 const page1 = await rss3.items.getList({
@@ -383,7 +383,7 @@ for (let i = 0; i < 10; i++) {
 }
 ```
 
-Also, if we want to get the profile from the RSS3 Network, e.g. nickname and avatar, of a list of personas from the item list, we can:
+Also, if we want to get the profile from the RSS4 Network, e.g. nickname and avatar, of a list of personas from the item list, we can:
 
 ```ts
 const profileSet = page1.filter((item) => item?.target?.field?.startsWith('assets-')).map((item) => utils.id.parse(item.id).persona);
@@ -408,7 +408,7 @@ Let's start with a plain text item
 
 ```ts
 await rss3.items.custom.post({
-    summary: 'I love RSS3',
+    summary: 'I love RSS4',
 });
 ```
 
@@ -416,7 +416,7 @@ Sometimes we also want to attach an image or a video to items, we need to upload
 
 ```ts
 await rss3.items.custom.post({
-    summary: 'I love RSS3',
+    summary: 'I love RSS4',
     contents: [{
         mime_type: 'image/jpeg',
         address: ['https://picsum.photos/200/300'],
@@ -510,7 +510,7 @@ const changedFiles = rss3.files.sync();
 <CodeGroupItem title="types" active>
 
 ```ts
-files.get(fileID: string): Promise<RSS3Content>
+files.get(fileID: string): Promise<RSS4Content>
 ```
 
 </CodeGroupItem>
@@ -556,7 +556,7 @@ account.address: string
 <CodeGroupItem title="types" active>
 
 ```ts
-profile.get(personaID: string = account.address): Promise<RSS3Profile>
+profile.get(personaID: string = account.address): Promise<RSS4Profile>
 ```
 
 </CodeGroupItem>
@@ -576,7 +576,7 @@ const file = await rss3.files.get(rss3.account.address);
 <CodeGroupItem title="types" active>
 
 ```ts
-profile.patch(profile: RSS3Profile): Promise<RSS3Profile>
+profile.patch(profile: RSS4Profile): Promise<RSS4Profile>
 ```
 
 </CodeGroupItem>
@@ -585,9 +585,9 @@ profile.patch(profile: RSS3Profile): Promise<RSS3Profile>
 
 ```ts
 const newProfile = await rss3.profile.patch({
-    name: 'RSS3',
+    name: 'RSS4',
     avatar: ['https://cloudflare-ipfs.com/ipfs/QmZWWSspbyFtWpLZtoAK35AjEYK75woNawqLgKC4DRpqxu'],
-    bio: 'RSS3 is an open protocol designed for content and social networks in the Web 3.0 era.',
+    bio: 'RSS4 is an open protocol designed for content and social networks in the Web 3.0 era.',
 });
 ```
 
@@ -600,7 +600,7 @@ const newProfile = await rss3.profile.patch({
 <CodeGroupItem title="types" active>
 
 ```ts
-profile.getList(personas: string[]): Promise<(RSS3Profile & { persona: string })[]>
+profile.getList(personas: string[]): Promise<(RSS4Profile & { persona: string })[]>
 ```
 
 </CodeGroupItem>
@@ -625,7 +625,7 @@ const profiles = rss3.profile.getList([
 <CodeGroupItem title="types" active>
 
 ```ts
-profile.accounts.getSigMessage(account: RSS3Account): Promise<string>
+profile.accounts.getSigMessage(account: RSS4Account): Promise<string>
 ```
 
 </CodeGroupItem>
@@ -634,7 +634,7 @@ profile.accounts.getSigMessage(account: RSS3Account): Promise<string>
 
 ```ts
 const sigMessage = await rss3.profile.accounts.getSigMessage({
-    id: RSS3Utils.id.getAccount('EVM+', '0x1234567890123456789012345678901234567890'),
+    id: RSS4Utils.id.getAccount('EVM+', '0x1234567890123456789012345678901234567890'),
     tags: ['test'],
 });
 ```
@@ -648,7 +648,7 @@ const sigMessage = await rss3.profile.accounts.getSigMessage({
 <CodeGroupItem title="types" active>
 
 ```ts
-profile.accounts.getList(persona?: string): Promise<RSS3Account[]>
+profile.accounts.getList(persona?: string): Promise<RSS4Account[]>
 ```
 
 </CodeGroupItem>
@@ -668,7 +668,7 @@ const list = await rss3.profile.accounts.getList('0x1234567890123456789012345678
 <CodeGroupItem title="types" active>
 
 ```ts
-profile.accounts.post(account: RSS3Account): Promise<RSS3Account>
+profile.accounts.post(account: RSS4Account): Promise<RSS4Account>
 ```
 
 </CodeGroupItem>
@@ -677,7 +677,7 @@ profile.accounts.post(account: RSS3Account): Promise<RSS3Account>
 
 ```ts
 const account = {
-    id: RSS3Utils.id.getAccount('EVM+', '0x1234567890123456789012345678901234567890'),
+    id: RSS4Utils.id.getAccount('EVM+', '0x1234567890123456789012345678901234567890'),
     tags: ['test'],
 };
 const signature = mySignFun(await rss3.profile.accounts.getSigMessage(account));
@@ -703,7 +703,7 @@ profile.accounts.delete(id: string): Promise<string>
 
 ```ts
 const account = await rss3.profile.accounts.delete(
-    RSS3Utils.id.getAccount('EVM+', '0x1234567890123456789012345678901234567890'),
+    RSS4Utils.id.getAccount('EVM+', '0x1234567890123456789012345678901234567890'),
 );
 ```
 
@@ -724,7 +724,7 @@ items.getList(options: {
     persona: string;
     linkID?: string;
     fieldLike?: string;
-}): Promise<(RSS3CustomItem | RSS3AutoItem)[]>
+}): Promise<(RSS4CustomItem | RSS4AutoItem)[]>
 ```
 
 </CodeGroupItem>
@@ -756,7 +756,7 @@ const personaTimeline = await rss3.items.getList({
 <CodeGroupItem title="types" active>
 
 ```ts
-items.auto.getListFile(persona: string, index?: number): Promise<RSS3AutoItemsList | null>
+items.auto.getListFile(persona: string, index?: number): Promise<RSS4AutoItemsList | null>
 ```
 
 </CodeGroupItem>
@@ -776,7 +776,7 @@ const items = await rss3.items.auto.getListFile(rss3.account.address, -1);
 <CodeGroupItem title="types" active>
 
 ```ts
-items.auto.getList(persona: string, breakpoint?: (file: RSS3AutoItemsList) => boolean): Promise<RSS3AutoItem[]>
+items.auto.getList(persona: string, breakpoint?: (file: RSS4AutoItemsList) => boolean): Promise<RSS4AutoItem[]>
 ```
 
 </CodeGroupItem>
@@ -796,7 +796,7 @@ const autoItems = await rss3.auto.items.getList('0x12345678901234567890123456789
 <CodeGroupItem title="types" active>
 
 ```ts
-items.auto.getListFile(persona: string, index?: number): Promise<RSS3AutoItemsList | null>
+items.auto.getListFile(persona: string, index?: number): Promise<RSS4AutoItemsList | null>
 ```
 
 </CodeGroupItem>
@@ -816,7 +816,7 @@ const backlinks = await rss3.items.auto.getListFile('0x1234567890123456789012345
 <CodeGroupItem title="types" active>
 
 ```ts
-items.auto.backlinks.getList(persona: string, breakpoint?: ((file: RSS3AutoItemsList) => boolean) | undefined): Promise<RSS3AutoItem[]>
+items.auto.backlinks.getList(persona: string, breakpoint?: ((file: RSS4AutoItemsList) => boolean) | undefined): Promise<RSS4AutoItem[]>
 ```
 
 </CodeGroupItem>
@@ -838,7 +838,7 @@ const backlinks = await rss3.items.auto.backlinks.getList('0x1234567890123456789
 <CodeGroupItem title="types" active>
 
 ```ts
-items.custom.getListFile(persona: string, index?: number): Promise<RSS3CustomItemsList | null>
+items.custom.getListFile(persona: string, index?: number): Promise<RSS4CustomItemsList | null>
 ```
 
 </CodeGroupItem>
@@ -858,7 +858,7 @@ const items = await rss3.items.custom.getListFile(rss3.account.address, -1);
 <CodeGroupItem title="types" active>
 
 ```ts
-items.custom.getList(persona: string, breakpoint?: (file: RSS3AutoItemsList) => boolean): Promise<RSS3AutoItem[]>
+items.custom.getList(persona: string, breakpoint?: (file: RSS4AutoItemsList) => boolean): Promise<RSS4AutoItem[]>
 ```
 
 </CodeGroupItem>
@@ -878,7 +878,7 @@ const customItems = await rss3.items.custom.getList('0x1234567890123456789012345
 <CodeGroupItem title="types" active>
 
 ```ts
-item.custom.post(itemIn: Omit<RSS3CustomItem, 'id' | 'date_created' | 'date_updated'>): Promise<RSS3CustomItem>
+item.custom.post(itemIn: Omit<RSS4CustomItem, 'id' | 'date_created' | 'date_updated'>): Promise<RSS4CustomItem>
 ```
 
 </CodeGroupItem>
@@ -887,8 +887,8 @@ item.custom.post(itemIn: Omit<RSS3CustomItem, 'id' | 'date_created' | 'date_upda
 
 ```ts
 const item = await rss3.item.custom.post({
-    title: 'Hello RSS3',
-    summary: 'RSS3 is an open protocol designed for content and social networks in the Web 3.0 era.',
+    title: 'Hello RSS4',
+    summary: 'RSS4 is an open protocol designed for content and social networks in the Web 3.0 era.',
 });
 ```
 
@@ -901,9 +901,9 @@ const item = await rss3.item.custom.post({
 <CodeGroupItem title="types" active>
 
 ```ts
-item.custom.patch(item: Partial<RSS3CustomItem> & {
-    id: RSS3CustomItemID;
-}): Promise<RSS3CustomItem | null>
+item.custom.patch(item: Partial<RSS4CustomItem> & {
+    id: RSS4CustomItemID;
+}): Promise<RSS4CustomItem | null>
 ```
 
 </CodeGroupItem>
@@ -913,7 +913,7 @@ item.custom.patch(item: Partial<RSS3CustomItem> & {
 ```ts
 const newItem = await rss3.item.custom.patch({
     id: '0x1234567890123456789012345678901234567890-item-custom-0',
-    title: 'Hi RSS3',
+    title: 'Hi RSS4',
 });
 ```
 
@@ -926,7 +926,7 @@ const newItem = await rss3.item.custom.patch({
 <CodeGroupItem title="types" active>
 
 ```ts
-items.custom.getListFile(persona: string, index?: number): Promise<RSS3CustomItemsList | null>
+items.custom.getListFile(persona: string, index?: number): Promise<RSS4CustomItemsList | null>
 ```
 
 </CodeGroupItem>
@@ -946,7 +946,7 @@ const backlinks = await rss3.items.custom.getListFile('0x12345678901234567890123
 <CodeGroupItem title="types" active>
 
 ```ts
-items.custom.backlinks.getList(persona: string, breakpoint?: ((file: RSS3CustomItemsList) => boolean) | undefined): Promise<RSS3CustomItem[]>
+items.custom.backlinks.getList(persona: string, breakpoint?: ((file: RSS4CustomItemsList) => boolean) | undefined): Promise<RSS4CustomItem[]>
 ```
 
 </CodeGroupItem>
@@ -968,7 +968,7 @@ const backlinks = await rss3.items.custom.backlinks.getList('0x12345678901234567
 <CodeGroupItem title="types" active>
 
 ```ts
-links.getListFile(persona: string, id: string, index?: number): Promise<RSS3LinksList | null>
+links.getListFile(persona: string, id: string, index?: number): Promise<RSS4LinksList | null>
 ```
 
 </CodeGroupItem>
@@ -988,7 +988,7 @@ const followers = await rss3.links.getListFile(rss3.account.address, 'following'
 <CodeGroupItem title="types" active>
 
 ```ts
-links.getList(persona: string, id: string, breakpoint?: ((file: RSS3LinksList) => boolean) | undefined): Promise<string[]>
+links.getList(persona: string, id: string, breakpoint?: ((file: RSS4LinksList) => boolean) | undefined): Promise<string[]>
 ```
 
 </CodeGroupItem>
@@ -1011,11 +1011,11 @@ const following = await rss3.links.getList(rss3.account.address, 'following');
 links.postList(links: {
     tags?: string[];
     id: string;
-    list?: RSS3ID[];
+    list?: RSS4ID[];
 }): Promise<{
     tags?: string[];
     id: string;
-    list?: RSS3ID[];
+    list?: RSS4ID[];
 }>
 ```
 
@@ -1087,7 +1087,7 @@ const following = await rss3.links.patchListTags('following', ['test']);
 <CodeGroupItem title="types" active>
 
 ```ts
-links.post(id: string, personaID: string): Promise<RSS3LinksList | undefined>
+links.post(id: string, personaID: string): Promise<RSS4LinksList | undefined>
 ```
 
 </CodeGroupItem>
@@ -1129,7 +1129,7 @@ const following = await rss3.links.delete('following', '0xd0B85A7bB6B602f63B0202
 <CodeGroupItem title="types" active>
 
 ```ts
-backlinks.getListFile(persona: string, id: string, index?: number): Promise<RSS3BacklinksList | null>
+backlinks.getListFile(persona: string, id: string, index?: number): Promise<RSS4BacklinksList | null>
 ```
 
 </CodeGroupItem>
@@ -1149,7 +1149,7 @@ const followers = await rss3.backlinks.getListFile(rss3.account.address, 'follow
 <CodeGroupItem title="types" active>
 
 ```ts
-backlinks.getList(persona: string, id: string, breakpoint?: ((file: RSS3BacklinksList) => boolean) | undefined): Promise<string[]>
+backlinks.getList(persona: string, id: string, breakpoint?: ((file: RSS4BacklinksList) => boolean) | undefined): Promise<string[]>
 ```
 
 </CodeGroupItem>
@@ -1199,7 +1199,7 @@ const details = await rss3.assets.getDetails({
 <CodeGroupItem title="types" active>
 
 ```ts
-assets.auto.getListFile(persona: string, index?: number): Promise<RSS3AutoAssetsList | null>
+assets.auto.getListFile(persona: string, index?: number): Promise<RSS4AutoAssetsList | null>
 ```
 
 </CodeGroupItem>
@@ -1219,7 +1219,7 @@ const assets = await rss3.assets.auto.getListFile(rss3.account.address, -1);
 <CodeGroupItem title="types" active>
 
 ```ts
-assets.auto.getList(persona: string, breakpoint?: (file: RSS3AutoAssetsList) => boolean): Promise<RSS3AutoAsset[]>
+assets.auto.getList(persona: string, breakpoint?: (file: RSS4AutoAssetsList) => boolean): Promise<RSS4AutoAsset[]>
 ```
 
 </CodeGroupItem>
@@ -1241,7 +1241,7 @@ const autoAssets = await rss3.auto.assets.getList('0x123456789012345678901234567
 <CodeGroupItem title="types" active>
 
 ```ts
-assets.custom.getListFile(persona: string, index?: number): Promise<RSS3AutoAssetsList | null>
+assets.custom.getListFile(persona: string, index?: number): Promise<RSS4AutoAssetsList | null>
 ```
 
 </CodeGroupItem>
@@ -1261,7 +1261,7 @@ const assets = await rss3.assets.custom.getListFile(rss3.account.address, -1);
 <CodeGroupItem title="types" active>
 
 ```ts
-assets.custom.getList(persona: string, breakpoint?: (file: RSS3CustomAssetsList) => boolean): Promise<RSS3CustomAsset[]>
+assets.custom.getList(persona: string, breakpoint?: (file: RSS4CustomAssetsList) => boolean): Promise<RSS4CustomAsset[]>
 ```
 
 </CodeGroupItem>
@@ -1281,7 +1281,7 @@ const customAssets = await rss3.custom.assets.getList('0x12345678901234567890123
 <CodeGroupItem title="types" active>
 
 ```ts
-asset.custom.post(asset: RSS3CustomAsset): Promise<RSS3CustomAsset>
+asset.custom.post(asset: RSS4CustomAsset): Promise<RSS4CustomAsset>
 ```
 
 </CodeGroupItem>
@@ -1301,7 +1301,7 @@ const asset = await rss3.custom.asset.post('custom-gk-q-10035911');
 <CodeGroupItem title="types" active>
 
 ```ts
-asset.custom.delete(asset: RSS3CustomAsset): Promise<RSS3CustomAsset[] | undefined>
+asset.custom.delete(asset: RSS4CustomAsset): Promise<RSS4CustomAsset[] | undefined>
 ```
 
 </CodeGroupItem>

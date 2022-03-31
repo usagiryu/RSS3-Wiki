@@ -2,11 +2,11 @@
 
 ## Abstract
 
-RIP-4 is used to describe and qualify the link types that can be used for RSS3 link.
+RIP-4 is used to describe and qualify the link types that can be used for RSS4 link.
 
 ## Motivation
 
-The RSS3 protocol does not restrict what link types can be used for links, which creates uncertainty in implementation and use.
+The RSS4 protocol does not restrict what link types can be used for links, which creates uncertainty in implementation and use.
 
 ## For Account Instances
 

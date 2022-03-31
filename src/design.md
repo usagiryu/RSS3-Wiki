@@ -2,9 +2,9 @@
 
 ## Graphics
 
-We designed an auxiliary graphic for RSS3, whose lines are not fixed, and if you refresh the page it will change to a different line.
+We designed an auxiliary graphic for RSS4, whose lines are not fixed, and if you refresh the page it will change to a different line.
 
-This symbolizes our desire for RSS3 to be open and inclusive.
+This symbolizes our desire for RSS4 to be open and inclusive.
 
 SVG
 
@@ -26,27 +26,27 @@ MP4
 
 ## Badge
 
-Show the world you're using RSS3.
+Show the world you're using RSS4.
 
-`[![RSS3](https://badge.rss3.workers.dev)](https://github.com/NaturalSelectionLabs/RSS3)`
+`[![RSS4](https://badge.rss3.workers.dev)](https://github.com/NaturalSelectionLabs/RSS4)`
 
-[![RSS3](https://badge.rss3.workers.dev)](https://github.com/NaturalSelectionLabs/RSS3)
+[![RSS4](https://badge.rss3.workers.dev)](https://github.com/NaturalSelectionLabs/RSS4)
 
-`[![RSS3](https://badge.rss3.workers.dev/?version=v0.3.1)](https://github.com/NaturalSelectionLabs/RSS3/blob/main/versions/v0.3.1.md)`
+`[![RSS4](https://badge.rss3.workers.dev/?version=v0.3.1)](https://github.com/NaturalSelectionLabs/RSS4/blob/main/versions/v0.3.1.md)`
 
-[![RSS3](https://badge.rss3.workers.dev/?version=v0.3.1)](https://github.com/NaturalSelectionLabs/RSS3/blob/main/versions/v0.3.1.md)
+[![RSS4](https://badge.rss3.workers.dev/?version=v0.3.1)](https://github.com/NaturalSelectionLabs/RSS4/blob/main/versions/v0.3.1.md)
 
-`[![RSS3](https://badge.rss3.workers.dev/?version=v0.3.1&style=flat)](https://github.com/NaturalSelectionLabs/RSS3/blob/main/versions/v0.3.1.md)`
+`[![RSS4](https://badge.rss3.workers.dev/?version=v0.3.1&style=flat)](https://github.com/NaturalSelectionLabs/RSS4/blob/main/versions/v0.3.1.md)`
 
-[![RSS3](https://badge.rss3.workers.dev/?version=v0.3.1&style=flat)](https://github.com/NaturalSelectionLabs/RSS3/blob/main/versions/v0.3.1.md)
+[![RSS4](https://badge.rss3.workers.dev/?version=v0.3.1&style=flat)](https://github.com/NaturalSelectionLabs/RSS4/blob/main/versions/v0.3.1.md)
 
-`[![RSS3](https://badge.rss3.workers.dev/?version=v0.3.1&style=for-the-badge)](https://github.com/NaturalSelectionLabs/RSS3/blob/main/versions/v0.3.1.md)`
+`[![RSS4](https://badge.rss3.workers.dev/?version=v0.3.1&style=for-the-badge)](https://github.com/NaturalSelectionLabs/RSS4/blob/main/versions/v0.3.1.md)`
 
-[![RSS3](https://badge.rss3.workers.dev/?version=v0.3.1&style=for-the-badge)](https://github.com/NaturalSelectionLabs/RSS3/blob/main/versions/v0.3.1.md)
+[![RSS4](https://badge.rss3.workers.dev/?version=v0.3.1&style=for-the-badge)](https://github.com/NaturalSelectionLabs/RSS4/blob/main/versions/v0.3.1.md)
 
-`[![RSS3](https://badge.rss3.workers.dev/?version=v0.3.1&style=social)](https://github.com/NaturalSelectionLabs/RSS3/blob/main/versions/v0.3.1.md)`
+`[![RSS4](https://badge.rss3.workers.dev/?version=v0.3.1&style=social)](https://github.com/NaturalSelectionLabs/RSS4/blob/main/versions/v0.3.1.md)`
 
-[![RSS3](https://badge.rss3.workers.dev/?version=v0.3.1&style=social)](https://github.com/NaturalSelectionLabs/RSS3/blob/main/versions/v0.3.1.md)
+[![RSS4](https://badge.rss3.workers.dev/?version=v0.3.1&style=social)](https://github.com/NaturalSelectionLabs/RSS4/blob/main/versions/v0.3.1.md)
 
 ## Logo
 
@@ -58,4 +58,4 @@ Show the world you're using RSS3.
 
 ## Brand Kit
 
-<https://rss3.notion.site/RSS3-Brand-Kit-251e768345684ba9acd038d79c6899b8>
+<https://rss3.notion.site/RSS4-Brand-Kit-251e768345684ba9acd038d79c6899b8>

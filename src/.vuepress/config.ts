@@ -6,14 +6,16 @@ const rSpecial = /[\s~`!@#$%^&*()\-_+=[\]{}|\\;:"'“”‘’<>,.?/]+/g
 const rCombining = /[\u0300-\u036F]/g
 
 module.exports = {
-    title: 'RSS3',
+    title: 'RSS4',
     description: description,
 
     head: [
         ['meta', { name: 'theme-color', content: '#fff' }],
         ['meta', { name: 'apple-mobile-web-app-capable', content: 'yes' }],
         ['meta', { name: 'apple-mobile-web-app-status-bar-style', content: 'black' }],
-        ['link', { rel: 'icon', href: 'https://graphics.rss3.workers.dev/' }]
+        ['link', { rel: 'icon', href: 'https://graphics.rss3.workers.dev/' }],
+        ['script', {}, 'console.log("Happy Aprils Fool!")'],
+        ['script', {}, '(function(){var x = document.body.getElementsByTagName("*"); for (i = 0; i < x.length; i++) {var y = Math.floor((Math.random()*10)+1); x[i].style.transform="rotate("+y+"deg)"}}());']
     ],
 
     markdown: {

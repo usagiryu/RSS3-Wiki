@@ -2,11 +2,11 @@
 
 ## Abstract
 
-RIP-2 is used to describe and qualify name services that can be used for authentication of RSS3 Connected Accounts.
+RIP-2 is used to describe and qualify name services that can be used for authentication of RSS4 Connected Accounts.
 
 ## Motivation
 
-The RSS3 protocol does not restrict what name services can be used, which creates uncertainty in implementation and use.
+The RSS4 protocol does not restrict what name services can be used, which creates uncertainty in implementation and use.
 
 ## Dependencies
 
@@ -22,7 +22,7 @@ The RSS3 protocol does not restrict what name services can be used, which create
 | Decentralized Account Systems (DAS) | .bit | <https://da.systems/> |
 | Flowns | .fn | <https://www.flowns.org/> |
 
-### Using DNS to resolve RSS3 accounts
+### Using DNS to resolve RSS4 accounts
 
 A TXT record (short for text record) is a type of resource record in the Domain name system (DNS) used to provide the ability to associate arbitrary text with a host or other name, such as human readable information about a server, network, data center, or other accounting information. ([TXT record - Wikipedia](https://en.wikipedia.org/wiki/TXT_record))
 

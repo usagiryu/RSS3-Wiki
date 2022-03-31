@@ -2,11 +2,11 @@
 
 ## Abstract
 
-RIP-3 is used to describe and qualify the networks that can be used for RSS3 profiles links items.
+RIP-3 is used to describe and qualify the networks that can be used for RSS4 profiles links items.
 
 ## Motivation
 
-The RSS3 protocol does not restrict what networks can be used for profiles links items, which creates uncertainty in implementation and use.
+The RSS4 protocol does not restrict what networks can be used for profiles links items, which creates uncertainty in implementation and use.
 
 ## Network List
 

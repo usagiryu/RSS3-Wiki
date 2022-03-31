@@ -2,11 +2,11 @@
 sidebar: auto
 ---
 
-# Support RSS3
+# Support RSS4
 
-RSS3 and its related tools is open source and completely free.
+RSS4 and its related tools is open source and completely free.
 
-You can support RSS3 via donations.
+You can support RSS4 via donations.
 
 We accept donations via the following ways:
 

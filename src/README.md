@@ -6,14 +6,14 @@ sidebarDepth: 1
 # Introduction
 
 <p align="center">
-    <img class="logo-vido" src="@source/images/logo.gif" />
+    <img class="logo-vido" src="https://i.imgur.com/xzP8Uwa.png" />
 </p>
 
-> RSS3 is an open information syndication protocol that aims to support efficient and decentralized information distribution in Web3.
+> RSS4 is an open information syndication protocol that aims to support efficient and decentralized information distribution in Web3.
 
-![RSS3](https://badge.rss3.workers.dev/)
+<!-- ![RSS4]() -->
 
-## Why RSS3?
+## Why RSS4? Happy Aprils Fool!
 
 The right to create, disseminate and distribute information should not be in the hands of centralized governing. It is the basic right of cyber lives.
 
@@ -21,27 +21,27 @@ Gradually over the past two decades, several data superpowers have controlled co
 
 The world has been eager for a new way of information syndication. RSS used to be the pioneer of its time, now it’s time for us to pick up the baton and carry on.
 
-Derived from the best out of RSS, RSS3 is an open information syndication protocol that aims to support efficient and decentralized information distribution in Web3. It defines the format of information presence and communication, with this elegantly designed, user-friendly content format, clients can easily access a variety of content sources in a uniform format without the need for extensive compatibility logic.
+Derived from the best out of RSS, RSS4 is an open information syndication protocol that aims to support efficient and decentralized information distribution in Web3. It defines the format of information presence and communication, with this elegantly designed, user-friendly content format, clients can easily access a variety of content sources in a uniform format without the need for extensive compatibility logic.
 
 Extended Reading:
 
-- [Here comes RSS3](https://rss3.notion.site/1-Here-comes-RSS3-501aa9df6dba40caae0a53eb2de6f060)
-- [What is the relationship between RSS3 and RSS?](./faq.md#q-what-is-the-relationship-between-rss3-and-rss)
-- [Is RSS3 a SocialFi?](./faq.md#q-is-rss3-a-socialfi)
+- [Here comes RSS4](https://rss3.notion.site/1-Here-comes-RSS4-501aa9df6dba40caae0a53eb2de6f060)
+- [What is the relationship between RSS4 and RSS?](./faq.md#q-what-is-the-relationship-between-rss3-and-rss)
+- [Is RSS4 a SocialFi?](./faq.md#q-is-rss3-a-socialfi)
 
-## How RSS3 works?
+## How RSS4 works?
 
-[RSS3 Protocls](./protocol/README.md) classify information into four types - profiles links assets notes
+[RSS4 Protocls](./protocol/README.md) classify information into four types - profiles links assets notes
 
-[RSS3 Apps](#rss3-apps) access and publish data using RSS3 SDKs in the format defined by RSS3 Protocls
+[RSS4 Apps](#rss3-apps) access and publish data using RSS4 SDKs in the format defined by RSS4 Protocls
 
-[RSS3 SDKs](./sdk/list.md) fetch data from the RSS3 Network and publish data to RSS3 Supported Networks
+[RSS4 SDKs](./sdk/list.md) fetch data from the RSS4 Network and publish data to RSS4 Supported Networks
 
-[RSS3 Network](./network/roadmap.md) crawls data from various RSS3 Supported Networks, caches the data into its own efficient database, and do some pre-processing, such as applying artificial intelligence recommendation algorithms and providing search function.
+[RSS4 Network](./network/roadmap.md) crawls data from various RSS4 Supported Networks, caches the data into its own efficient database, and do some pre-processing, such as applying artificial intelligence recommendation algorithms and providing search function.
 
-![RSS3 System](./images/system.png)
+![RSS4 System](./images/system.png)
 
-RSS3 and its affiliated network and tools are open and permissionless - If you are using RSS3 for your project, we would be delighted if you [let us know](https://github.com/NaturalSelectionLabs/RSS3/issues/21).
+RSS4 and its affiliated network and tools are open and permissionless - If you are using RSS4 for your project, we would be delighted if you [let us know](https://github.com/NaturalSelectionLabs/RSS4/issues/21).
 
 Extended Reading:
 
@@ -61,9 +61,9 @@ Or you can follow [Twitter](https://twitter.com/rss3_) for updates.
 
 ## Ecosystem
 
-### RSS3 Apps
+### RSS4 Apps
 
-Feel free to submit yours in [Let us know!](https://github.com/NaturalSelectionLabs/RSS3/issues/21)
+Feel free to submit yours in [Let us know!](https://github.com/NaturalSelectionLabs/RSS4/issues/21)
 
 <div class="grid grid-apps">
     <span class="eco-app">
@@ -96,7 +96,7 @@ Feel free to submit yours in [Let us know!](https://github.com/NaturalSelectionL
         </span>
         <span class="description">
             <h4>Mask</h4>
-            <p>RSS3 work with Mask Network to bring the best Web3 enhanced Web2 social experience</p>
+            <p>RSS4 work with Mask Network to bring the best Web3 enhanced Web2 social experience</p>
         </span>
         <span class="link">
             <a target="_blank" href="https://mask.io/">Open Mask</a>
@@ -108,7 +108,7 @@ Feel free to submit yours in [Let us know!](https://github.com/NaturalSelectionL
         </span>
         <span class="description">
             <h4>ShowMe</h4>
-            <p>RSS3 powers the profile page of ShowMe, an NFT social subscription platform</p>
+            <p>RSS4 powers the profile page of ShowMe, an NFT social subscription platform</p>
         </span>
         <span class="link">
             <a target="_blank" href="https://showme.fan/">Open ShowMe</a>
@@ -120,7 +120,7 @@ Feel free to submit yours in [Let us know!](https://github.com/NaturalSelectionL
         </span>
         <span class="description">
             <h4>inGroup</h4>
-            <p>RSS3 powers the activity feed of different groups in crypto organizations of InGroup, a web3 social network</p>
+            <p>RSS4 powers the activity feed of different groups in crypto organizations of InGroup, a web3 social network</p>
         </span>
         <span class="link">
             <a target="_blank" href="https://ingroup.chat/">Open inGroup</a>
@@ -132,7 +132,7 @@ Feel free to submit yours in [Let us know!](https://github.com/NaturalSelectionL
         </span>
         <span class="description">
             <h4>Flowns</h4>
-            <p>RSS3 powers the profile of FlowNS, an opening protocol of identities and assets</p>
+            <p>RSS4 powers the profile of FlowNS, an opening protocol of identities and assets</p>
         </span>
         <span class="link">
             <a target="_blank" href="https://www.flowns.org/">Open Flowns</a>
@@ -144,7 +144,7 @@ Feel free to submit yours in [Let us know!](https://github.com/NaturalSelectionL
         </span>
         <span class="description">
             <h4>Une Meta</h4>
-            <p>RSS3 support his social-enforced NFT trading platform to bring out a refreshing NFT experience</p>
+            <p>RSS4 support his social-enforced NFT trading platform to bring out a refreshing NFT experience</p>
         </span>
         <span class="link">
             <a target="_blank" href="https://www.info.unemeta.com/">Open Une Meta</a>
@@ -156,7 +156,7 @@ Feel free to submit yours in [Let us know!](https://github.com/NaturalSelectionL
         </span>
         <span class="description">
             <h4>Matrix World</h4>
-            <p>RSS3 powers the social profile of characters in this metaverse</p>
+            <p>RSS4 powers the social profile of characters in this metaverse</p>
         </span>
         <span class="link">
             <a target="_blank" href="https://matrixworld.org/home">Open Matrix World</a>
@@ -168,7 +168,7 @@ Feel free to submit yours in [Let us know!](https://github.com/NaturalSelectionL
         </span>
         <span class="description">
             <h4>UniPass</h4>
-            <p>RSS3 constructs part of Unipass’s user social graph</p>
+            <p>RSS4 constructs part of Unipass’s user social graph</p>
         </span>
         <span class="link">
             <a target="_blank" href="https://www.unipass.id/">Open UniPass</a>
@@ -180,7 +180,7 @@ Feel free to submit yours in [Let us know!](https://github.com/NaturalSelectionL
         </span>
         <span class="description">
             <h4>KNN3</h4>
-            <p>A web3 users topological graph network where a major part of data comes from RSS3</p>
+            <p>A web3 users topological graph network where a major part of data comes from RSS4</p>
         </span>
         <span class="link">
             <a target="_blank" href="https://www.knn3.xyz/">Open KNN3</a>
@@ -192,7 +192,7 @@ Feel free to submit yours in [Let us know!](https://github.com/NaturalSelectionL
         </span>
         <span class="description">
             <h4>Interface Search</h4>
-            <p>A social search engine where a major part of data comes from RSS3</p>
+            <p>A social search engine where a major part of data comes from RSS4</p>
         </span>
         <span class="link">
             <a target="_blank" href="https://search.interface.social/">Open Interface Search</a>
@@ -204,7 +204,7 @@ Feel free to submit yours in [Let us know!](https://github.com/NaturalSelectionL
         </span>
         <span class="description">
             <h4>Atem</h4>
-            <p>RSS3 provides data for profile and also community activities for this decentralized community</p>
+            <p>RSS4 provides data for profile and also community activities for this decentralized community</p>
         </span>
         <span class="link">
             <a target="_blank" href="https://www.atemnet.com/">Open Atem</a>
@@ -212,7 +212,7 @@ Feel free to submit yours in [Let us know!](https://github.com/NaturalSelectionL
     </span>
 </div>
 
-### RSS3 Supported Sources
+### RSS4 Supported Sources
 
 #### Profiles
 
